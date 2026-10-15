@@ -21,6 +21,7 @@ export default function Header() {
     { label: "How It Works", href: "/how-it-works" },
     { label: "Competition", href: "/competition" },
     { label: "Schools", href: "/schools" },
+    { label: "Gallery", href: "/gallery" },
     { label: "Resources", href: "/resources" },
     { label: "FAQs", href: "/faqs" },
   ];
@@ -48,7 +49,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-7 text-sm font-semibold text-gray-700">
+        <nav className="hidden md:flex items-center gap-5 lg:gap-6 xl:gap-7 text-sm font-semibold text-gray-700">
           <Link 
             href="/" 
             className={`transition-colors pb-1 ${isLinkActive("/") ? "text-yellow-500 font-bold border-b-2 border-yellow-500" : "hover:text-yellow-500"}`}
@@ -78,6 +79,12 @@ export default function Header() {
             className={`transition-colors pb-1 flex items-center gap-1 ${isLinkActive("/schools") ? "text-yellow-500 font-bold border-b-2 border-yellow-500" : "hover:text-yellow-500"}`}
           >
             Schools ▾
+          </Link>
+          <Link 
+            href="/gallery" 
+            className={`transition-colors pb-1 ${isLinkActive("/gallery") ? "text-yellow-500 font-bold border-b-2 border-yellow-500" : "hover:text-yellow-500"}`}
+          >
+            Gallery
           </Link>
           <Link 
             href="/resources" 
