@@ -61,28 +61,6 @@ export const galleryPhotos = [
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/WA9A1439.JPG"
   },
   {
-    id: 5,
-    title: "Grand Finale All-Stars & Finalists Victory",
-    category: "Grand Finale",
-    date: "Mega Event",
-    location: "Championship Stage",
-    description: "The exhilarating finale moment where all category winners, finalists, teachers, and organizers gather under confetti rain with their trophies.",
-    tag: "State Finale",
-    image: "/images/gallery/img-5.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/WA9A1328%20(1).JPG"
-  },
-  {
-    id: 6,
-    title: "Championship Winners Stage Felicitation",
-    category: "Grand Finale",
-    date: "Grand Finale",
-    location: "Championship Stage",
-    description: "All state finalists, category toppers, and guests celebrating the culmination of the nationwide spelling competition.",
-    tag: "Champions Stage",
-    image: "/images/gallery/img-6.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/WA9A1328.JPG"
-  },
-  {
     id: 7,
     title: "Grand Stage Confetti Shower Celebration",
     category: "Grand Finale",
@@ -190,6 +168,7 @@ export const galleryPhotos = [
     description: "Official pronouncer giving phonetic cues, definitions, and word origins from the ceremonial podium.",
     tag: "Official Pronouncer",
     image: "/images/gallery/img-16.jpg",
+    objectPosition: "top",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/WA9A0394.JPG"
   },
   {
@@ -245,18 +224,8 @@ export const galleryPhotos = [
     description: "The iconic golden trophies lined up on the honours table ready for the felicitation of district champions.",
     tag: "Golden Trophies",
     image: "/images/gallery/img-21.jpg",
+    objectPosition: "top",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/WA9A0011.JPG"
-  },
-  {
-    id: 22,
-    title: "State Championship Winner Certificate & Trophy",
-    category: "Award Ceremonies",
-    date: "Season Finale",
-    location: "Karnataka State Championship",
-    description: "State winner P. Sirichandana Chowdhary holding her official Certificate of Appreciation and champion trophy.",
-    tag: "State Winner",
-    image: "/images/gallery/img-22.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/p4%20last%20.JPG"
   },
   {
     id: 23,
@@ -333,6 +302,7 @@ export const galleryPhotos = [
     description: "Senior champion speller proudly receiving the golden trophy and certificate of merit from guest dignitaries.",
     tag: "Championship Trophy",
     image: "/images/gallery/img-29.jpg",
+    objectPosition: "top",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/KET_2389-001.JPG"
   },
   {
@@ -388,6 +358,7 @@ export const galleryPhotos = [
     description: "School representative speller honored with certificate of excellence and shiny gold cup on stage.",
     tag: "Excellence Award",
     image: "/images/gallery/img-34.jpg",
+    objectPosition: "top",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/KET_2352-001.JPG"
   },
   {
@@ -842,17 +813,6 @@ export const galleryPhotos = [
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1875.JPG"
   },
   {
-    id: 76,
-    title: "Championship Arena: Stage Panorama",
-    category: "Grand Finale",
-    date: "Grand Finale",
-    location: "Main Stage Arena",
-    description: "Wide panoramic perspective of the championship stage featuring the official emblem and all seated contestants.",
-    tag: "Stage Panorama",
-    image: "/images/gallery/img-76.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1869.JPG"
-  },
-  {
     id: 77,
     title: "Spell Champ In Your School: Proud Certificate Holder",
     category: "School Rounds",
@@ -1235,6 +1195,7 @@ export const galleryPhotos = [
     description: "Junior champion holding her gleaming golden star trophy with pride and happiness in the spotlight.",
     tag: "Junior Winner",
     image: "/images/gallery/img-111.jpg",
+    objectPosition: "top",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/9G6A8452%20copy.jpg"
   },
   {
@@ -1323,6 +1284,7 @@ export const galleryPhotos = [
     description: "Presidency School boy raising his star trophy victoriously to the cheering crowd and judges.",
     tag: "Presidency School",
     image: "/images/gallery/img-119.jpg",
+    objectPosition: "top",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/9G6A8503%20copy.jpg"
   },
   {
@@ -1334,6 +1296,7 @@ export const galleryPhotos = [
     description: "Young contestant smiling with pride as he hoists his grand finale star trophy high in celebration.",
     tag: "Junior Accolade",
     image: "/images/gallery/img-120.jpg",
+    objectPosition: "top",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/9G6A8508%20copy.jpg"
   },
   {
@@ -1356,9 +1319,23 @@ export const galleryPhotos = [
     description: "Heartfelt celebration as a loving mother poses proudly with her son holding his star trophy and championship medal.",
     tag: "Parent Pride",
     image: "/images/gallery/img-122.jpg",
+    objectPosition: "top",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/9G6A8513%20copy.jpg"
   }
 ];
+
+const portraitImages = new Set([
+  "/images/gallery/img-16.jpg",
+  "/images/gallery/img-19.jpg",
+  "/images/gallery/img-20.jpg",
+  "/images/gallery/img-21.jpg",
+  "/images/gallery/img-29.jpg",
+  "/images/gallery/img-34.jpg",
+  "/images/gallery/img-111.jpg",
+  "/images/gallery/img-119.jpg",
+  "/images/gallery/img-120.jpg",
+  "/images/gallery/img-122.jpg",
+]);
 
 const categories = ["All Moments", "Grand Finale", "Competitions", "Award Ceremonies", "School Rounds"];
 
@@ -1456,6 +1433,7 @@ export default function GalleryPage() {
                     <img 
                       src={item.image} 
                       alt={item.title} 
+                      style={{ objectPosition: item.objectPosition || (portraitImages.has(item.image) ? 'top' : 'center') }}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-between p-4">

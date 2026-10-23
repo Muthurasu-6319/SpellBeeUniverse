@@ -37,10 +37,11 @@ export default function Hero() {
           <div className="absolute w-96 h-96 bg-yellow-300 rounded-[40%] -z-20 -bottom-20 -right-10 opacity-60 rotate-45"></div>
           
           <Image 
-            src="/image.png" 
+            src="/images/image.png" 
             alt="Students participating in SpellBee Universe" 
-            width={600} 
-            height={500}
+            width={1583} 
+            height={994}
+            priority
             className="relative z-10 w-full h-auto object-contain"
           />
           
