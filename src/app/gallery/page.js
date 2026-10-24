@@ -1091,18 +1091,6 @@ export const galleryPhotos = [
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/9G6A8499%20copy.jpg"
   },
   {
-    id: 119,
-    title: "Presidency School Champion: High Trophy Salute",
-    category: "Award Ceremonies",
-    date: "Award Ceremony",
-    location: "Championship Stage",
-    description: "Presidency School boy raising his star trophy victoriously to the cheering crowd and judges.",
-    tag: "Presidency School",
-    image: "/images/gallery/img-119.jpg",
-    objectPosition: "top",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/9G6A8503%20copy.jpg"
-  },
-  {
     id: 120,
     title: "Junior Speller Triumph: Raising the Accolade",
     category: "Award Ceremonies",
@@ -1113,18 +1101,6 @@ export const galleryPhotos = [
     image: "/images/gallery/img-120.jpg",
     objectPosition: "top",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/9G6A8508%20copy.jpg"
-  },
-  {
-    id: 122,
-    title: "Mother & Son Victory Moment: Proud Smiles",
-    category: "Grand Finale",
-    date: "Award Ceremony",
-    location: "Championship Stage",
-    description: "Heartfelt celebration as a loving mother poses proudly with her son holding his star trophy and championship medal.",
-    tag: "Parent Pride",
-    image: "/images/gallery/img-122.jpg",
-    objectPosition: "top",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/9G6A8513%20copy.jpg"
   }
 ];
 
@@ -1136,9 +1112,7 @@ const portraitImages = new Set([
   "/images/gallery/img-29.jpg",
   "/images/gallery/img-34.jpg",
   "/images/gallery/img-111.jpg",
-  "/images/gallery/img-119.jpg",
   "/images/gallery/img-120.jpg",
-  "/images/gallery/img-122.jpg",
 ]);
 
 const categories = ["All Moments", "Grand Finale", "Competitions", "Award Ceremonies", "School Rounds"];
