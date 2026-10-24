@@ -1,7 +1,5 @@
 import Header from "@/components/Header";
-import FAQHero from "@/components/FAQHero";
-import FAQCategories from "@/components/FAQCategories";
-import FAQAccordionSection from "@/components/FAQAccordionSection";
+import FAQPageClient from "@/components/FAQPageClient";
 import JourneyCTA from "@/components/JourneyCTA";
 import Footer from "@/components/Footer";
 
@@ -14,9 +12,7 @@ export default function FAQPage() {
   return (
     <main className="min-h-screen bg-white font-sans overflow-x-hidden">
       <Header />
-      <FAQHero />
-      <FAQCategories />
-      <FAQAccordionSection />
+      <FAQPageClient />
       <JourneyCTA 
         title="Your SpellBee Journey Continues!" 
         description="Explore our resources, prepare for the competition and keep growing." 
