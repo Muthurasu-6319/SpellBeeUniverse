@@ -1089,18 +1089,6 @@ export const galleryPhotos = [
     tag: "Acharya Vidya Kula",
     image: "/images/gallery/img-118.jpg",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/9G6A8499%20copy.jpg"
-  },
-  {
-    id: 120,
-    title: "Junior Speller Triumph: Raising the Accolade",
-    category: "Award Ceremonies",
-    date: "Award Ceremony",
-    location: "Championship Stage",
-    description: "Young contestant smiling with pride as he hoists his grand finale star trophy high in celebration.",
-    tag: "Junior Accolade",
-    image: "/images/gallery/img-120.jpg",
-    objectPosition: "top",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/9G6A8508%20copy.jpg"
   }
 ];
 
@@ -1112,7 +1100,6 @@ const portraitImages = new Set([
   "/images/gallery/img-29.jpg",
   "/images/gallery/img-34.jpg",
   "/images/gallery/img-111.jpg",
-  "/images/gallery/img-120.jpg",
 ]);
 
 const categories = ["All Moments", "Grand Finale", "Competitions", "Award Ceremonies", "School Rounds"];
