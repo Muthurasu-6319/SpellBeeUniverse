@@ -37,8 +37,8 @@ const HowItWorksHero = () => {
             <div className="relative z-10 max-w-sm lg:max-w-md w-full group">
               <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-white transition-transform duration-500 group-hover:scale-[1.02]">
                 <img 
-                  src="/images/how-it-works-hero.jpg" 
-                  alt="Young students reading and preparing SpellBee book together" 
+                  src="/images/how-it-works-student.jpg" 
+                  alt="Young student prepared and enthusiastic for the SpellBee competition journey" 
                   className="w-full h-auto object-cover block transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
