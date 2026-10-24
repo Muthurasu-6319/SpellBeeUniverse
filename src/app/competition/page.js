@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import CompetitionHero from "@/components/CompetitionHero";
-import CompetitionCategories from "@/components/CompetitionCategories";
 import CompetitionRounds from "@/components/CompetitionRounds";
 import CompetitionFinaleStage from "@/components/CompetitionFinaleStage";
 import CompetitionAwardsSection from "@/components/CompetitionAwardsSection";
@@ -13,7 +12,6 @@ export default function CompetitionPage() {
     <main className="min-h-screen bg-white font-sans overflow-x-hidden">
       <Header />
       <CompetitionHero />
-      <CompetitionCategories />
       <CompetitionRounds />
       <CompetitionFinaleStage />
       <CompetitionAwardsSection />

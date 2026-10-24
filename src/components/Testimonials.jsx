@@ -25,24 +25,24 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-16 bg-white relative">
+    <section className="pt-8 sm:pt-9 pb-8 sm:pb-10 bg-white relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="mb-10 text-center md:text-left">
+        <div className="mb-6 sm:mb-7 text-center md:text-left">
           <h2 className="text-2xl md:text-3xl font-bold text-[#1a237e] mb-2 tracking-tight">What Parents & Teachers Say</h2>
-          <p className="text-slate-500 font-medium text-sm md:text-base">Real stories. Lasting impact.</p>
+          <p className="text-slate-500 font-medium text-sm md:text-base max-w-xl mx-auto md:mx-0">Real stories. Lasting impact.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           {testimonials.map((t, index) => (
-            <div key={index} className="bg-white rounded-2xl p-6 shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-slate-100 flex gap-4 items-start hover:-translate-y-1 transition-transform">
-              <div className="w-12 h-12 flex-shrink-0">
-                <img src={t.avatar} alt="Avatar" className="w-full h-full rounded-full" />
+            <div key={index} className="bg-white rounded-2xl p-5 sm:p-6 shadow-[0_4px_20px_rgb(0,0,0,0.04)] border border-slate-100/80 hover:border-amber-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex gap-4 items-start h-full group cursor-pointer">
+              <div className="w-11 h-11 sm:w-12 sm:h-12 flex-shrink-0">
+                <img src={t.avatar} alt="Avatar" className="w-full h-full rounded-full shadow-2xs group-hover:scale-110 group-hover:ring-3 group-hover:ring-amber-300 transition-all duration-300" />
               </div>
-              <div className="flex flex-col h-full justify-between">
-                <p className="text-[#3949ab] text-xs font-medium leading-relaxed italic mb-4">
-                  "{t.quote}"
+              <div className="flex flex-col flex-1 h-full justify-between min-w-0">
+                <p className="text-[#3949ab] group-hover:text-[#1a237e] transition-colors text-xs font-medium leading-relaxed italic mb-3 min-h-[64px] lg:min-h-[76px]">
+                  &ldquo;{t.quote}&rdquo;
                 </p>
-                <span className="text-slate-400 text-[10px] md:text-xs font-semibold">
+                <span className="text-slate-500 group-hover:text-amber-600 transition-colors text-xs font-bold block mt-auto">
                   {t.author}
                 </span>
               </div>

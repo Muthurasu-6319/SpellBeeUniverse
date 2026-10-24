@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { 
   Download, 
   FileText, 
@@ -21,7 +22,7 @@ const ResourceDownloadsBar = () => {
   ];
 
   return (
-    <section className="py-10 bg-[#fed940] border-y border-amber-400 relative overflow-hidden" id="downloads">
+    <section className="py-6 sm:py-7 bg-[#fed940] border-y border-amber-400 relative overflow-hidden" id="downloads">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
           
@@ -55,13 +56,14 @@ const ResourceDownloadsBar = () => {
           </div>
 
           {/* Right Action Button */}
-          <div className="shrink-0">
-            <a 
-              href="#view-all-downloads"
-              className="px-6 py-3 rounded-full bg-[#0d1e4c] hover:bg-[#1a237e] text-white font-extrabold text-xs sm:text-sm shadow-md transition-all transform hover:-translate-y-0.5 flex items-center gap-2 group whitespace-nowrap"
+          <div className="shrink-0 w-full sm:w-auto flex justify-center">
+            <Link 
+              href="/resources"
+              className="px-6 py-3 rounded-full bg-[#0d1e4c] hover:bg-[#1a237e] text-white font-extrabold text-xs sm:text-sm shadow-md transition-all transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-2 group whitespace-nowrap w-full sm:w-auto text-center"
             >
-              View All Downloads <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
+              <span>View All Downloads</span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
 
         </div>

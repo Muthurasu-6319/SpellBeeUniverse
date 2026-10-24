@@ -116,17 +116,6 @@ export const galleryPhotos = [
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/WA9A0839.JPG"
   },
   {
-    id: 12,
-    title: "Live Championship Stage & Arena Setup",
-    category: "Competitions",
-    date: "Championship Round",
-    location: "Open-Air Amphitheater",
-    description: "Panoramic view of the Grand Finale stage, featuring the pronouncer podium, live contestants, and traditional ceremonial lamp.",
-    tag: "Arena View",
-    image: "/images/gallery/img-12.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/WA9A0447.JPG"
-  },
-  {
     id: 13,
     title: "High-Stakes Countdown Spelling Round",
     category: "Competitions",
@@ -147,17 +136,6 @@ export const galleryPhotos = [
     tag: "Live Spelling",
     image: "/images/gallery/img-14.jpg",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/WA9A0411.JPG"
-  },
-  {
-    id: 15,
-    title: "Buzzer Round: 6 Seconds Left on the Clock",
-    category: "Competitions",
-    date: "Rapid Fire Round",
-    location: "Championship Stage",
-    description: "Thrilling race against time with 6 seconds flashing on the giant digital display as the student delivers her final spelling.",
-    tag: "Timer Buzzer",
-    image: "/images/gallery/img-15.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/WA9A0407.JPG"
   },
   {
     id: 16,
@@ -205,17 +183,6 @@ export const galleryPhotos = [
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/WA9A0040.JPG"
   },
   {
-    id: 20,
-    title: "Gold Medals of Excellence",
-    category: "Award Ceremonies",
-    date: "Awards Gallery",
-    location: "State Championship",
-    description: "Gleaming gold medals awaiting the highest achieving spellers across junior and senior championship categories.",
-    tag: "Gold Medals",
-    image: "/images/gallery/img-20.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/WA9A0033.JPG"
-  },
-  {
     id: 21,
     title: "District Championship Golden Trophies",
     category: "Award Ceremonies",
@@ -227,17 +194,7 @@ export const galleryPhotos = [
     objectPosition: "top",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/WA9A0011.JPG"
   },
-  {
-    id: 23,
-    title: "Championship Award Felicitation on Stage",
-    category: "Award Ceremonies",
-    date: "Awards Ceremony",
-    location: "Grand Finale Stage",
-    description: "School speller receiving grand applause and congratulations from judges and guests under festive confetti.",
-    tag: "Stage Felicitation",
-    image: "/images/gallery/img-23.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/p4%20last%20%20(2).JPG"
-  },
+
   {
     id: 24,
     title: "Rising Stars: Category Winners Trophy Triumph",
@@ -259,17 +216,6 @@ export const galleryPhotos = [
     tag: "Young Learner",
     image: "/images/gallery/img-25.jpg",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/p3%201.JPG"
-  },
-  {
-    id: 26,
-    title: "State Championship Auditorium Main Stage",
-    category: "Grand Finale",
-    date: "Season Finale",
-    location: "Karnataka Spell Bee Arena",
-    description: "The iconic auditorium stage of Karnataka Spell Bee with host, finalists, and digital displays ready for the showdown.",
-    tag: "Grand Stage",
-    image: "/images/gallery/img-26.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/p2%203.JPG"
   },
   {
     id: 27,
@@ -681,17 +627,6 @@ export const galleryPhotos = [
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1913.JPG"
   },
   {
-    id: 64,
-    title: "Young Achiever #11 Live Stage Performance",
-    category: "Competitions",
-    date: "Junior Finals",
-    location: "Main Stage Screen",
-    description: "Little finalist #11 confidently reciting letter by letter with the pronouncer standing attentive at the ceremonial podium.",
-    tag: "Young Achiever",
-    image: "/images/gallery/img-64.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1912.JPG"
-  },
-  {
     id: 65,
     title: "Hillrock NPS Speller Confident Stage Performance",
     category: "Competitions",
@@ -758,17 +693,6 @@ export const galleryPhotos = [
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1895.JPG"
   },
   {
-    id: 71,
-    title: "Contestant #4 Poised Recitation on Stage",
-    category: "Competitions",
-    date: "Junior Category",
-    location: "Championship Stage",
-    description: "Contestant #4 holding the microphone firmly and spelling out her designated word with clarity and poise.",
-    tag: "Poised Recitation",
-    image: "/images/gallery/img-71.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1893.JPG"
-  },
-  {
     id: 72,
     title: "Junior Finalists Awaiting the Countdown Clock",
     category: "Competitions",
@@ -824,28 +748,6 @@ export const galleryPhotos = [
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1808.JPG"
   },
   {
-    id: 78,
-    title: "Certificate of Participation: Young Star Speller",
-    category: "School Rounds",
-    date: "District Round",
-    location: "Awards Photo Booth",
-    description: "Little speller proudly presenting her official certificate of participation earned at the spelling competition.",
-    tag: "Star Speller",
-    image: "/images/gallery/img-78.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1807.JPG"
-  },
-  {
-    id: 79,
-    title: "Official Certificate Verification & Signing",
-    category: "Award Ceremonies",
-    date: "Behind the Scenes",
-    location: "Honors Desk",
-    description: "Close-up view of official certificates being hand-signed and verified for all qualifying student participants.",
-    tag: "Certificate Desk",
-    image: "/images/gallery/img-79.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1801.JPG"
-  },
-  {
     id: 80,
     title: "Speller Focus: Portrait of Determination",
     category: "School Rounds",
@@ -866,17 +768,6 @@ export const galleryPhotos = [
     tag: "Double Celebration",
     image: "/images/gallery/img-81.jpg",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1788.JPG"
-  },
-  {
-    id: 82,
-    title: "Faculty Evaluation: Answer Sheet Grading",
-    category: "School Rounds",
-    date: "Evaluation Round",
-    location: "Jury Assessment Room",
-    description: "Jury evaluator diligently reviewing and scoring student written round response papers.",
-    tag: "Jury Evaluation",
-    image: "/images/gallery/img-82.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1744.JPG"
   },
   {
     id: 83,
@@ -922,28 +813,7 @@ export const galleryPhotos = [
     image: "/images/gallery/img-86.jpg",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1736.JPG"
   },
-  {
-    id: 87,
-    title: "Audience Interaction: Speller Answering the Mic",
-    category: "Competitions",
-    date: "Interactive Session",
-    location: "Auditorium Floor",
-    description: "Bright student speller holding the roving microphone, answering vocabulary trivia during the interactive audience round.",
-    tag: "Audience Mic",
-    image: "/images/gallery/img-87.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1732.JPG"
-  },
-  {
-    id: 88,
-    title: "Be A Spell Champ: Proud Book Holder",
-    category: "School Rounds",
-    date: "State Championship",
-    location: "Auditorium Gallery",
-    description: "Delighted student holding the official 'Be A Spell Champ' study edition with a proud smile in the auditorium.",
-    tag: "Spell Champ Book",
-    image: "/images/gallery/img-88.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1731.JPG"
-  },
+
   {
     id: 89,
     title: "GVN Primary Speller: Quiet Focus",
@@ -1099,28 +969,6 @@ export const galleryPhotos = [
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1553%20(2).JPG"
   },
   {
-    id: 103,
-    title: "Behind the Scenes: Coordination & Judgement Desk",
-    category: "Grand Finale",
-    date: "Behind the Scenes",
-    location: "Officials' Table",
-    description: "Key organizer coordinating with the jury and stage staff to maintain fair judging standards throughout the finale.",
-    tag: "Jury Coordination",
-    image: "/images/gallery/img-103.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1552.JPG"
-  },
-  {
-    id: 104,
-    title: "Championship Intermission: Refreshment Moment",
-    category: "School Rounds",
-    date: "Auditorium Session",
-    location: "Auditorium Seating",
-    description: "Young speller enjoying a quick snack break between competitive spelling rounds in the auditorium gallery.",
-    tag: "Break Time",
-    image: "/images/gallery/img-104.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1548.JPG"
-  },
-  {
     id: 105,
     title: "Family Support: Parents Cheering from Audience",
     category: "Grand Finale",
@@ -1165,17 +1013,6 @@ export const galleryPhotos = [
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1545.JPG"
   },
   {
-    id: 109,
-    title: "Joint Revision: Learning Together from the Guidebook",
-    category: "School Rounds",
-    date: "Junior Finals",
-    location: "Auditorium Seating",
-    description: "Two young spellers sharing the Karnataka Spell Bee workbook, double-checking pronunciations and spellings.",
-    tag: "Collaborative Learning",
-    image: "/images/gallery/img-109.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1539.JPG"
-  },
-  {
     id: 110,
     title: "Championship Star Trophy: Proud Winner",
     category: "Award Ceremonies",
@@ -1208,17 +1045,6 @@ export const galleryPhotos = [
     tag: "Senior Champion",
     image: "/images/gallery/img-112.jpg",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/9G6A8459%20copy.jpg"
-  },
-  {
-    id: 113,
-    title: "Radiant Spell Bee Laureate on Stage",
-    category: "Award Ceremonies",
-    date: "Award Ceremony",
-    location: "Main Stage",
-    description: "Delighted young winner proudly showcasing her star accolade and fresh flowers by the mascot backdrop.",
-    tag: "Stage Accolade",
-    image: "/images/gallery/img-113.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/9G6A8460%20copy.jpg"
   },
   {
     id: 114,
@@ -1254,17 +1080,6 @@ export const galleryPhotos = [
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/9G6A8493%20copy.jpg"
   },
   {
-    id: 117,
-    title: "Grand Finale Laureate: Candor School Star",
-    category: "Award Ceremonies",
-    date: "Grand Finale",
-    location: "Championship Stage",
-    description: "Candor student holding her trophy and award plaque bouquet under the Grand Finale stage lights.",
-    tag: "Grand Finale Star",
-    image: "/images/gallery/img-117.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/9G6A8497%20copy.jpg"
-  },
-  {
     id: 118,
     title: "Acharya Vidya Kula Winner: Pure Joy",
     category: "Award Ceremonies",
@@ -1298,17 +1113,6 @@ export const galleryPhotos = [
     image: "/images/gallery/img-120.jpg",
     objectPosition: "top",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/9G6A8508%20copy.jpg"
-  },
-  {
-    id: 121,
-    title: "Family Felicitations: Certificate Presentation",
-    category: "Award Ceremonies",
-    date: "Grand Finale",
-    location: "Stage Arena",
-    description: "Young finalist flanked by her proud family receiving her official Certificate of Participation from the organizers.",
-    tag: "Certificate Presentation",
-    image: "/images/gallery/img-121.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/9G6A8512%20copy.jpg"
   },
   {
     id: 122,
@@ -1352,35 +1156,35 @@ export default function GalleryPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative py-16 md:py-24 bg-gradient-to-b from-[#1a237e] via-[#151c6b] to-[#0f172a] text-white overflow-hidden">
+      <section className="relative py-10 md:py-14 bg-gradient-to-b from-[#1a237e] via-[#151c6b] to-[#0f172a] text-white overflow-hidden">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-10 w-80 h-80 bg-rose-500/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/15 border border-amber-400/30 text-amber-300 text-xs sm:text-sm font-bold uppercase tracking-wider mb-5 shadow-xs">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/15 border border-amber-400/30 text-amber-300 text-xs sm:text-sm font-bold uppercase tracking-wider mb-4 shadow-xs">
             <Camera className="w-4 h-4 text-amber-400" />
             Moments That Matter
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4">
             SpellBee Universe <span className="text-amber-400">Photo Gallery</span>
           </h1>
 
-          <p className="max-w-2xl mx-auto text-slate-300 text-base sm:text-lg md:text-xl font-medium leading-relaxed">
+          <p className="max-w-2xl mx-auto text-slate-300 text-sm sm:text-base md:text-lg font-medium leading-relaxed">
             Explore memorable moments, triumphs, and highlights from our nationwide competitions, celebrations, and school workshops.
           </p>
         </div>
       </section>
 
       {/* Filter Bar */}
-      <section className="py-6 bg-white border-b border-gray-200 sticky top-[69px] z-30 shadow-xs">
+      <section className="py-3 sm:py-4 bg-white border-b border-gray-200 sticky top-[60px] sm:top-[68px] z-30 shadow-xs">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-none justify-start md:justify-center">
+          <div className="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0 scrollbar-none -mx-4 px-4 sm:mx-0 sm:px-0 justify-start md:justify-center">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold whitespace-nowrap transition-all cursor-pointer ${
+                className={`px-3.5 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-bold whitespace-nowrap transition-all cursor-pointer shrink-0 ${
                   selectedCategory === cat
                     ? "bg-[#1a237e] text-white shadow-md shadow-[#1a237e]/20 scale-105"
                     : "bg-slate-100 text-slate-600 hover:bg-slate-200"
@@ -1394,20 +1198,20 @@ export default function GalleryPage() {
       </section>
 
       {/* Gallery Showcase Section */}
-      <section className="py-12 md:py-20 min-h-[420px]">
+      <section className="py-8 md:py-12 min-h-[420px]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           {filteredPhotos.length === 0 ? (
             /* Visitor-facing Clean Curated State */
-            <div className="max-w-2xl mx-auto text-center py-16 px-6 bg-white rounded-3xl border border-slate-200/80 shadow-sm">
-              <div className="w-16 h-16 rounded-2xl bg-amber-50 text-amber-500 border border-amber-200/80 flex items-center justify-center mx-auto mb-5 shadow-xs">
+            <div className="max-w-2xl mx-auto text-center py-12 px-6 bg-white rounded-3xl border border-slate-200/80 shadow-sm">
+              <div className="w-16 h-16 rounded-2xl bg-amber-50 text-amber-500 border border-amber-200/80 flex items-center justify-center mx-auto mb-4 shadow-xs">
                 <ImageIcon className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-black text-[#1a237e] mb-3">
+              <h3 className="text-xl sm:text-2xl font-black text-[#1a237e] mb-2">
                 {selectedCategory === "All Moments" 
                   ? "Event Highlights Coming Soon" 
                   : `Moments from "${selectedCategory}" Coming Soon`}
               </h3>
-              <p className="text-slate-500 text-sm sm:text-base max-w-md mx-auto mb-6 leading-relaxed">
+              <p className="text-slate-500 text-xs sm:text-sm max-w-md mx-auto mb-5 leading-relaxed">
                 Photographs from our recent nationwide rounds and award ceremonies are currently being curated and will be showcased here shortly.
               </p>
               {selectedCategory !== "All Moments" && (
@@ -1421,20 +1225,21 @@ export default function GalleryPage() {
             </div>
           ) : (
             /* Photos Grid */
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
               {filteredPhotos.map((item) => (
                 <div 
                   key={item.id}
                   onClick={() => setActivePhoto(item)}
                   className="group bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer flex flex-col"
                 >
-                  {/* Image Container */}
+                  {/* Image Container - position at 15% from top to guarantee heads are never cut off */}
                   <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-900">
                     <img 
                       src={item.image} 
                       alt={item.title} 
-                      style={{ objectPosition: item.objectPosition || (portraitImages.has(item.image) ? 'top' : 'center') }}
+                      style={{ objectPosition: item.objectPosition || 'center 15%' }}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-between p-4">
                       <span className="text-white text-xs font-semibold flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-3 py-1 rounded-full">
@@ -1448,7 +1253,7 @@ export default function GalleryPage() {
                   </div>
 
                   {/* Content */}
-                  <div className="p-5 flex-1 flex flex-col justify-between">
+                  <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between">
                     <div>
                       <div className="flex items-center justify-between text-slate-400 text-xs font-semibold mb-2">
                         <span className="flex items-center gap-1">
@@ -1460,7 +1265,7 @@ export default function GalleryPage() {
                           {item.location}
                         </span>
                       </div>
-                      <h3 className="text-lg font-bold text-[#1a237e] group-hover:text-amber-500 transition-colors mb-2">
+                      <h3 className="text-base sm:text-lg font-bold text-[#1a237e] group-hover:text-amber-500 transition-colors mb-1.5 line-clamp-1">
                         {item.title}
                       </h3>
                       {item.description && (
@@ -1477,46 +1282,57 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Lightbox Modal (For viewing enlarged photo) */}
+      {/* Lightbox Modal (For viewing enlarged photo) - Responsive & viewport safe */}
       {activePhoto && (
         <div 
-          className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 animate-fade-in"
+          className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 overflow-y-auto animate-fade-in"
           onClick={() => setActivePhoto(null)}
         >
+          {/* Always-visible top-right fixed close button */}
+          <button
+            onClick={() => setActivePhoto(null)}
+            className="fixed top-3 right-3 sm:top-5 sm:right-5 z-60 bg-amber-400 hover:bg-amber-300 text-slate-900 p-2.5 sm:p-3 rounded-full shadow-2xl transition-all hover:scale-110 cursor-pointer font-bold flex items-center justify-center border-2 border-white/20"
+            aria-label="Close modal"
+          >
+            <X className="w-5 h-5 sm:w-6 sm:h-6" />
+          </button>
+
           <div 
-            className="bg-white rounded-3xl max-w-4xl w-full overflow-hidden shadow-2xl relative"
+            className="bg-white rounded-2xl sm:rounded-3xl max-w-3xl w-full max-h-[88vh] flex flex-col shadow-2xl relative overflow-hidden my-auto border border-white/10"
             onClick={(e) => e.stopPropagation()}
           >
-            <button
-              onClick={() => setActivePhoto(null)}
-              className="absolute top-4 right-4 z-10 bg-black/60 hover:bg-black text-white p-2.5 rounded-full transition-colors cursor-pointer"
-              aria-label="Close modal"
-            >
-              <X className="w-5 h-5" />
-            </button>
-
-            <div className="relative aspect-[16/10] w-full bg-slate-950">
+            {/* Image Container - fits nicely inside viewport */}
+            <div className="relative bg-slate-950 flex items-center justify-center overflow-hidden flex-1 min-h-[200px] max-h-[52vh] sm:max-h-[58vh]">
               <img 
                 src={activePhoto.image} 
                 alt={activePhoto.title} 
-                className="w-full h-full object-contain"
+                className="max-h-full w-auto max-w-full object-contain mx-auto select-none"
               />
             </div>
 
-            <div className="p-6 sm:p-8 bg-white">
-              <div className="flex flex-wrap items-center gap-2 mb-3">
-                <span className="bg-amber-100 text-amber-800 text-xs font-extrabold px-3 py-1 rounded-full">
-                  {activePhoto.category}
-                </span>
-                <span className="text-slate-400 text-xs font-medium">
-                  {activePhoto.date} • {activePhoto.location}
-                </span>
+            {/* Content Details */}
+            <div className="p-4 sm:p-6 bg-white shrink-0 overflow-y-auto max-h-[32vh] border-t border-slate-100">
+              <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="bg-amber-100 text-amber-800 text-xs font-extrabold px-3 py-1 rounded-full">
+                    {activePhoto.category}
+                  </span>
+                  <span className="text-slate-400 text-xs font-medium">
+                    {activePhoto.date} • {activePhoto.location}
+                  </span>
+                </div>
+                <button
+                  onClick={() => setActivePhoto(null)}
+                  className="sm:hidden text-xs font-bold text-slate-600 bg-slate-100 px-3 py-1 rounded-full"
+                >
+                  Close
+                </button>
               </div>
-              <h2 className="text-2xl font-black text-[#1a237e] mb-2">
+              <h2 className="text-lg sm:text-2xl font-black text-[#1a237e] mb-1.5">
                 {activePhoto.title}
               </h2>
               {activePhoto.description && (
-                <p className="text-slate-600 text-sm leading-relaxed">
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   {activePhoto.description}
                 </p>
               )}
@@ -1526,7 +1342,7 @@ export default function GalleryPage() {
       )}
 
       {/* Bottom CTA */}
-      <section className="py-16 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 border-t border-amber-300">
+      <section className="py-10 md:py-14 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 border-t border-amber-300">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#1a237e] mb-4">
             Be A Part Of Our Next Unforgettable Event!

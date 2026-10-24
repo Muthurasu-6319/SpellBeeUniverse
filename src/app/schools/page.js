@@ -19,11 +19,11 @@ export default function SchoolsPage() {
     <main className="min-h-screen bg-white font-sans overflow-x-hidden">
       <Header />
       <SchoolsHero />
+      <SchoolsWorkedWith />
       <WhySchoolsParticipate />
       <HowItWorksForSchools />
       <SchoolOfferingsAndPortal />
       <SchoolPartnershipForm />
-      <SchoolsWorkedWith />
       <SchoolsFAQ />
       <JourneyCTA 
         title="Ready to Bring SpellBee Universe to Your School?" 

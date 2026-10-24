@@ -1,95 +1,85 @@
 import React from 'react';
-import { ArrowRight, CheckCircle2, FileText, BookOpen, Type, Award, Mic, Zap, Image as ImageIcon, MessageSquare, Volume2, Bell, Eye, Trophy, Gift } from 'lucide-react';
-import Image from 'next/image';
+import { ArrowRight, CheckCircle2, FileText, BookOpen, Type, Award, Mic, Zap, Image as ImageIcon, MessageSquare, Volume2, Bell, Eye, Trophy, Gift, Medal, Tv } from 'lucide-react';
 
 const CompetitionStages = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-8 sm:py-10 md:py-12 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-5 sm:gap-6">
           
           {/* Row 1: Written and Oral Rounds */}
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-5 sm:gap-6">
             
             {/* Step 3: Written Round */}
-            <div className="lg:col-span-3 bg-[#f4f8ff] rounded-3xl p-8 border border-blue-100 flex flex-col md:flex-row relative overflow-hidden">
-              <div className="flex-1 relative z-10">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-2xl shadow-sm">
+            <div className="lg:col-span-3 bg-[#f4f8ff] rounded-2xl md:rounded-3xl p-5 sm:p-6 border border-blue-200/60 flex flex-col justify-between relative overflow-hidden shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-extrabold text-base shadow-sm shrink-0 group-hover:scale-110 group-hover:rotate-6 transition-transform">
                     3
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-[#1a237e]">Written Round</h3>
-                    <p className="text-[#3949ab] text-sm mt-1 max-w-xs">All registered participants take the written examination.</p>
+                    <h3 className="text-xl font-extrabold text-[#1a237e] tracking-tight">Written Round</h3>
+                    <p className="text-[#3949ab] text-xs font-semibold mt-0.5">All registered participants take the written examination.</p>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-                  <div className="bg-white rounded-xl p-3 flex flex-col items-center justify-center gap-2 border border-blue-50 shadow-sm">
-                    <FileText className="w-6 h-6 text-blue-500" />
-                    <span className="text-xs font-semibold text-[#1a237e]">Written Test</span>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 mb-5">
+                  <div className="bg-white rounded-xl p-3 flex flex-col items-center justify-center gap-1.5 border border-blue-100/70 shadow-2xs hover:shadow-md hover:-translate-y-1 transition-all duration-300 group/item cursor-pointer">
+                    <FileText className="w-5 h-5 text-blue-500 group-hover/item:scale-115 transition-transform" />
+                    <span className="text-xs font-bold text-[#1a237e]">Written Test</span>
                   </div>
-                  <div className="bg-white rounded-xl p-3 flex flex-col items-center justify-center gap-2 border border-blue-50 shadow-sm">
-                    <BookOpen className="w-6 h-6 text-blue-500" />
-                    <span className="text-xs font-semibold text-[#1a237e]">Vocabulary</span>
+                  <div className="bg-white rounded-xl p-3 flex flex-col items-center justify-center gap-1.5 border border-blue-100/70 shadow-2xs hover:shadow-md hover:-translate-y-1 transition-all duration-300 group/item cursor-pointer">
+                    <BookOpen className="w-5 h-5 text-blue-500 group-hover/item:scale-115 transition-transform" />
+                    <span className="text-xs font-bold text-[#1a237e]">Vocabulary</span>
                   </div>
-                  <div className="bg-white rounded-xl p-3 flex flex-col items-center justify-center gap-2 border border-blue-50 shadow-sm">
-                    <Type className="w-6 h-6 text-blue-500" />
-                    <span className="text-xs font-semibold text-[#1a237e]">Spelling</span>
+                  <div className="bg-white rounded-xl p-3 flex flex-col items-center justify-center gap-1.5 border border-blue-100/70 shadow-2xs hover:shadow-md hover:-translate-y-1 transition-all duration-300 group/item cursor-pointer">
+                    <Type className="w-5 h-5 text-blue-500 group-hover/item:scale-115 transition-transform" />
+                    <span className="text-xs font-bold text-[#1a237e]">Spelling</span>
                   </div>
-                  <div className="bg-white rounded-xl p-3 flex flex-col items-center justify-center gap-2 border border-blue-50 shadow-sm text-center">
-                    <Award className="w-6 h-6 text-blue-500" />
-                    <span className="text-[10px] font-semibold text-[#1a237e] leading-tight">Participation<br/>Recognition</span>
+                  <div className="bg-white rounded-xl p-3 flex flex-col items-center justify-center gap-1.5 border border-blue-100/70 shadow-2xs text-center hover:shadow-md hover:-translate-y-1 transition-all duration-300 group/item cursor-pointer">
+                    <Award className="w-5 h-5 text-blue-500 group-hover/item:scale-115 transition-transform" />
+                    <span className="text-[10px] font-bold text-[#1a237e] leading-tight">Participation<br/>Recognition</span>
                   </div>
                 </div>
 
-                <div className="inline-block bg-[#dbeafe] text-blue-800 text-sm font-medium px-4 py-2 rounded-lg">
+                <div className="inline-flex items-center gap-2 bg-[#dbeafe] text-blue-800 text-xs font-semibold px-3.5 py-1.5 rounded-lg border border-blue-200/50 shadow-2xs">
                   Qualified students move forward to the next round.
                 </div>
-              </div>
-              
-              {/* Illustration placeholder */}
-              <div className="hidden md:flex w-48 shrink-0 items-end justify-end relative">
-                <Image 
-                  src="/images/little-learner.png" 
-                  alt="Written Round" 
-                  width={200} 
-                  height={200} 
-                  className="w-full h-auto object-cover rounded-2xl relative z-20"
-                />
-                <div className="absolute bottom-10 right-0 w-32 h-32 bg-blue-200 rounded-full opacity-50 blur-2xl z-10"></div>
               </div>
             </div>
 
             {/* Step 4: Oral Round */}
-            <div className="lg:col-span-2 bg-[#fff0f5] rounded-3xl p-8 border border-pink-100 relative overflow-hidden">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 rounded-full bg-[#ec407a] text-white flex items-center justify-center font-bold text-2xl shadow-sm">
-                  4
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-[#880e4f]">Oral Round</h3>
-                </div>
-              </div>
-              <p className="text-[#ad1457] text-sm mb-6 leading-relaxed max-w-sm">
-                Students demonstrate their spelling skills through interactive oral rounds conducted at school.
-              </p>
-
-              <div className="space-y-3 mb-8 relative z-10">
-                {["Live interaction", "Confidence building", "Better communication"].map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#ec407a] shrink-0" />
-                    <span className="text-[#880e4f] font-medium text-sm">{item}</span>
+            <div className="lg:col-span-2 bg-[#fff0f5] rounded-2xl md:rounded-3xl p-5 sm:p-6 border border-pink-200/60 relative overflow-hidden shadow-xs hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between">
+              <div>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#ec407a] text-white flex items-center justify-center font-extrabold text-base shadow-sm shrink-0 group-hover:scale-110 group-hover:rotate-6 transition-transform">
+                    4
                   </div>
-                ))}
+                  <div>
+                    <h3 className="text-xl font-extrabold text-[#880e4f] tracking-tight">Oral Round</h3>
+                    <p className="text-[#ad1457] text-xs font-semibold">Live School Challenge</p>
+                  </div>
+                </div>
+                <p className="text-[#ad1457] text-xs mb-4 leading-relaxed max-w-sm">
+                  Students demonstrate their spelling skills through interactive oral rounds conducted at school.
+                </p>
+
+                <div className="space-y-2 mb-6 relative z-10">
+                  {["Live interaction", "Confidence building", "Better communication"].map((item, idx) => (
+                    <div key={idx} className="flex items-center gap-2 hover:translate-x-1 transition-transform">
+                      <CheckCircle2 className="w-4 h-4 text-[#ec407a] shrink-0" />
+                      <span className="text-[#880e4f] font-semibold text-xs">{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
 
-              {/* Illustration */}
-              <div className="absolute bottom-4 right-4 md:bottom-8 md:right-8 flex flex-col items-center">
-                 <div className="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mb-2">
-                   <Mic className="w-8 h-8 text-[#ec407a]" />
+              {/* Illustration with Micro-Float */}
+              <div className="absolute bottom-3 right-3 md:bottom-5 md:right-5 flex flex-col items-center animate-float-slow pointer-events-none">
+                 <div className="bg-pink-100/90 w-12 h-12 rounded-full flex items-center justify-center mb-1 shadow-xs border border-pink-200">
+                   <Mic className="w-6 h-6 text-[#ec407a]" />
                  </div>
-                 <div className="text-center font-script text-[#ec407a] font-bold leading-tight rotate-[-10deg]">
+                 <div className="text-center font-script text-[#ec407a] text-xs font-bold leading-tight rotate-[-8deg]">
                    Speak<br/>Spell<br/>Shine
                  </div>
               </div>
@@ -98,61 +88,68 @@ const CompetitionStages = () => {
           </div>
 
           {/* Step 5: Grand Finale */}
-          <div className="bg-[#1a237e] rounded-3xl p-8 md:p-10 relative overflow-hidden text-white border border-[#283593] shadow-xl">
+          <div className="bg-[#1a237e] rounded-2xl md:rounded-3xl p-6 md:p-8 relative overflow-hidden text-white border border-[#283593] shadow-xl hover:shadow-2xl transition-all duration-300 group">
              {/* Background Effects */}
              <div className="absolute inset-0 bg-gradient-to-r from-[#1a237e] via-[#311b92] to-[#1a237e] opacity-80"></div>
-             <div className="absolute inset-0 bg-[url('/images/stars-bg.png')] opacity-30 bg-cover bg-center mix-blend-screen"></div>
              <div className="absolute top-0 left-1/4 w-64 h-full bg-blue-500 opacity-20 blur-3xl transform -skew-x-12"></div>
              <div className="absolute top-0 right-1/4 w-64 h-full bg-blue-500 opacity-20 blur-3xl transform skew-x-12"></div>
 
-             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
                 
                 {/* Left Content */}
                 <div className="lg:col-span-4">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-[#fbc02d] text-gray-900 flex items-center justify-center font-bold text-2xl shadow-sm">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#fbc02d] text-gray-900 flex items-center justify-center font-extrabold text-base shadow-sm shrink-0 group-hover:scale-110 group-hover:rotate-6 transition-transform">
                       5
                     </div>
                     <div>
-                      <h3 className="text-3xl font-bold text-white">Grand Finale</h3>
+                      <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">Grand Finale</h3>
+                      <p className="text-amber-300 font-semibold text-xs sm:text-sm">Welcome to the Spell Master Stage</p>
                     </div>
                   </div>
-                  <p className="text-blue-200 font-medium mb-6">Welcome to the Spell Master Stage</p>
-                  <p className="text-blue-100 text-sm leading-relaxed mb-8">
+                  <p className="text-blue-100 text-xs sm:text-sm leading-relaxed mb-6">
                     Selected finalists compete in an exciting stage competition featuring multiple spelling and language challenges.
                   </p>
-                  <button className="px-6 py-3 rounded-full bg-[#fbc02d] hover:bg-yellow-500 text-gray-900 font-bold shadow-lg transition-all flex items-center gap-2 text-sm">
-                    Explore Competition <ArrowRight className="w-4 h-4" />
+                  <button className="px-5 py-2.5 rounded-full bg-[#fbc02d] hover:bg-yellow-500 text-gray-900 font-bold text-xs shadow-lg shadow-yellow-400/20 transition-all flex items-center gap-2 hover:scale-105 active:scale-95 cursor-pointer">
+                    Explore Competition <ArrowRight className="w-3.5 h-3.5" />
                   </button>
                 </div>
 
-                {/* Center Image */}
-                <div className="lg:col-span-4 flex justify-center items-end h-full min-h-[250px] relative">
-                    <div className="w-full max-w-[280px] aspect-square rounded-t-full bg-gradient-to-b from-blue-400/30 to-transparent absolute bottom-0 flex items-end justify-center pb-4">
-                        <div className="text-8xl">🏆</div>
+                {/* Center Trophy with Float */}
+                <div className="lg:col-span-4 flex justify-center items-center h-full min-h-[160px] relative select-none">
+                    <div className="w-full max-w-[220px] aspect-square rounded-full bg-gradient-to-b from-blue-400/20 to-transparent flex items-center justify-center p-4">
+                        <div className="animate-float-slow hover:scale-115 transition-transform duration-300 filter drop-shadow-[0_10px_20px_rgba(251,192,45,0.4)] cursor-pointer">
+                          <Trophy className="w-16 h-16 sm:w-20 sm:h-20 text-amber-400 fill-amber-300" />
+                        </div>
                     </div>
                 </div>
 
-                {/* Right Content */}
+                {/* Right Content - Challenges List */}
                 <div className="lg:col-span-4">
-                  <div className="bg-[#121858]/80 backdrop-blur-sm border border-blue-800/50 rounded-2xl p-6">
-                    <h4 className="text-white font-bold mb-4 border-b border-blue-800/50 pb-2">The Grand Finale Challenges</h4>
-                    <div className="space-y-3">
+                  <div className="bg-[#121858]/80 backdrop-blur-sm border border-blue-800/60 rounded-xl p-4 sm:p-5 shadow-lg">
+                    <h4 className="text-white font-extrabold text-xs sm:text-sm mb-3 border-b border-blue-800/60 pb-2 flex items-center justify-between">
+                      <span>Grand Finale Challenges</span>
+                      <span className="text-[10px] bg-blue-900 text-blue-200 px-2 py-0.5 rounded-full font-semibold">Stage</span>
+                    </h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2">
                       {[
-                        { icon: <Zap className="w-4 h-4" />, text: "Rapid Fire Spelling" },
-                        { icon: <ImageIcon className="w-4 h-4" />, text: "Audio-Visual Words" },
-                        { icon: <Type className="w-4 h-4" />, text: "Jumbled Letters" },
-                        { icon: <BookOpen className="w-4 h-4" />, text: "Meaning & Usage" },
-                        { icon: <Volume2 className="w-4 h-4" />, text: "Pronunciation & Listening" },
-                        { icon: <Bell className="w-4 h-4" />, text: "Buzzer Round" },
-                        { icon: <Eye className="w-4 h-4" />, text: "Visual Memory Challenge" },
-                        { icon: <Award className="w-4 h-4" />, text: "Champion Elimination" }
+                        { icon: <Zap className="w-3.5 h-3.5" />, text: "Rapid Fire Spelling" },
+                        { icon: <ImageIcon className="w-3.5 h-3.5" />, text: "Audio-Visual Words" },
+                        { icon: <Type className="w-3.5 h-3.5" />, text: "Jumbled Letters" },
+                        { icon: <BookOpen className="w-3.5 h-3.5" />, text: "Meaning & Usage" },
+                        { icon: <Volume2 className="w-3.5 h-3.5" />, text: "Pronunciation & Listening" },
+                        { icon: <Bell className="w-3.5 h-3.5" />, text: "Buzzer Round" },
+                        { icon: <Eye className="w-3.5 h-3.5" />, text: "Visual Memory Challenge" },
+                        { icon: <Award className="w-3.5 h-3.5" />, text: "Champion Elimination" }
                       ].map((item, idx) => (
-                        <div key={idx} className="flex items-center gap-3">
-                          <div className="w-6 h-6 rounded-full bg-blue-900/50 flex items-center justify-center text-blue-300">
+                        <div 
+                          key={idx} 
+                          className="flex items-center gap-2.5 px-2 py-1 rounded-md hover:bg-blue-800/60 hover:translate-x-1 transition-all duration-200 cursor-pointer"
+                        >
+                          <div className="w-5 h-5 rounded-full bg-blue-900/60 flex items-center justify-center text-blue-300 shrink-0">
                             {item.icon}
                           </div>
-                          <span className="text-blue-100 text-sm">{item.text}</span>
+                          <span className="text-blue-100 text-xs font-medium">{item.text}</span>
                         </div>
                       ))}
                     </div>
@@ -163,61 +160,77 @@ const CompetitionStages = () => {
           </div>
 
           {/* Step 6: Recognition */}
-          <div className="bg-[#fffdf0] rounded-3xl p-8 border border-amber-100 shadow-sm">
-             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="bg-[#fffdf0] rounded-2xl md:rounded-3xl p-5 sm:p-6 border border-amber-200/60 shadow-xs hover:shadow-xl transition-all duration-300">
+             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
                 
-                <div className="lg:col-span-5">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-[#fbc02d] text-gray-900 flex items-center justify-center font-bold text-2xl shadow-sm">
+                <div className="lg:col-span-4">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#fbc02d] text-gray-900 flex items-center justify-center font-extrabold text-base shadow-sm shrink-0">
                       6
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-[#1a237e]">Recognition</h3>
-                      <p className="text-[#3949ab] font-medium text-sm mt-1">Every effort deserves to be celebrated.</p>
+                      <h3 className="text-xl font-extrabold text-[#1a237e] tracking-tight">Recognition</h3>
+                      <p className="text-[#3949ab] font-semibold text-xs">Every effort deserves celebration</p>
                     </div>
                   </div>
-                  <p className="text-[#3949ab] text-sm leading-relaxed mb-8 max-w-md">
-                    Participants, finalists and winners receive certificates, medals, gifts and trophies based on the competition stage.
+                  <p className="text-[#3949ab] text-xs leading-relaxed mb-4 max-w-sm">
+                    Participants, finalists and winners receive certificates, medals, gifts, trophies and wide media coverage.
                   </p>
-                  <button className="px-6 py-2.5 rounded-full border-2 border-[#fbc02d] text-[#1a237e] hover:bg-[#fff9df] font-bold transition-all flex items-center gap-2 text-sm bg-white">
-                    Awards & Recognition <ArrowRight className="w-4 h-4 text-[#fbc02d]" />
+                  <button className="px-4 py-2 rounded-full border-2 border-[#fbc02d] text-[#1a237e] hover:bg-[#fff9df] font-bold text-xs transition-all inline-flex items-center gap-1.5 bg-white hover:scale-105 active:scale-95 cursor-pointer shadow-2xs">
+                    Awards & Recognition <ArrowRight className="w-3.5 h-3.5 text-[#fbc02d]" />
                   </button>
                 </div>
 
-                <div className="lg:col-span-7">
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <div className="lg:col-span-8">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5">
                     
-                    <div className="bg-white rounded-2xl p-4 flex flex-col items-center justify-center text-center border border-amber-50 shadow-sm gap-3 h-full">
-                      <div className="w-16 h-12 bg-amber-100 rounded-lg flex items-center justify-center border border-amber-200">
-                        <FileText className="w-6 h-6 text-amber-600" />
+                    <div className="bg-white rounded-xl p-3 flex flex-col items-center justify-center text-center border border-amber-100 shadow-2xs hover:shadow-md hover:-translate-y-1.5 hover:border-amber-300 transition-all duration-300 gap-2 h-full cursor-pointer group/card">
+                      <div className="w-11 h-9 bg-amber-100 rounded-lg flex items-center justify-center border border-amber-200 group-hover/card:scale-110 transition-transform">
+                        <FileText className="w-5 h-5 text-amber-600" />
                       </div>
                       <div>
-                        <h4 className="text-sm font-bold text-[#1a237e]">Certificates</h4>
-                        <p className="text-[10px] text-[#3949ab]">(Participants)</p>
-                      </div>
-                    </div>
-
-                    <div className="bg-white rounded-2xl p-4 flex flex-col items-center justify-center text-center border border-amber-50 shadow-sm gap-3 h-full">
-                      <div className="text-4xl drop-shadow-md">🏅</div>
-                      <div>
-                        <h4 className="text-sm font-bold text-[#1a237e]">Medals</h4>
-                        <p className="text-[10px] text-[#3949ab]">(Finalists)</p>
+                        <h4 className="text-xs font-bold text-[#1a237e]">Certificates</h4>
+                        <p className="text-[10px] text-[#3949ab] mt-0.5">(Participants)</p>
                       </div>
                     </div>
 
-                    <div className="bg-white rounded-2xl p-4 flex flex-col items-center justify-center text-center border border-amber-50 shadow-sm gap-3 h-full">
-                      <div className="text-4xl drop-shadow-md">🏆</div>
+                    <div className="bg-white rounded-xl p-3 flex flex-col items-center justify-center text-center border border-amber-100 shadow-2xs hover:shadow-md hover:-translate-y-1.5 hover:border-amber-300 transition-all duration-300 gap-2 h-full cursor-pointer group/card">
+                      <div className="group-hover/card:scale-125 group-hover/card:-rotate-6 transition-transform">
+                        <Medal className="w-7 h-7 text-amber-500 fill-amber-300" />
+                      </div>
                       <div>
-                        <h4 className="text-sm font-bold text-[#1a237e]">Trophies</h4>
-                        <p className="text-[10px] text-[#3949ab]">(Winners)</p>
+                        <h4 className="text-xs font-bold text-[#1a237e]">Medals</h4>
+                        <p className="text-[10px] text-[#3949ab] mt-0.5">(Finalists)</p>
                       </div>
                     </div>
 
-                    <div className="bg-white rounded-2xl p-4 flex flex-col items-center justify-center text-center border border-amber-50 shadow-sm gap-3 h-full">
-                      <div className="text-4xl drop-shadow-md">🎁</div>
+                    <div className="bg-white rounded-xl p-3 flex flex-col items-center justify-center text-center border border-amber-100 shadow-2xs hover:shadow-md hover:-translate-y-1.5 hover:border-amber-300 transition-all duration-300 gap-2 h-full cursor-pointer group/card">
+                      <div className="group-hover/card:scale-125 group-hover/card:-rotate-6 transition-transform">
+                        <Trophy className="w-7 h-7 text-amber-500 fill-amber-300" />
+                      </div>
                       <div>
-                        <h4 className="text-sm font-bold text-[#1a237e]">Gifts</h4>
-                        <p className="text-[10px] text-[#3949ab]">(All Stages)</p>
+                        <h4 className="text-xs font-bold text-[#1a237e]">Trophies</h4>
+                        <p className="text-[10px] text-[#3949ab] mt-0.5">(Winners)</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-white rounded-xl p-3 flex flex-col items-center justify-center text-center border border-amber-100 shadow-2xs hover:shadow-md hover:-translate-y-1.5 hover:border-amber-300 transition-all duration-300 gap-2 h-full cursor-pointer group/card">
+                      <div className="group-hover/card:scale-125 group-hover/card:-rotate-6 transition-transform">
+                        <Gift className="w-7 h-7 text-pink-500" />
+                      </div>
+                      <div>
+                        <h4 className="text-xs font-bold text-[#1a237e]">Gifts</h4>
+                        <p className="text-[10px] text-[#3949ab] mt-0.5">(All Stages)</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-white rounded-xl p-3 flex flex-col items-center justify-center text-center border border-amber-100 shadow-2xs hover:shadow-md hover:-translate-y-1.5 hover:border-amber-300 transition-all duration-300 gap-2 h-full cursor-pointer group/card">
+                      <div className="group-hover/card:scale-125 group-hover/card:-rotate-6 transition-transform">
+                        <Tv className="w-7 h-7 text-indigo-500" />
+                      </div>
+                      <div>
+                        <h4 className="text-xs font-bold text-[#1a237e] leading-snug">Media Presence</h4>
+                        <p className="text-[10px] text-[#3949ab] leading-tight mt-0.5">(Live & Coverage)</p>
                       </div>
                     </div>
 

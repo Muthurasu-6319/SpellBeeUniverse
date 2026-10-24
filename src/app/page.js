@@ -19,6 +19,7 @@ export default function Home() {
       <Header />
       <Hero />
       <TrustedBy />
+      <Stats />
       <WhySpellbee />
       <HowItWorks />
       <ChooseCategory />
@@ -27,7 +28,6 @@ export default function Home() {
       <WhyParents />
       <BringToSchool />
       <Testimonials />
-      <Stats />
       <CTA />
       <Footer />
     </main>

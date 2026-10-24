@@ -83,9 +83,9 @@ export default function StudentRegisterPage() {
             />
             <div className="flex flex-col">
               <span className="text-base sm:text-lg font-black text-[#1a237e] tracking-tight leading-none">
-                SpellBee<span className="text-rose-500 font-extrabold">!</span>
+                SpellBee
               </span>
-              <span className="text-[9px] sm:text-[10px] font-extrabold text-amber-500 tracking-wider uppercase leading-tight">
+              <span className="text-base sm:text-lg font-black text-amber-500 tracking-tight leading-none mt-0.5">
                 Universe
               </span>
             </div>
@@ -164,9 +164,7 @@ export default function StudentRegisterPage() {
               <div className="flex items-center gap-2 text-xs font-bold text-amber-300">
                 <ShieldCheck className="w-4 h-4" /> Safe & Secure Registration
               </div>
-              <div className="text-3xl animate-bounce-slow">
-                🐝
-              </div>
+              <img src="/logo.png" alt="SpellBee Mascot" className="w-8 h-8 object-contain animate-bounce-slow" />
             </div>
           </div>
 

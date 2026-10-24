@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Search, ChevronRight, MessageCircleQuestion } from 'lucide-react';
+import { Search, ChevronRight, MessageCircleQuestion, Sparkles, MessageCircle } from 'lucide-react';
 
 const FAQHero = ({ onSearch }) => {
   const [query, setQuery] = useState('');
@@ -14,7 +14,7 @@ const FAQHero = ({ onSearch }) => {
   };
 
   return (
-    <section className="bg-[#fff9e6] pt-6 pb-16 md:pt-8 md:pb-24 overflow-hidden relative">
+    <section className="bg-[#fff9e6] pt-5 pb-10 md:pt-7 md:pb-14 overflow-hidden relative">
       {/* Background soft ambient glows */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-12 left-10 w-72 h-72 bg-yellow-200/60 rounded-full filter blur-3xl"></div>
@@ -40,16 +40,16 @@ const FAQHero = ({ onSearch }) => {
               </span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#1a237e] leading-[1.12] mb-6 tracking-tight">
-              Questions?<br />We've Got Answers.
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a237e] leading-[1.14] mb-4 sm:mb-6 tracking-tight text-center lg:text-left">
+              Questions?<br />We&apos;ve Got Answers.
             </h1>
             
-            <p className="text-[#3949ab] text-base sm:text-lg lg:text-xl font-medium mb-8 max-w-xl leading-relaxed">
+            <p className="text-[#3949ab] text-sm sm:text-base lg:text-lg font-medium mb-6 sm:mb-8 max-w-xl leading-relaxed text-center lg:text-left mx-auto lg:mx-0">
               Find everything you need to know about SpellBee Universe.
             </p>
             
             {/* Search Input Bar */}
-            <div className="relative max-w-lg">
+            <div className="relative max-w-lg mx-auto lg:mx-0">
               <div className="flex items-center bg-white rounded-full p-2 border-2 border-amber-300 shadow-md focus-within:ring-2 focus-within:ring-yellow-400 focus-within:border-amber-400 transition-all">
                 <Search className="w-5 h-5 text-slate-400 ml-3 shrink-0" />
                 <input 
@@ -60,7 +60,7 @@ const FAQHero = ({ onSearch }) => {
                   className="w-full px-3 py-2 text-sm text-slate-800 placeholder-slate-400 bg-transparent focus:outline-none font-medium"
                 />
                 <button 
-                  className="w-10 h-10 rounded-full bg-[#fbc02d] hover:bg-yellow-500 text-gray-900 flex items-center justify-center shrink-0 shadow-sm transition-transform active:scale-95"
+                  className="w-10 h-10 rounded-full bg-[#fbc02d] hover:bg-yellow-500 text-gray-900 flex items-center justify-center shrink-0 shadow-sm transition-transform active:scale-95 cursor-pointer"
                   aria-label="Search FAQs"
                 >
                   <Search className="w-4 h-4" />
@@ -70,12 +70,12 @@ const FAQHero = ({ onSearch }) => {
           </div>
 
           {/* Right Image & Creative Visual */}
-          <div className="lg:col-span-6 xl:col-span-6 relative flex justify-center items-center">
+          <div className="lg:col-span-6 xl:col-span-6 relative flex justify-center items-center py-2 sm:py-4">
             {/* The circular golden background glow */}
-            <div className="absolute w-[340px] h-[340px] sm:w-[440px] sm:h-[440px] rounded-full bg-gradient-to-tr from-yellow-300 via-amber-200 to-yellow-100 shadow-xl opacity-90 z-0"></div>
+            <div className="absolute w-[270px] h-[270px] sm:w-[360px] sm:h-[360px] md:w-[420px] md:h-[420px] rounded-full bg-gradient-to-tr from-yellow-300 via-amber-200 to-yellow-100 shadow-xl opacity-90 z-0 animate-pulse-soft"></div>
             
             {/* Student Thinking & Asking visual */}
-            <div className="relative z-10 w-full max-w-[420px] aspect-square rounded-full p-2.5 bg-white/80 shadow-2xl backdrop-blur-sm border-4 border-white overflow-hidden flex items-center justify-center">
+            <div className="relative z-10 w-full max-w-[260px] sm:max-w-[340px] md:max-w-[400px] aspect-square rounded-full p-2 sm:p-2.5 bg-white/80 shadow-2xl backdrop-blur-sm border-4 border-white overflow-hidden flex items-center justify-center">
               <img 
                 src="/images/competition-hero-student.png" 
                 alt="Student asking questions about SpellBee Universe" 
@@ -83,24 +83,26 @@ const FAQHero = ({ onSearch }) => {
               />
               
               {/* Stacked books pile badge at bottom */}
-              <div className="absolute bottom-3 inset-x-12 bg-white/95 backdrop-blur-md rounded-2xl p-2.5 shadow-lg border border-yellow-200 flex flex-col gap-1 items-center">
-                <div className="w-full flex justify-between gap-1 text-[10px] font-extrabold uppercase">
-                  <span className="px-2.5 py-0.5 rounded bg-emerald-100 text-emerald-800">Learn</span>
-                  <span className="px-2.5 py-0.5 rounded bg-pink-100 text-pink-800">Practice</span>
-                  <span className="px-2.5 py-0.5 rounded bg-blue-100 text-blue-800">Improve</span>
+              <div className="absolute bottom-2.5 sm:bottom-3 inset-x-6 sm:inset-x-12 bg-white/95 backdrop-blur-md rounded-2xl p-1.5 sm:p-2.5 shadow-lg border border-yellow-200 flex flex-col gap-1 items-center">
+                <div className="w-full flex justify-between gap-1 text-[9px] sm:text-[10px] font-extrabold uppercase">
+                  <span className="px-2 sm:px-2.5 py-0.5 rounded bg-emerald-100 text-emerald-800">Learn</span>
+                  <span className="px-2 sm:px-2.5 py-0.5 rounded bg-pink-100 text-pink-800">Practice</span>
+                  <span className="px-2 sm:px-2.5 py-0.5 rounded bg-blue-100 text-blue-800">Improve</span>
                 </div>
               </div>
             </div>
 
-            {/* Flying Cute Mascot Bee */}
-            <div className="absolute -top-2 left-6 sm:left-4 z-20 text-3xl sm:text-4xl animate-bounce-slow">
-              🐝
+            {/* Mascot Sparkle Badge */}
+            <div className="absolute -top-2 left-6 sm:left-4 z-20">
+              <div className="w-10 h-10 rounded-full bg-amber-400 text-slate-900 flex items-center justify-center shadow-lg border-2 border-white animate-bounce-slow">
+                <Sparkles className="w-5 h-5 fill-slate-900" />
+              </div>
             </div>
 
             {/* Floating Speech Bubble: "Ask" */}
             <div className="absolute top-8 right-2 sm:right-6 z-20 select-none animate-pulse">
               <div className="px-4 py-2 rounded-2xl bg-[#0d1e4c] text-white font-extrabold text-sm sm:text-base shadow-lg border border-blue-400/30 flex items-center gap-1.5">
-                <span>Ask</span> 💬
+                <span>Ask</span> <MessageCircle className="w-4 h-4 text-amber-400" />
               </div>
             </div>
 

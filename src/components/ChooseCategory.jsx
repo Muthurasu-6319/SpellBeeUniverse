@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { ArrowRight, GraduationCap } from 'lucide-react';
 
 const ChooseCategory = () => {
@@ -12,7 +13,7 @@ const ChooseCategory = () => {
       tagText: "text-amber-900",
       btnBg: "bg-[#f5b81a] hover:bg-[#e0a718]",
       btnText: "text-slate-900",
-      image: "/images/little-learner.png",
+      image: "/images/little-learner-portrait.png",
     },
     {
       classes: "Classes 3 - 5",
@@ -23,7 +24,7 @@ const ChooseCategory = () => {
       tagText: "text-pink-900",
       btnBg: "bg-[#ec449c] hover:bg-[#d83d8e]",
       btnText: "text-white",
-      image: "https://api.dicebear.com/9.x/avataaars/svg?seed=Jack&backgroundColor=fbe5f1",
+      image: "/images/young-explorer-portrait.png",
     },
     {
       classes: "Classes 6 - 7",
@@ -34,7 +35,7 @@ const ChooseCategory = () => {
       tagText: "text-emerald-900",
       btnBg: "bg-[#18b556] hover:bg-[#159e4b]",
       btnText: "text-white",
-      image: "https://api.dicebear.com/9.x/avataaars/svg?seed=Sophia&backgroundColor=dff3e5",
+      image: "/images/growing-achiever-portrait.png",
     },
     {
       classes: "Classes 8 - 10",
@@ -45,46 +46,58 @@ const ChooseCategory = () => {
       tagText: "text-blue-900",
       btnBg: "bg-[#3e8df3] hover:bg-[#357ce0]",
       btnText: "text-white",
-      image: "https://api.dicebear.com/9.x/avataaars/svg?seed=Liam&backgroundColor=e2effe",
+      image: "/images/future-leader-portrait.png",
     }
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="pt-8 sm:pt-10 md:pt-12 pb-8 sm:pb-10 md:pb-12 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="mb-10 lg:mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3 tracking-tight" style={{color: '#1a237e'}}>Choose Your Category</h2>
-          <p className="text-[#3949ab] font-medium text-lg">Four categories. One exciting journey.</p>
+        <div className="mb-6 sm:mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1a237e] mb-3 tracking-tight">Choose Your Category</h2>
+          <p className="text-[#3949ab] font-medium text-base sm:text-lg leading-relaxed">Four categories. One exciting journey.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 items-stretch">
           {categories.map((cat, index) => (
-            <div key={index} className={`${cat.bgClass} rounded-[24px] p-6 lg:p-7 relative overflow-hidden transition-transform duration-300 hover:-translate-y-1`}>
+            <div key={index} className={`${cat.bgClass} rounded-[24px] p-5 sm:p-6 relative overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl h-full flex flex-col justify-between group cursor-pointer border border-white/60`}>
               
-              <div className="flex justify-between items-start mb-24 relative z-10">
-                <span className={`${cat.tagBg} ${cat.tagText} px-4 py-1.5 rounded-full text-sm font-bold shadow-sm`}>
+              {/* Top Row: Classes Badge on left, Round Student Portrait on right */}
+              <div className="flex justify-between items-start gap-2 mb-5 relative z-10">
+                <span className={`${cat.tagBg} ${cat.tagText} px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold shadow-xs whitespace-nowrap group-hover:scale-105 transition-transform duration-200`}>
                   {cat.classes}
                 </span>
-              </div>
-              
-              {/* Student Image */}
-              <div className="absolute -top-4 -right-4 w-44 h-44 pointer-events-none z-0">
-                <img 
-                  src={cat.image} 
-                  alt={cat.title}
-                  className="w-full h-full object-cover object-top rounded-full drop-shadow-md"
-                />
+
+                {/* Round Student Portrait - Contained cleanly in top section, zero overlap with text */}
+                <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden shadow-md border-2 border-white/90 flex-shrink-0 bg-white/40 group-hover:ring-4 group-hover:ring-white/80 transition-all duration-300">
+                  <img 
+                    src={cat.image} 
+                    alt={cat.title}
+                    className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
               </div>
 
-              <div className="relative z-10">
-                <h3 className="text-xl font-bold text-slate-900 mb-3 leading-tight" style={{color: '#1a237e'}}>{cat.title}</h3>
-                <p className="text-sm text-slate-700 mb-6 font-medium leading-relaxed min-h-[44px]">
-                  {cat.description}
-                </p>
+              {/* Bottom Content: Title, Description, Button */}
+              <div className="relative z-10 flex flex-col flex-1 justify-between">
+                <div>
+                  <h3 className="text-xl font-bold text-[#1a237e] group-hover:text-amber-600 transition-colors mb-2 leading-tight">
+                    {cat.title}
+                  </h3>
+                  <p className="text-sm text-slate-700 mb-6 font-medium leading-relaxed min-h-[44px]">
+                    {cat.description}
+                  </p>
+                </div>
                 
-                <button className={`${cat.btnBg} ${cat.btnText} font-bold py-2.5 px-6 rounded-full flex items-center gap-2 text-sm transition-all shadow-sm hover:shadow-md hover:gap-3`}>
-                  View Category <ArrowRight className="w-4 h-4" />
-                </button>
+                <div className="mt-auto">
+                  <Link 
+                    href="/competition"
+                    className={`${cat.btnBg} ${cat.btnText} font-black py-2.5 px-6 rounded-full inline-flex items-center justify-center gap-2 text-sm transition-all shadow-sm hover:shadow-md group/btn group-hover:scale-105 active:scale-95 w-full sm:w-auto text-center`}
+                  >
+                    <span>View Category</span>
+                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1.5 transition-transform" />
+                  </Link>
+                </div>
               </div>
             </div>
           ))}

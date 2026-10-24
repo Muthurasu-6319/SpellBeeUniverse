@@ -14,7 +14,8 @@ import {
   MessageCircle, 
   Phone, 
   ArrowRight, 
-  LogIn 
+  LogIn,
+  Sparkles 
 } from 'lucide-react';
 
 const FAQAccordionSection = () => {
@@ -36,11 +37,30 @@ const FAQAccordionSection = () => {
       icon: <Lightbulb className="w-5 h-5 text-amber-500" />,
       iconBg: "bg-amber-100",
       items: [
-        { q: "What is SpellBee Universe?", a: "SpellBee Universe is a premier national and international spelling and vocabulary competition designed to build language skills, confidence, and stage performance for students from Classes 1 to 10." },
-        { q: "Who can participate?", a: "Students from Classes 1 through 10 enrolled in recognized schools across any educational board (CBSE, ICSE, State Boards, and International Curriculums) are eligible." },
-        { q: "What are the competition categories?", a: "There are four age-tailored categories: Classes 1-2 (Little Learners), Classes 3-5 (Young Explorers), Classes 6-7 (Growing Achievers), and Classes 8-10 (Future Leaders)." },
-        { q: "Is there a registration fee?", a: "Yes, a nominal fee is charged which includes registration, curriculum preparatory word banks, digital resources, and participation certification." },
-        { q: "Where can I find more information?", a: "You can explore our How It Works and Resources pages, or contact our dedicated academic support desk via WhatsApp or email." }
+        { 
+          q: "What is the SpellBee Universe competition?", 
+          a: "The SpellBee Universe competition is a three-round contest where participants progress through a written examination, an interactive oral round conducted in school, and a grand finale stage competition. Students spell words correctly across each round, with qualified participants advancing to the next stage." 
+        },
+        { 
+          q: "What is the goal of the SpellBee Universe competition?", 
+          a: "The SpellBee Universe competition aims for students to know and understand English vocabulary and pronounce and annunciate words correctly." 
+        },
+        { 
+          q: "Who can participate in a SpellBee Universe competition?", 
+          a: "Typically, spelling bee competitions are open to students from ages 6 to 16 years and elementary, middle, and high school grade levels (Classes 1 to 10 across CBSE, ICSE, State Boards and International curriculums)." 
+        },
+        { 
+          q: "Is there any registration fee for competitions?", 
+          a: "Yes, the participant must pay the registration fee." 
+        },
+        { 
+          q: "What are the competition categories?", 
+          a: "There are four age-tailored categories: Classes 1-2 (Little Learners), Classes 3-5 (Young Explorers), Classes 6-7 (Growing Achievers), and Classes 8-10 (Future Leaders)." 
+        },
+        { 
+          q: "Where can I find more information?", 
+          a: "You can explore our How It Works and Resources pages, or contact our dedicated academic support desk via WhatsApp or email." 
+        }
       ]
     },
     {
@@ -49,11 +69,26 @@ const FAQAccordionSection = () => {
       icon: <FileText className="w-5 h-5 text-pink-500" />,
       iconBg: "bg-pink-100",
       items: [
-        { q: "How do I register?", a: "Students can register online through the student registration portal, or directly through their participating school coordinator." },
-        { q: "What information is required?", a: "Student name, grade/class, school name, parent contact number, email ID, and city of residence." },
-        { q: "Is there a registration fee?", a: "Registration fees vary depending on individual vs. school-bulk enrollment. Full fee schedules are detailed upon sign-up." },
-        { q: "Is the fee refundable?", a: "Registration fees are non-refundable once preparatory materials and student login credentials have been issued." },
-        { q: "Can I register through my school?", a: "Yes, if your school is an official partner, you can register via the school coordinator with special institutional support." }
+        { 
+          q: "What is the Registration process?", 
+          a: "The registration process for the SpellBee Universe competition can vary. Here are some general steps you can follow to register:\n\n• Download the SpellBee Universe App from Google Play Store (once available) or register on our website.\n• Once downloaded, register by creating an account.\n• Pay a registration fee of ₹380 + GST to enter the first round (Progressing rounds will carry their registration fees).\n• Cross each level by scoring high.\n• After qualifying through the written examination and oral round, selected students advance to the Grand Finale stage competition." 
+        },
+        { 
+          q: "What are the details required for registration?", 
+          a: "You need to provide the necessary information required for registration, such as your name, grade level, school and contact information so that you can be registered for the right category and level and be notified of your progress throughout the competition." 
+        },
+        { 
+          q: "Is there any registration fee for competitions?", 
+          a: "Yes, the participant must pay the registration fee. The fee for the first round is ₹380 + GST, and progressing rounds carry their respective fees." 
+        },
+        { 
+          q: "Are there any deadlines to complete the rounds?", 
+          a: "Yes, each round has a deadline. You will get notified about these after your registration is complete." 
+        },
+        { 
+          q: "Can I register through my school?", 
+          a: "Yes, if your school is an official partner, you can register via the school coordinator with special institutional support." 
+        }
       ]
     },
     {
@@ -62,11 +97,26 @@ const FAQAccordionSection = () => {
       icon: <Trophy className="w-5 h-5 text-emerald-600" />,
       iconBg: "bg-emerald-100",
       items: [
-        { q: "How many rounds are there?", a: "The competition comprises three structured rounds: Round 1 (Written Examination), Round 2 (Interactive Oral Round), and Round 3 (The Grand Finale)." },
-        { q: "What happens in Round 1?", a: "Round 1 is a written exam assessing word spelling, phonetics, audio-visual recognition, and vocabulary usage." },
-        { q: "What happens in Round 2?", a: "Qualified students participate in verbal oral rounds testing pronunciation, rapid spelling, and verbal accuracy." },
-        { q: "What happens in the Grand Finale?", a: "Selected national finalists compete live on stage with buzzers, rapid fire spelling, audio-visual challenges, and elimination rounds." },
-        { q: "How are students selected?", a: "Students advance based on standardized benchmark scoring rubrics evaluated by certified language adjudicators." }
+        { 
+          q: "How are SpellBee Universe competitions judged?", 
+          a: "Round 1 is a written examination where all participants appear for a written test. Qualified students advance based on their performance.\n\nRound 2 consists of interactive spelling rounds conducted in school.\n\nRound 3 is the Grand Finale (Spell Master Stage), a high-level stage competition with advanced rounds where participants spell words aloud and may be eliminated if they misspell a word." 
+        },
+        { 
+          q: "How can we know I am eligible for the next levels or rounds?", 
+          a: "SpellBee Universe competition will share feedback on the app to let you know if you are eligible to participate in the next level or round." 
+        },
+        { 
+          q: "Are there any deadlines to complete the rounds?", 
+          a: "Yes, each round has a deadline. You will get notified about these after your registration is complete." 
+        },
+        { 
+          q: "How many rounds are there in total?", 
+          a: "The competition comprises three structured rounds: Round 1 (Written Examination), Round 2 (Interactive Oral Round conducted in school), and Round 3 (The Grand Finale)." 
+        },
+        { 
+          q: "What happens in the Grand Finale?", 
+          a: "Selected national finalists compete live on stage with buzzers, rapid fire spelling, audio-visual challenges, and elimination rounds." 
+        }
       ]
     },
     {
@@ -75,11 +125,26 @@ const FAQAccordionSection = () => {
       icon: <BookOpen className="w-5 h-5 text-blue-500" />,
       iconBg: "bg-blue-100",
       items: [
-        { q: "How should my child prepare?", a: "Follow our daily practice word lists, interactive audio pronunciation guides, and take practice quizzes on our student portal." },
-        { q: "Are study materials provided?", a: "Yes, every registered student gets access to category-specific word banks, practice worksheets, and phonetics audio clips." },
-        { q: "Are practice tests available?", a: "Yes, multiple mock tests and interactive timed quizzes are available in the Practice Zone of our website and mobile app." },
-        { q: "How can students improve pronunciation?", a: "Use the audio speaker tool in our Practice Zone to listen to correct British and American pronunciations with syllable breakdowns." },
-        { q: "How are students improve vocabulary?", a: "Read daily context sentences, study root words and prefixes/suffixes, and engage with our meaning-and-usage worksheets." }
+        { 
+          q: "How do I prepare for a SpellBee Universe competition?", 
+          a: "To prepare for a SpellBee Universe competition, you should study commonly misspelled words and practice spelling them out loud. You may also want to use flashcards or the SpellBee Universe app to help you memorize spellings." 
+        },
+        { 
+          q: "Are study materials provided?", 
+          a: "Yes, every registered student gets access to category-specific word banks, practice worksheets, and phonetics audio clips." 
+        },
+        { 
+          q: "Are practice tests available?", 
+          a: "Yes, multiple mock tests and interactive timed quizzes are available in the Practice Zone of our website and mobile app." 
+        },
+        { 
+          q: "How can students improve pronunciation?", 
+          a: "Use the audio speaker tool in our Practice Zone to listen to correct British and American pronunciations with syllable breakdowns." 
+        },
+        { 
+          q: "How can students improve vocabulary?", 
+          a: "Read daily context sentences, study root words and prefixes/suffixes, and engage with our meaning-and-usage worksheets." 
+        }
       ]
     },
     {
@@ -88,10 +153,22 @@ const FAQAccordionSection = () => {
       icon: <Users className="w-5 h-5 text-purple-600" />,
       iconBg: "bg-purple-100",
       items: [
-        { q: "How will parents receive updates?", a: "Updates regarding schedules, results, and round qualification are sent via SMS, WhatsApp, and registered email." },
-        { q: "How will I know if my child qualifies?", a: "Result scorecards are published on the student portal and emailed to parents within two weeks of exam completion." },
-        { q: "Where will dates be announced?", a: "Competition dates are updated on the website calendar, student dashboard, and communicated directly by school coordinators." },
-        { q: "How will I receive certificates?", a: "Digital certificates of participation are downloadable instantly from the dashboard; printed trophies and medals are shipped or awarded at school ceremonies." }
+        { 
+          q: "How can we know if my child is eligible for the next levels or rounds?", 
+          a: "SpellBee Universe competition will share feedback on the app to let you know if you are eligible to participate in the next level or round. Additionally, parents receive updates via SMS, WhatsApp, and registered email." 
+        },
+        { 
+          q: "Are there any deadlines to complete the rounds?", 
+          a: "Yes, each round has a deadline. You will get notified about these after your registration is complete." 
+        },
+        { 
+          q: "Where will dates be announced?", 
+          a: "Competition dates are updated on the website calendar, student dashboard, and communicated directly by school coordinators." 
+        },
+        { 
+          q: "How will I receive certificates?", 
+          a: "Digital certificates of participation are downloadable instantly from the dashboard; printed trophies and medals are shipped or awarded at school ceremonies." 
+        }
       ]
     },
     {
@@ -112,10 +189,22 @@ const FAQAccordionSection = () => {
       icon: <Star className="w-5 h-5 text-rose-500" />,
       iconBg: "bg-rose-100",
       items: [
-        { q: "What happens on the Spell Master stage?", a: "Finalists compete on a state-of-the-art stage with spotlights, digital buzzer podiums, live audience cheering, and expert jury panels." },
-        { q: "What are the Grand Finale challenges?", a: "Challenges include Rapid Fire Spelling, Buzzer Round, Audio-Visual Words, Visual Memory Challenge, and Champion Elimination." },
-        { q: "What recognition do finalists receive?", a: "All finalists receive customized championship medals, framed certificates of merit, and exclusive SpellBee gifts." },
-        { q: "What do winners receive?", a: "Grand champions win prestigious championship trophies, laptops/tablets, educational scholarships, and national media coverage." }
+        { 
+          q: "What are the prizes for winning the SpellBee Universe competition?", 
+          a: "The prizes for winning the SpellBee Universe competition vary depending on the competition and are subjected to the terms and conditions of the competition. Some competitions may offer cash prizes and gifts like a digital watch, an iPad, holidays etc., while others may offer trophies or certificates. In some cases, winners may also earn scholarships, a trip to NASA, and other forms of recognition." 
+        },
+        { 
+          q: "What happens on the Spell Master stage?", 
+          a: "Finalists compete on a state-of-the-art stage with spotlights, digital buzzer podiums, live audience cheering, and expert jury panels." 
+        },
+        { 
+          q: "What are the Grand Finale challenges?", 
+          a: "Challenges include Rapid Fire Spelling, Buzzer Round, Audio-Visual Words, Visual Memory Challenge, and Champion Elimination." 
+        },
+        { 
+          q: "What recognition do finalists receive?", 
+          a: "All finalists receive customized championship medals, framed certificates of merit, and exclusive SpellBee gifts." 
+        }
       ]
     },
     {
@@ -124,18 +213,30 @@ const FAQAccordionSection = () => {
       icon: <Smartphone className="w-5 h-5 text-sky-500" />,
       iconBg: "bg-sky-100",
       items: [
-        { q: "Is the app available?", a: "Yes, the SpellBee Universe learning app is available for download on both Google Play Store and Apple App Store." },
-        { q: "How do I log in?", a: "Use the registered mobile number or student registration ID along with your secure password or OTP." },
-        { q: "What if I forget my password?", a: "Click on 'Forgot Password' on the login screen to receive an instant password reset link on your registered phone or email." },
-        { q: "Can I use the app on multiple devices?", a: "Yes, students can log in from smartphones, tablets, or desktop browsers with progress synchronized automatically." }
+        { 
+          q: "Where can I download the app?", 
+          a: "It will be available on the play store and the app store shortly. All the registered users will be intimated with the app link to download." 
+        },
+        { 
+          q: "How do I log in?", 
+          a: "Use the registered mobile number or student registration ID along with your secure password or OTP." 
+        },
+        { 
+          q: "What if I forget my password?", 
+          a: "Click on 'Forgot Password' on the login screen to receive an instant password reset link on your registered phone or email." 
+        },
+        { 
+          q: "Can I use the app on multiple devices?", 
+          a: "Yes, students can log in from smartphones, tablets, or desktop browsers with progress synchronized automatically once the app is launched." 
+        }
       ]
     }
   ];
 
   return (
-    <section className="py-16 md:py-20 bg-slate-50/70 border-t border-slate-100">
+    <section className="py-8 md:py-12 bg-slate-50/70 border-t border-slate-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="mb-12">
+        <div className="mb-6 sm:mb-8">
           <h2 className="text-3xl md:text-4xl font-extrabold text-[#1a237e] mb-2 tracking-tight">
             Frequently Asked Questions
           </h2>
@@ -188,7 +289,7 @@ const FAQAccordionSection = () => {
                         </button>
 
                         {isOpen && (
-                          <div className="mt-3 pt-3 border-t border-slate-200/70 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+                          <div className="mt-3 pt-3 border-t border-slate-200/70 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium whitespace-pre-line">
                             {item.a}
                           </div>
                         )}
@@ -205,8 +306,8 @@ const FAQAccordionSection = () => {
             
             {/* Card 1: Still Have a Question? */}
             <div className="bg-[#fffdf0] border border-amber-200/90 rounded-[2rem] p-6 shadow-xs text-center relative overflow-hidden">
-              <div className="absolute top-2 right-3 text-3xl animate-bounce-slow">
-                🐝
+              <div className="absolute top-3 right-4 w-8 h-8 rounded-full bg-amber-400 text-slate-900 flex items-center justify-center shadow-md animate-bounce-slow">
+                <Sparkles className="w-4 h-4 fill-slate-900" />
               </div>
 
               <h3 className="font-serif italic font-black text-2xl text-[#1a237e] leading-tight mb-2 pt-2">
@@ -226,7 +327,7 @@ const FAQAccordionSection = () => {
                 </a>
 
                 <a 
-                  href="https://wa.me/919876543210" 
+                  href="https://wa.me/919611209606" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-full py-3 px-5 rounded-full bg-[#25d366] hover:bg-[#20ba59] text-white font-extrabold text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2"
@@ -237,16 +338,20 @@ const FAQAccordionSection = () => {
             </div>
 
             {/* Card 2: Download SpellBee Universe App */}
-            <div className="bg-[#f0f7ff] border border-blue-200/80 rounded-[2rem] p-6 shadow-xs text-center">
+            <div className="bg-[#f0f7ff] border border-blue-200/80 rounded-2xl sm:rounded-[2rem] p-6 shadow-xs text-center">
               <div className="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center mx-auto mb-3 shadow-sm">
                 <Smartphone className="w-6 h-6" />
+              </div>
+
+              <div className="inline-block px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 text-[10px] font-extrabold uppercase mb-2">
+                Available Shortly
               </div>
 
               <h4 className="text-base sm:text-lg font-extrabold text-[#1a237e] mb-1">
                 Download the SpellBee Universe App
               </h4>
               <p className="text-slate-500 text-xs font-medium mb-4">
-                Practice, learn and get ready for the competition on the go.
+                It will be available on the Play Store and the App Store shortly. All registered users will be intimated with the link to download.
               </p>
 
               {/* App Store / Google Play Buttons */}
@@ -255,7 +360,9 @@ const FAQAccordionSection = () => {
                   href="#google-play"
                   className="w-full bg-slate-950 hover:bg-slate-800 text-white rounded-xl py-2.5 px-4 flex items-center justify-center gap-3 shadow-sm transition-colors text-left"
                 >
-                  <span className="text-xl">▶</span>
+                  <svg className="w-5 h-5 fill-current text-emerald-400 shrink-0" viewBox="0 0 24 24">
+                    <path d="M3.609 1.814L13.792 12 3.61 22.186a2.033 2.033 0 0 1-.22-.924V2.738c0-.339.08-.654.22-.924zM15.207 13.414l2.457 2.457-11.49 6.55 9.033-9.007zm0-2.828L6.174 1.579l11.49 6.55-2.457 2.457zm1.414 1.414l3.535-2.016a1.5 1.5 0 0 1 0 2.604l-3.535 2.016-1.414-1.414 1.414-1.19z" />
+                  </svg>
                   <div>
                     <div className="text-[9px] text-slate-300 uppercase tracking-widest leading-none">Get it on</div>
                     <div className="text-xs font-bold leading-tight">Google Play</div>
@@ -266,7 +373,9 @@ const FAQAccordionSection = () => {
                   href="#app-store"
                   className="w-full bg-slate-950 hover:bg-slate-800 text-white rounded-xl py-2.5 px-4 flex items-center justify-center gap-3 shadow-sm transition-colors text-left"
                 >
-                  <span className="text-xl">🍏</span>
+                  <svg className="w-5 h-5 fill-current text-white shrink-0" viewBox="0 0 24 24">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-1.99.6-2.63 1.35-.56.64-1.06 1.7-0.93 2.73 1.01.08 2.02-.48 2.64-1.23z" />
+                  </svg>
                   <div>
                     <div className="text-[9px] text-slate-300 uppercase tracking-widest leading-none">Download on the</div>
                     <div className="text-xs font-bold leading-tight">App Store</div>

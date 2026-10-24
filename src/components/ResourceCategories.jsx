@@ -104,10 +104,10 @@ const ResourceCategories = () => {
   ];
 
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="pt-8 pb-10 md:pt-10 md:pb-12 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="mb-12">
-          <div className="flex items-center gap-3 mb-3">
+        <div className="mb-6">
+          <div className="flex items-center gap-3 mb-2">
             <span className="w-6 h-1 bg-yellow-400 rounded-full inline-block"></span>
             <span className="text-[#1a237e] font-extrabold tracking-wider text-xs sm:text-sm uppercase">
               Resource Directory
@@ -122,36 +122,37 @@ const ResourceCategories = () => {
         </div>
 
         {/* 8 Categories Grid (2x4) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {categories.map((cat, idx) => (
             <div 
               key={idx}
-              className={`${cat.cardBg} ${cat.borderClass} border rounded-2xl p-6 flex flex-col justify-between shadow-xs hover:shadow-md hover:-translate-y-1 transition-all duration-300 min-h-[220px]`}
+              className={`${cat.cardBg} ${cat.borderClass} border rounded-xl sm:rounded-2xl p-3.5 sm:p-6 flex flex-col justify-between shadow-xs hover:shadow-md hover:-translate-y-1 transition-all duration-300 min-h-[170px] sm:min-h-[220px]`}
             >
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <div className={`w-11 h-11 rounded-xl ${cat.iconBg} flex items-center justify-center shadow-xs`}>
+                <div className="flex items-center justify-between mb-2.5 sm:mb-4">
+                  <div className={`w-9 h-9 sm:w-11 sm:h-11 rounded-lg sm:rounded-xl ${cat.iconBg} flex items-center justify-center shadow-xs`}>
                     {cat.icon}
                   </div>
-                  <div className="w-6 h-6 rounded-full bg-white/70 flex items-center justify-center text-slate-400">
-                    <ArrowRight className="w-3.5 h-3.5" />
+                  <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-white/70 flex items-center justify-center text-slate-400">
+                    <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                   </div>
                 </div>
 
-                <h3 className="text-lg font-extrabold text-[#1a237e] mb-2">
+                <h3 className="text-sm sm:text-lg font-extrabold text-[#1a237e] mb-1 sm:mb-2 leading-tight">
                   {cat.title}
                 </h3>
                 
-                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-medium mb-6">
+                <p className="text-slate-600 text-[11px] sm:text-sm leading-relaxed font-medium mb-3 sm:mb-6">
                   {cat.desc}
                 </p>
               </div>
 
               <a 
                 href={cat.href}
-                className={`inline-flex items-center gap-1.5 font-bold text-xs sm:text-sm ${cat.accentText} hover:underline`}
+                className={`inline-flex items-center gap-1 font-bold text-[11px] sm:text-sm ${cat.accentText} hover:underline mt-auto`}
               >
-                {cat.linkText} <ArrowRight className="w-3.5 h-3.5" />
+                <span>{cat.linkText}</span>
+                <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
               </a>
             </div>
           ))}

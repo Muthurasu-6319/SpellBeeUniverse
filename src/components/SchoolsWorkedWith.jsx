@@ -1,108 +1,169 @@
 "use client";
-import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, School, Award, Sparkles, Building2, BookOpen } from 'lucide-react';
+import React from 'react';
+import { School, Award, Sparkles, Building2, BookOpen, CheckCircle } from 'lucide-react';
 
 const SchoolsWorkedWith = () => {
-  const [startIndex, setStartIndex] = useState(0);
-
+  // Exactly 13 unique partner schools corresponding strictly to the 13 logos provided by the user
   const partnerSchools = [
     {
-      name: "Raffles",
+      name: "Presidency School",
+      type: "Bangalore North",
+      location: "Bengaluru, Karnataka",
+      logo: "/images/schools/presidency-school.png",
+      tag: "Presidency Group"
+    },
+    {
+      name: "Candor International",
+      type: "IB & Cambridge School",
+      location: "Bengaluru, Karnataka",
+      logo: "/images/schools/candor-international-school.png",
+      tag: "World School"
+    },
+    {
+      name: "Apollo International",
       type: "International School",
-      icon: <Award className="w-6 h-6 text-red-600" />,
-      color: "bg-red-50 text-red-600 border-red-200"
+      location: "Aspire & Actualise",
+      logo: "/images/schools/apollo-international-school.png",
+      tag: "Excellence Hub"
     },
     {
-      name: "Delhi Public School",
-      type: "DPS Society",
-      icon: <School className="w-6 h-6 text-emerald-600" />,
-      color: "bg-emerald-50 text-emerald-600 border-emerald-200"
+      name: "IQRA School",
+      type: "Islamic & Modern School",
+      location: "Academic Excellence",
+      logo: "/images/schools/iqra-school.png",
+      tag: "Knowledge & Values"
     },
     {
-      name: "The Assam Valley School",
-      type: "Heritage Campus",
-      icon: <Building2 className="w-6 h-6 text-green-700" />,
-      color: "bg-green-50 text-green-700 border-green-200"
-    },
-    {
-      name: "Kendriya Vidyalaya",
-      type: "Sangathan",
-      icon: <Sparkles className="w-6 h-6 text-amber-600" />,
-      color: "bg-amber-50 text-amber-600 border-amber-200"
-    },
-    {
-      name: "Ryan International School",
-      type: "Ryan Group",
-      icon: <Sparkles className="w-6 h-6 text-blue-600" />,
-      color: "bg-blue-50 text-blue-600 border-blue-200"
-    },
-    {
-      name: "Cambridge",
+      name: "Aryan International",
       type: "International School",
-      icon: <BookOpen className="w-6 h-6 text-rose-700" />,
-      color: "bg-rose-50 text-rose-700 border-rose-200"
+      location: "Legacy of Trust",
+      logo: "/images/schools/aryan-international-school.png",
+      tag: "Premier Campus"
+    },
+    {
+      name: "Hillrock National Public",
+      type: "National Public School",
+      location: "Bengaluru, Karnataka",
+      logo: "/images/schools/hillrock-national-public-school.png",
+      tag: "Academic Leader"
+    },
+    {
+      name: "NES National Public",
+      type: "NES & SVB Group",
+      location: "Mulund, Mumbai",
+      logo: "/images/schools/nes-national-public-school.png",
+      tag: "CISCE Affiliated"
+    },
+    {
+      name: "Martin Luther Public",
+      type: "Girinagar Educational Trust",
+      location: "Bengaluru, Karnataka",
+      logo: "/images/schools/martin-luther-public-school.png",
+      tag: "Foundation for Tomorrow"
+    },
+    {
+      name: "VSS Public School",
+      type: "CBSE Affiliated",
+      location: "Bengaluru, Karnataka",
+      logo: "/images/schools/vss-public-school.png",
+      tag: "Since 1972"
+    },
+    {
+      name: "PES Public School",
+      type: "PES Institutions",
+      location: "Bengaluru & Shivamogga",
+      logo: "/images/schools/pes-public-school.png",
+      tag: "PES Group"
+    },
+    {
+      name: "KLE Society Schools",
+      type: "Lingayat Education Society",
+      location: "Belagavi & Bengaluru",
+      logo: "/images/schools/kle-society.png",
+      tag: "Heritage Society"
+    },
+    {
+      name: "Oakridge International",
+      type: "Nord Anglia School",
+      location: "Bengaluru & Hyderabad",
+      logo: "/images/schools/oakridge-international-school.png",
+      tag: "Global Network"
+    },
+    {
+      name: "Orchids International",
+      type: "The International School",
+      location: "Bengaluru & Pan India",
+      logo: "/images/schools/orchids-international-school.png",
+      tag: "CBSE & ICSE Chain"
     }
   ];
 
-  const handlePrev = () => {
-    setStartIndex((prev) => (prev === 0 ? partnerSchools.length - 1 : prev - 1));
-  };
-
-  const handleNext = () => {
-    setStartIndex((prev) => (prev === partnerSchools.length - 1 ? 0 : prev + 1));
-  };
-
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="pt-8 md:pt-10 pb-3 md:pb-4 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="mb-10 text-center sm:text-left">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#1a237e] mb-2 tracking-tight">
-            Schools We've Worked With
-          </h2>
-          <p className="text-[#3949ab] font-medium text-sm sm:text-base">
-            We are proud to partner with respected schools and educational institutions.
-          </p>
-        </div>
-
-        {/* Carousel / Slider Container */}
-        <div className="relative flex items-center">
-          {/* Left Arrow Button */}
-          <button 
-            onClick={handlePrev}
-            className="w-10 h-10 rounded-full bg-white border border-slate-200 shadow-md flex items-center justify-center text-slate-700 hover:bg-slate-50 transition-colors shrink-0 -mr-3 z-10"
-            aria-label="Previous partner schools"
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-
-          {/* Cards Row */}
-          <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 px-4 overflow-hidden">
-            {partnerSchools.map((school, idx) => (
-              <div 
-                key={idx}
-                className="bg-white rounded-2xl border border-slate-200/90 p-5 flex flex-col items-center justify-center text-center shadow-xs hover:shadow-md hover:-translate-y-1 transition-all duration-300 min-h-[140px]"
-              >
-                <div className={`w-12 h-12 rounded-xl border flex items-center justify-center mb-3 shadow-xs ${school.color}`}>
-                  {school.icon}
-                </div>
-                <h4 className="text-xs sm:text-sm font-extrabold text-slate-800 leading-tight mb-1">
-                  {school.name}
-                </h4>
-                <p className="text-[11px] text-slate-500 font-medium">
-                  {school.type}
-                </p>
-              </div>
-            ))}
+        {/* Section Header */}
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-6">
+          <div>
+            <div className="group/pill inline-flex items-center gap-2 mb-1.5 cursor-pointer">
+              <span className="w-5 group-hover/pill:w-8 h-1 bg-yellow-400 rounded-full inline-block transition-all duration-300"></span>
+              <span className="text-[#1a237e] font-extrabold tracking-wider text-xs uppercase group-hover/pill:text-yellow-600 transition-colors">
+                Our Network
+              </span>
+            </div>
+            <h2 className="text-xl sm:text-2xl font-extrabold text-[#1a237e] mb-1 tracking-tight">
+              Schools We&apos;ve Worked With
+            </h2>
+            <p className="text-[#3949ab] font-medium text-xs sm:text-sm">
+              We are proud to partner with respected schools and premier educational institutions across India.
+            </p>
           </div>
 
-          {/* Right Arrow Button */}
-          <button 
-            onClick={handleNext}
-            className="w-10 h-10 rounded-full bg-white border border-slate-200 shadow-md flex items-center justify-center text-slate-700 hover:bg-slate-50 transition-colors shrink-0 -ml-3 z-10"
-            aria-label="Next partner schools"
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
+          {/* Exact count badge matching user-provided logos */}
+          <div className="flex items-center gap-2 self-start sm:self-auto">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-xs font-bold text-amber-800">
+              <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+              {partnerSchools.length} Partner Schools
+            </span>
+          </div>
+        </div>
+
+        {/* Clean Showcase Grid - Zero Repetition, Every school shown exactly once */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 gap-3 sm:gap-3.5">
+          {partnerSchools.map((school, idx) => (
+            <div 
+              key={`${school.name}-${idx}`}
+              className="group relative bg-white rounded-2xl border border-slate-200/90 hover:border-yellow-400 p-3 sm:p-3.5 flex flex-col items-center justify-center text-center shadow-xs hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 min-h-[145px] cursor-pointer overflow-hidden animate-pop-in"
+            >
+              {/* Active hover corner glow */}
+              <div className="absolute top-0 right-0 w-12 h-12 bg-gradient-to-bl from-yellow-300/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-tr-2xl pointer-events-none"></div>
+
+              {/* Verified partner badge popping up on hover */}
+              <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-75 group-hover:scale-100 text-emerald-600 z-10">
+                <CheckCircle className="w-4 h-4 fill-emerald-100" />
+              </div>
+
+              {/* Circular School Logo Badge */}
+              <div className="w-16 h-16 sm:w-18 sm:h-18 rounded-full border-2 border-slate-100 group-hover:border-yellow-400 p-1 bg-white shadow-xs group-hover:shadow-md transition-all duration-300 group-hover:scale-110 flex items-center justify-center mb-2 shrink-0 overflow-hidden">
+                <img 
+                  src={school.logo} 
+                  alt={`${school.name} Logo`}
+                  className="w-full h-full object-contain rounded-full"
+                />
+              </div>
+
+              <h4 className="text-xs sm:text-[13px] font-extrabold text-slate-800 group-hover:text-[#1a237e] leading-snug mb-0.5 transition-colors line-clamp-2">
+                {school.name}
+              </h4>
+
+              <p className="text-[10px] text-slate-500 font-medium line-clamp-1">
+                {school.type}
+              </p>
+
+              <div className="text-[9px] text-amber-700/80 font-semibold mt-0.5 opacity-0 group-hover:opacity-100 transition-opacity">
+                {school.location}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

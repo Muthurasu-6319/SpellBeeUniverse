@@ -12,12 +12,14 @@ const FeaturedResources = () => {
       tag: "Word Lists",
       badgeColor: "bg-pink-100 text-pink-700",
       graphic: (
-        <div className="w-full h-44 bg-gradient-to-br from-amber-100 via-yellow-100 to-orange-100 rounded-2xl flex flex-col items-center justify-center p-4 relative overflow-hidden border border-amber-200/60">
+        <div className="w-full h-36 sm:h-44 bg-gradient-to-br from-amber-100 via-yellow-100 to-orange-100 rounded-2xl flex flex-col items-center justify-center p-4 relative overflow-hidden border border-amber-200/60">
           <div className="bg-white px-5 py-3 rounded-xl shadow-md border-2 border-pink-300 text-center transform -rotate-3">
             <span className="text-xs font-bold text-pink-500 uppercase tracking-widest block">Essential</span>
             <span className="text-lg font-black text-[#1a237e]">WORD LISTS</span>
           </div>
-          <div className="absolute top-2 right-3 text-2xl">📝</div>
+          <div className="absolute top-2 right-3">
+            <FileText className="w-5 h-5 text-pink-500" />
+          </div>
         </div>
       )
     },
@@ -27,7 +29,7 @@ const FeaturedResources = () => {
       tag: "Vocabulary",
       badgeColor: "bg-blue-100 text-blue-700",
       graphic: (
-        <div className="w-full h-44 bg-gradient-to-br from-blue-100 via-sky-100 to-indigo-100 rounded-2xl flex items-center justify-center p-4 relative overflow-hidden border border-blue-200/60">
+        <div className="w-full h-36 sm:h-44 bg-gradient-to-br from-blue-100 via-sky-100 to-indigo-100 rounded-2xl flex items-center justify-center p-4 relative overflow-hidden border border-blue-200/60">
           <div className="flex gap-2 transform rotate-2">
             <div className="w-12 h-12 rounded-xl bg-pink-500 text-white font-extrabold text-xl flex items-center justify-center shadow-md">A</div>
             <div className="w-12 h-12 rounded-xl bg-blue-500 text-white font-extrabold text-xl flex items-center justify-center shadow-md -translate-y-2">B</div>
@@ -43,9 +45,9 @@ const FeaturedResources = () => {
       tag: "Pronunciation",
       badgeColor: "bg-purple-100 text-purple-700",
       graphic: (
-        <div className="w-full h-44 bg-gradient-to-br from-indigo-900 via-blue-950 to-purple-950 rounded-2xl flex flex-col items-center justify-center p-4 relative overflow-hidden border border-indigo-800 text-white">
-          <div className="w-14 h-14 rounded-full bg-blue-500/30 border border-blue-400/50 flex items-center justify-center text-3xl shadow-lg">
-            🎙️
+        <div className="w-full h-36 sm:h-44 bg-gradient-to-br from-indigo-900 via-blue-950 to-purple-950 rounded-2xl flex flex-col items-center justify-center p-4 relative overflow-hidden border border-indigo-800 text-white">
+          <div className="w-14 h-14 rounded-full bg-blue-500/30 border border-blue-400/50 flex items-center justify-center shadow-lg">
+            <Volume2 className="w-7 h-7 text-yellow-300" />
           </div>
           <div className="mt-2 text-xs font-bold text-blue-200 tracking-wider uppercase flex items-center gap-1">
             <Volume2 className="w-3.5 h-3.5 text-yellow-400" /> Phonetics & Audio
@@ -60,7 +62,7 @@ const FeaturedResources = () => {
       tag: "Worksheets",
       badgeColor: "bg-emerald-100 text-emerald-700",
       graphic: (
-        <div className="w-full h-44 bg-gradient-to-br from-slate-100 via-emerald-50 to-teal-100 rounded-2xl flex flex-col items-center justify-center p-4 relative overflow-hidden border border-emerald-200/60">
+        <div className="w-full h-36 sm:h-44 bg-gradient-to-br from-slate-100 via-emerald-50 to-teal-100 rounded-2xl flex flex-col items-center justify-center p-4 relative overflow-hidden border border-emerald-200/60">
           <div className="bg-white p-3.5 rounded-xl shadow-md border border-slate-200 text-center w-40 transform rotate-1">
             <div className="text-[10px] font-extrabold text-emerald-600 uppercase border-b pb-1 mb-1.5 flex items-center justify-center gap-1">
               <FileText className="w-3 h-3" /> Practice Sheet
@@ -77,9 +79,9 @@ const FeaturedResources = () => {
   ];
 
   return (
-    <section className="py-16 md:py-20 bg-slate-50/60 border-t border-slate-100">
+    <section className="py-8 md:py-10 bg-slate-50/60 border-t border-slate-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-2">
               <span className="w-6 h-1 bg-yellow-400 rounded-full inline-block"></span>

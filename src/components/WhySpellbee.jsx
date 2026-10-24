@@ -34,10 +34,10 @@ const WhySpellbee = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white relative">
+    <section className="pt-8 md:pt-12 pb-6 md:pb-8 bg-white relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="max-w-3xl mb-12 lg:mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">Why SpellBee Universe?</h2>
+        <div className="max-w-3xl mb-8 lg:mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1a237e] mb-3 tracking-tight">Why SpellBee Universe?</h2>
           <p className="text-slate-600 text-base md:text-lg font-medium leading-relaxed max-w-2xl">
             More Than a Spelling Competition. Every word a student learns is a step toward stronger vocabulary, clearer communication and greater confidence.
           </p>
@@ -45,15 +45,17 @@ const WhySpellbee = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {cards.map((card, index) => (
-            <div key={index} className="bg-white rounded-[24px] p-6 lg:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100/50 hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 group">
-              <div className="flex flex-col h-full gap-4">
-                <div className="flex items-center gap-4 lg:flex-col lg:items-start lg:gap-6">
-                  <div className={`w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm ${card.iconBg} group-hover:scale-110 transition-transform duration-300`}>
-                    <card.icon className={`w-7 h-7 ${card.iconColor}`} />
+            <div key={index} className="bg-white rounded-[24px] p-6 lg:p-7 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100/60 hover:shadow-xl hover:-translate-y-2 hover:border-amber-200/80 transition-all duration-300 group flex flex-col justify-between cursor-pointer">
+              <div className="flex flex-col gap-4">
+                <div className="flex items-center gap-4 lg:flex-col lg:items-start lg:gap-5">
+                  <div className={`w-13 h-13 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm ${card.iconBg} group-hover:scale-115 group-hover:rotate-6 group-hover:shadow-md transition-all duration-300`}>
+                    <card.icon className={`w-6 h-6 sm:w-7 sm:h-7 ${card.iconColor}`} />
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 leading-tight">{card.title}</h3>
+                  <h3 className="text-lg font-bold text-[#1a237e] group-hover:text-amber-500 transition-colors leading-snug min-h-[28px] lg:min-h-[48px] flex items-start">
+                    {card.title}
+                  </h3>
                 </div>
-                <p className="text-sm text-slate-500 font-medium leading-relaxed mt-2 lg:mt-0">
+                <p className="text-sm text-slate-600 font-medium leading-relaxed">
                   {card.description}
                 </p>
               </div>
