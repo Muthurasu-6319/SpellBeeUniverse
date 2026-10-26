@@ -1,9 +1,8 @@
-"use client";
 import React from 'react';
 import { School, Award, Sparkles, Building2, BookOpen, CheckCircle } from 'lucide-react';
 
 const SchoolsWorkedWith = () => {
-  // Exactly 13 unique partner schools corresponding strictly to the 13 logos provided by the user
+  // Exactly 24 unique partner schools corresponding strictly to verified schools
   const partnerSchools = [
     {
       name: "Presidency School",
@@ -95,6 +94,76 @@ const SchoolsWorkedWith = () => {
       location: "Bengaluru & Pan India",
       logo: "/images/schools/orchids-international-school.png",
       tag: "CBSE & ICSE Chain"
+    },
+    {
+      name: "TCIS Bangalore",
+      type: "The Cambridge International",
+      location: "Bengaluru, Karnataka",
+      logo: "/images/schools/tcis-international-school.png",
+      tag: "Cambridge Certified"
+    },
+    {
+      name: "EKAM Early Learning",
+      type: "International Preschool & Daycare",
+      location: "Bengaluru, Karnataka",
+      logo: "/images/schools/ekam-school.png",
+      tag: "Early Education"
+    },
+    {
+      name: "Edify World School",
+      type: "Think Beyond • Whitefield",
+      location: "Whitefield, Bengaluru",
+      logo: "/images/schools/edify-world-school.png",
+      tag: "World School"
+    },
+    {
+      name: "Heritage Public School",
+      type: "Public School",
+      location: "Excellence in Education",
+      logo: "/images/schools/heritage-public-school.png",
+      tag: "Value Education"
+    },
+    {
+      name: "Freedom International",
+      type: "Dare to Dream",
+      location: "Bengaluru, Karnataka",
+      logo: "/images/schools/freedom-international-school.png",
+      tag: "ICSE School"
+    },
+    {
+      name: "Harvest International",
+      type: "Education Beyond Classrooms",
+      location: "Sarjapur, Bengaluru",
+      logo: "/images/schools/harvest-international-school.png",
+      tag: "IB & Cambridge"
+    },
+    {
+      name: "Greenwood High",
+      type: "Rooted In Knowledge",
+      location: "Bengaluru, Karnataka",
+      logo: "/images/schools/greenwood-high.png",
+      tag: "International School"
+    },
+    {
+      name: "Bethany High",
+      type: "Trust & Obey",
+      location: "Koramangala, Bengaluru",
+      logo: "/images/schools/bethany-high.png",
+      tag: "Estd. 1963"
+    },
+    {
+      name: "Christ School (ICSE)",
+      type: "Bengaluru - 560 029",
+      location: "Bengaluru, Karnataka",
+      logo: "/images/schools/christ-school-icse.png",
+      tag: "CISCE Affiliated"
+    },
+    {
+      name: "Magnolia Maaruti Public",
+      type: "AECS • Building Knowledge",
+      location: "Bengaluru, Karnataka",
+      logo: "/images/schools/magnolia-maaruti-public-school.png",
+      tag: "CBSE Affiliated"
     }
   ];
 
@@ -122,7 +191,7 @@ const SchoolsWorkedWith = () => {
           <div className="flex items-center gap-2 self-start sm:self-auto">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-xs font-black text-slate-950 shadow-xs">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              {partnerSchools.length} Schools Participated
+              Participated Schools
             </span>
           </div>
         </div>

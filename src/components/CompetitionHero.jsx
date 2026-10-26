@@ -55,11 +55,11 @@ const CompetitionHero = () => {
             {/* The circular golden background glow */}
             <div className="absolute w-[270px] h-[270px] sm:w-[350px] sm:h-[350px] md:w-[410px] md:h-[410px] rounded-full bg-gradient-to-tr from-yellow-300 via-amber-200 to-yellow-100 shadow-xl opacity-90 z-0 animate-pulse-soft"></div>
             
-            {/* Main Stage Speaker Image inside Circle */}
+            {/* Main Stage Champion Image inside Circle */}
             <div className="relative z-10 w-full max-w-[260px] sm:max-w-[340px] md:max-w-[380px] aspect-square rounded-full p-2 sm:p-2.5 bg-white shadow-2xl border-4 border-white overflow-hidden flex items-center justify-center group cursor-pointer">
               <img 
-                src="/images/competition-hero-speaker.jpg" 
-                alt="SpellBee Universe Competition Stage Address" 
+                src="/images/competition-hero-champion.jpg" 
+                alt="SpellBee Universe Competition Champion" 
                 className="w-full h-full object-cover object-center rounded-full transition-transform duration-500 group-hover:scale-110"
               />
             </div>

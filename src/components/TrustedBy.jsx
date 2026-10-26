@@ -17,6 +17,16 @@ const TrustedBy = () => {
     { name: "KLE Society Schools", type: "Heritage Society", logo: "/images/schools/kle-society.png" },
     { name: "Oakridge International", type: "Nord Anglia School", logo: "/images/schools/oakridge-international-school.png" },
     { name: "Orchids International", type: "The International School", logo: "/images/schools/orchids-international-school.png" },
+    { name: "TCIS Bangalore", type: "The Cambridge International", logo: "/images/schools/tcis-international-school.png" },
+    { name: "EKAM Early Learning", type: "International Preschool", logo: "/images/schools/ekam-school.png" },
+    { name: "Edify World School", type: "Whitefield Campus", logo: "/images/schools/edify-world-school.png" },
+    { name: "Heritage Public School", type: "Public School", logo: "/images/schools/heritage-public-school.png" },
+    { name: "Freedom International", type: "Dare to Dream", logo: "/images/schools/freedom-international-school.png" },
+    { name: "Harvest International", type: "Sarjapur Campus", logo: "/images/schools/harvest-international-school.png" },
+    { name: "Greenwood High", type: "International School", logo: "/images/schools/greenwood-high.png" },
+    { name: "Bethany High", type: "Trust & Obey", logo: "/images/schools/bethany-high.png" },
+    { name: "Christ School (ICSE)", type: "Bengaluru Campus", logo: "/images/schools/christ-school-icse.png" },
+    { name: "Magnolia Maaruti Public", type: "AECS Campus", logo: "/images/schools/magnolia-maaruti-public-school.png" },
   ];
 
   return (
@@ -27,7 +37,7 @@ const TrustedBy = () => {
           {/* Section Headline */}
           <div className="w-full lg:w-[260px] shrink-0 text-center lg:text-left">
             <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-100 text-slate-950 text-[10px] font-black uppercase mb-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 13 Schools Participated
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Participated Schools
             </div>
             <h2 className="text-lg sm:text-xl font-black text-slate-950 tracking-tight leading-tight">
               Trusted by Schools & Educators
