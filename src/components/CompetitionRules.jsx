@@ -75,7 +75,7 @@ const CompetitionRules = () => {
               Know the Rules. Play Fair.
             </h2>
             
-            <p className="text-[#3949ab] font-medium text-xs sm:text-sm md:text-base mb-5 sm:mb-6 leading-relaxed max-w-lg mx-auto md:mx-0">
+            <p className="text-slate-900 font-medium text-xs sm:text-sm md:text-base mb-5 sm:mb-6 leading-relaxed max-w-lg mx-auto md:mx-0">
               Read the complete rules and guidelines to ensure a smooth and enjoyable competition experience.
             </p>
             

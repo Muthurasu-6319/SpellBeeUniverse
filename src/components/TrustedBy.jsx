@@ -26,13 +26,13 @@ const TrustedBy = () => {
           
           {/* Section Headline */}
           <div className="w-full lg:w-[260px] shrink-0 text-center lg:text-left">
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 text-[10px] font-extrabold uppercase mb-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 13 Partner Schools
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-100 text-slate-950 text-[10px] font-black uppercase mb-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 13 Schools Participated
             </div>
-            <h2 className="text-lg sm:text-xl font-black text-[#1a237e] tracking-tight leading-tight">
+            <h2 className="text-lg sm:text-xl font-black text-slate-950 tracking-tight leading-tight">
               Trusted by Schools & Educators
             </h2>
-            <p className="text-slate-500 text-[11px] font-medium leading-relaxed mt-1">
+            <p className="text-slate-600 text-[11px] font-medium leading-relaxed mt-1">
               Across India, premier institutions partner with SpellBee Universe.
             </p>
           </div>

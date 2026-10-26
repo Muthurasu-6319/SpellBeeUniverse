@@ -16,14 +16,14 @@ const Footer = () => {
                 alt="SpellBee Universe Logo" 
                 className="w-20 h-20 sm:w-24 sm:h-24 object-contain filter drop-shadow-lg group-hover:scale-105 transition-transform shrink-0"
               />
-              <div className="flex flex-col justify-center">
-                <span className="text-2xl sm:text-3xl font-black text-white tracking-tight leading-none">
+              <div className="flex flex-col justify-center font-brand">
+                <span className="text-2xl sm:text-3xl font-black text-white tracking-tight leading-tight select-none">
                   SpellBee
                 </span>
-                <span className="text-2xl sm:text-3xl font-black text-amber-400 tracking-tight leading-none mt-1.5">
+                <span className="text-2xl sm:text-3xl font-black text-amber-400 tracking-tight leading-tight mt-0.5 select-none">
                   Universe
                 </span>
-                <span className="text-xs sm:text-sm text-slate-400 italic font-semibold leading-none mt-2">
+                <span className="text-xs sm:text-sm text-slate-300 italic font-medium tracking-wide mt-1 select-none">
                   Where Words Build Worlds
                 </span>
               </div>

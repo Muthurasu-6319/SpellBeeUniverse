@@ -106,23 +106,23 @@ const SchoolsWorkedWith = () => {
           <div>
             <div className="group/pill inline-flex items-center gap-2 mb-1.5 cursor-pointer">
               <span className="w-5 group-hover/pill:w-8 h-1 bg-yellow-400 rounded-full inline-block transition-all duration-300"></span>
-              <span className="text-[#1a237e] font-extrabold tracking-wider text-xs uppercase group-hover/pill:text-yellow-600 transition-colors">
+              <span className="text-slate-950 font-black tracking-wider text-xs uppercase group-hover/pill:text-yellow-600 transition-colors">
                 Our Network
               </span>
             </div>
-            <h2 className="text-xl sm:text-2xl font-extrabold text-[#1a237e] mb-1 tracking-tight">
+            <h2 className="text-xl sm:text-2xl font-black text-slate-950 mb-1 tracking-tight">
               Schools We&apos;ve Worked With
             </h2>
-            <p className="text-[#3949ab] font-medium text-xs sm:text-sm">
+            <p className="text-slate-700 font-medium text-xs sm:text-sm">
               We are proud to partner with respected schools and premier educational institutions across India.
             </p>
           </div>
 
           {/* Exact count badge matching user-provided logos */}
           <div className="flex items-center gap-2 self-start sm:self-auto">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-xs font-bold text-amber-800">
-              <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-              {partnerSchools.length} Partner Schools
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-xs font-black text-slate-950 shadow-xs">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              {partnerSchools.length} Schools Participated
             </span>
           </div>
         </div>

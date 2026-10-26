@@ -32,10 +32,10 @@ const ResourceDownloadsBar = () => {
               <Download className="w-6 h-6" />
             </div>
             <div>
-              <h3 className="text-xl sm:text-2xl font-black text-[#1a237e] tracking-tight">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">
                 Downloads
               </h3>
-              <p className="text-slate-900 font-semibold text-xs sm:text-sm">
+              <p className="text-slate-950 font-bold text-xs sm:text-sm">
                 Get ready with our printable resources and guides.
               </p>
             </div>
@@ -47,7 +47,7 @@ const ResourceDownloadsBar = () => {
               <a
                 key={idx}
                 href="#download-file"
-                className="bg-white/80 hover:bg-white border border-amber-300 rounded-xl px-3 py-2 flex items-center gap-2 text-xs font-bold text-slate-800 shadow-xs hover:shadow-sm transition-all transform hover:-translate-y-0.5"
+                className="bg-white/90 hover:bg-white border border-amber-300 rounded-xl px-3 py-2 flex items-center gap-2 text-xs font-black text-slate-950 shadow-xs hover:shadow-sm transition-all transform hover:-translate-y-0.5"
               >
                 {item.icon}
                 <span>{item.title}</span>

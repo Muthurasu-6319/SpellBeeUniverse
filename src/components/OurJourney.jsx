@@ -1,32 +1,31 @@
 import React from 'react';
-import { Lightbulb, MapPin, Award, Users, Trophy, Globe, Zap, Star, Rocket, ArrowRight } from 'lucide-react';
+import { Lightbulb, Award, Trophy, Globe, Zap, Rocket, ArrowRight } from 'lucide-react';
 
 const OurJourney = () => {
   const milestones = [
-    { year: '2016', title: 'Founded', icon: Lightbulb },
-    { year: '2017', title: 'Regional Events', icon: MapPin },
-    { year: '2018', title: 'State Finals', icon: Award },
-    { year: '2021', title: 'National Growth', icon: Users },
-    { year: '2022', title: 'Grand Finale', icon: Trophy },
-    { year: '2023', title: 'Pan-India', icon: Globe },
-    { year: '2024', title: 'Digital Era', icon: Zap },
-    { year: '2025', title: 'Championship', icon: Star },
-    { year: '2026', title: 'Future', icon: Rocket },
+    { year: '2017', title: 'Season 1', icon: Lightbulb },
+    { year: '2018', title: 'Season 2', icon: Award },
+    { year: '2022', title: 'Season 3', icon: Trophy },
+    { year: '2023', title: 'Season 4', icon: Globe },
+    { year: '2024', title: 'Season 5', icon: Zap },
+    { year: '2026', title: 'Season 6', icon: Rocket },
   ];
 
   return (
-    <section className="pt-4 sm:pt-6 pb-6 sm:pb-8 bg-white relative">
+    <section className="pt-6 sm:pt-8 pb-8 sm:pb-10 bg-white relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="mb-5 sm:mb-6 text-center sm:text-left">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1a237e] mb-1.5 tracking-tight">Our Journey</h2>
-          <p className="text-[#3949ab] font-medium text-sm sm:text-base max-w-lg mx-auto sm:mx-0">From an idea to a movement — here&apos;s how SpellBee Universe grew.</p>
+        <div className="mb-6 sm:mb-8 text-center sm:text-left">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#1a237e] mb-1.5 tracking-tight">Our Journey</h2>
+          <p className="text-slate-800 font-medium text-sm sm:text-base max-w-lg mx-auto sm:mx-0">
+            From an idea to a movement — here&apos;s how SpellBee Universe grew.
+          </p>
         </div>
 
-        <div className="relative overflow-x-auto pb-4 pt-1 -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-none">
+        <div className="relative overflow-x-auto pb-4 pt-2 -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-none">
           {/* Main flex container */}
-          <div className="flex flex-row items-start relative z-10 min-w-[760px] lg:min-w-0 lg:w-full justify-between">
+          <div className="flex flex-row items-start relative z-10 min-w-[620px] md:min-w-0 md:w-full justify-between">
             {milestones.map((milestone, index) => (
-              <div key={index} className="flex flex-col items-center relative flex-1 min-w-[80px] lg:min-w-0 group cursor-pointer hover:-translate-y-1.5 transition-transform duration-300 px-1">
+              <div key={index} className="flex flex-col items-center relative flex-1 min-w-[90px] md:min-w-0 group cursor-pointer hover:-translate-y-1.5 transition-transform duration-300 px-2">
                 
                 {/* Connector Arrow */}
                 {index < milestones.length - 1 && (
@@ -43,8 +42,8 @@ const OurJourney = () => {
                 
                 {/* Text Content */}
                 <div className="text-center mt-3">
-                  <h3 className="text-sm sm:text-base lg:text-sm xl:text-base font-bold text-[#1a237e] group-hover:text-amber-600 transition-colors mb-0.5">{milestone.year}</h3>
-                  <p className="text-[#3949ab] font-bold text-[10px] sm:text-[11px] xl:text-xs leading-tight">{milestone.title}</p>
+                  <h3 className="text-base sm:text-lg font-extrabold text-slate-950 group-hover:text-amber-600 transition-colors mb-0.5 tracking-tight">{milestone.year}</h3>
+                  <p className="text-slate-900 font-bold text-xs sm:text-sm leading-tight">{milestone.title}</p>
                 </div>
               </div>
             ))}

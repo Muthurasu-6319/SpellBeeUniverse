@@ -19,9 +19,7 @@ import {
   Phone, 
   Mail, 
   Sparkles, 
-  CheckCircle2, 
-  HelpCircle,
-  ExternalLink
+  CheckCircle2
 } from "lucide-react";
 
 export default function RulesAndGuidelinesPage() {
@@ -32,10 +30,9 @@ export default function RulesAndGuidelinesPage() {
       id: 1,
       number: "01",
       category: "PREPARATION",
-      categoryColor: "bg-amber-100 text-amber-800 border-amber-200",
+      categoryColor: "bg-amber-100 text-amber-900 border-amber-300",
       iconBg: "bg-amber-500 text-white shadow-amber-300/50",
-      cardBg: "bg-gradient-to-br from-[#fffdf5] via-white to-[#fff9e6]",
-      cardBorder: "border-amber-200/80 hover:border-amber-400",
+      cardBorder: "border-slate-200/90 hover:border-amber-400",
       icon: BookOpen,
       title: "Pre-Competition Study & Practice Sessions",
       statement: "You can attend pre-competition events, such as study sessions or practice rounds, to help you prepare for the competition.",
@@ -46,10 +43,9 @@ export default function RulesAndGuidelinesPage() {
       id: 2,
       number: "02",
       category: "SCHEDULE & ARRIVAL",
-      categoryColor: "bg-blue-100 text-blue-800 border-blue-200",
+      categoryColor: "bg-blue-100 text-blue-900 border-blue-300",
       iconBg: "bg-blue-600 text-white shadow-blue-300/50",
-      cardBg: "bg-gradient-to-br from-[#f8fbff] via-white to-[#edf5ff]",
-      cardBorder: "border-blue-200/80 hover:border-blue-400",
+      cardBorder: "border-slate-200/90 hover:border-blue-400",
       icon: Clock,
       title: "Reporting Time (1 Hour Before)",
       statement: "On the day of the competition, arrive at the designated location at least 1 hour before the start time to check in and receive any necessary instructions or materials.",
@@ -60,10 +56,9 @@ export default function RulesAndGuidelinesPage() {
       id: 3,
       number: "03",
       category: "FEE POLICY",
-      categoryColor: "bg-rose-100 text-rose-800 border-rose-200",
+      categoryColor: "bg-rose-100 text-rose-900 border-rose-300",
       iconBg: "bg-rose-500 text-white shadow-rose-300/50",
-      cardBg: "bg-gradient-to-br from-[#fff9f9] via-white to-[#fff0f0]",
-      cardBorder: "border-rose-200/80 hover:border-rose-400",
+      cardBorder: "border-slate-200/90 hover:border-rose-400",
       icon: ShieldAlert,
       title: "Non-Refundable Registration Fee",
       statement: "The SpellBee Universe registration fee is non-refundable.",
@@ -74,10 +69,9 @@ export default function RulesAndGuidelinesPage() {
       id: 4,
       number: "04",
       category: "TRANSPARENCY",
-      categoryColor: "bg-purple-100 text-purple-800 border-purple-200",
+      categoryColor: "bg-purple-100 text-purple-900 border-purple-300",
       iconBg: "bg-purple-600 text-white shadow-purple-300/50",
-      cardBg: "bg-gradient-to-br from-[#faf8ff] via-white to-[#f3edff]",
-      cardBorder: "border-purple-200/80 hover:border-purple-400",
+      cardBorder: "border-slate-200/90 hover:border-purple-400",
       icon: FileText,
       title: "Review Terms Prior to Payment",
       statement: "It is important to review the terms and conditions of the registration process and understand the refund policy before completing the payment.",
@@ -88,10 +82,9 @@ export default function RulesAndGuidelinesPage() {
       id: 5,
       number: "05",
       category: "JURY DECISIONS",
-      categoryColor: "bg-indigo-100 text-indigo-800 border-indigo-200",
+      categoryColor: "bg-indigo-100 text-indigo-900 border-indigo-300",
       iconBg: "bg-indigo-600 text-white shadow-indigo-300/50",
-      cardBg: "bg-gradient-to-br from-[#f8f9ff] via-white to-[#edf0ff]",
-      cardBorder: "border-indigo-200/80 hover:border-indigo-400",
+      cardBorder: "border-slate-200/90 hover:border-indigo-400",
       icon: Scale,
       title: "Collective Judicial Authority",
       statement: "Competition decisions will be made by the spell master, judges, and finally by the show producer collectively.",
@@ -102,10 +95,9 @@ export default function RulesAndGuidelinesPage() {
       id: 6,
       number: "06",
       category: "EVENT SCHEDULE",
-      categoryColor: "bg-amber-100 text-amber-900 border-amber-300",
+      categoryColor: "bg-amber-100 text-amber-950 border-amber-300",
       iconBg: "bg-amber-600 text-white shadow-amber-300/50",
-      cardBg: "bg-gradient-to-br from-[#fffdf5] via-white to-[#fff8e7]",
-      cardBorder: "border-amber-200/80 hover:border-amber-400",
+      cardBorder: "border-slate-200/90 hover:border-amber-400",
       icon: Users,
       title: "Parental Cooperation & Flexible Timing",
       statement: "Parents must cooperate with the schedule for the oral round and grand finale events. We try our best to get things done within the deadline, but events may sometimes take more time.",
@@ -116,13 +108,12 @@ export default function RulesAndGuidelinesPage() {
       id: 7,
       number: "07",
       category: "EQUAL TREATMENT",
-      categoryColor: "bg-emerald-100 text-emerald-800 border-emerald-200",
+      categoryColor: "bg-emerald-100 text-emerald-900 border-emerald-300",
       iconBg: "bg-emerald-600 text-white shadow-emerald-300/50",
-      cardBg: "bg-gradient-to-br from-[#f6fcf8] via-white to-[#edfbf1]",
-      cardBorder: "border-emerald-200/80 hover:border-emerald-400",
+      cardBorder: "border-slate-200/90 hover:border-emerald-400",
       icon: HeartHandshake,
       title: "Equality & Inclusivity for Every Student",
-      statement: "We treat all the students equally.",
+      statement: "We treat all the students equally with complete fairness and respect.",
       note: "Every child receives identical encouragement, equal stage opportunity, objective judging, and our heartfelt celebration of their courage.",
       group: "conduct"
     },
@@ -130,10 +121,9 @@ export default function RulesAndGuidelinesPage() {
       id: 8,
       number: "08",
       category: "LEGAL & COPYRIGHT",
-      categoryColor: "bg-slate-100 text-slate-800 border-slate-300",
+      categoryColor: "bg-slate-200 text-slate-900 border-slate-300",
       iconBg: "bg-slate-800 text-white shadow-slate-400/50",
-      cardBg: "bg-gradient-to-br from-[#f8fafc] via-white to-[#f1f5f9]",
-      cardBorder: "border-slate-200/80 hover:border-slate-400",
+      cardBorder: "border-slate-200/90 hover:border-slate-400",
       icon: Lock,
       title: "Copyrighted Show Formats & Intellectual Property",
       statement: "All content and show formats are copyrighted and registered. If anyone misuses them, we reserve the right to take legal action.",
@@ -144,10 +134,9 @@ export default function RulesAndGuidelinesPage() {
       id: 9,
       number: "09",
       category: "MEDIA BROADCAST",
-      categoryColor: "bg-red-100 text-red-800 border-red-200",
+      categoryColor: "bg-red-100 text-red-900 border-red-300",
       iconBg: "bg-red-600 text-white shadow-red-300/50",
-      cardBg: "bg-gradient-to-br from-[#fff8f8] via-white to-[#ffeded]",
-      cardBorder: "border-red-200/80 hover:border-red-400",
+      cardBorder: "border-slate-200/90 hover:border-red-400",
       icon: Video,
       title: "Public Video Broadcast on YouTube & Website",
       statement: "All the competition videos will be available on YouTube and our website.",
@@ -172,12 +161,12 @@ export default function RulesAndGuidelinesPage() {
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
           {/* Breadcrumb */}
-          <div className="flex items-center gap-1.5 text-xs sm:text-sm text-[#3949ab] font-medium mb-6">
-            <Link href="/" className="hover:text-amber-600 transition-colors">Home</Link>
+          <div className="flex items-center gap-1.5 text-xs sm:text-sm text-slate-800 font-medium mb-6">
+            <Link href="/" className="hover:text-amber-600 transition-colors text-slate-900 font-semibold">Home</Link>
             <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
-            <Link href="/competition" className="hover:text-amber-600 transition-colors">Competition</Link>
+            <Link href="/competition" className="hover:text-amber-600 transition-colors text-slate-900 font-semibold">Competition</Link>
             <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
-            <span className="text-slate-600 font-bold">Rules & Guidelines</span>
+            <span className="text-slate-950 font-bold">Rules & Guidelines</span>
           </div>
 
           <div className="text-center max-w-3xl mx-auto">
@@ -187,27 +176,27 @@ export default function RulesAndGuidelinesPage() {
               <span>OFFICIAL RULES & REGULATIONS</span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-black text-[#1a237e] tracking-tight leading-[1.16] mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-black text-slate-950 tracking-tight leading-[1.16] mb-4">
               Competition Rules & Guidelines
             </h1>
 
-            <p className="text-slate-700 text-sm sm:text-base md:text-lg font-medium leading-relaxed max-w-2xl mx-auto mb-8">
+            <p className="text-slate-900 text-sm sm:text-base md:text-lg font-medium leading-relaxed max-w-2xl mx-auto mb-8">
               Transparent, fair, and supportive guidelines designed to ensure every young learner experiences healthy competition, builds confidence, and shines on stage.
             </p>
 
             {/* Quick Highlight Pills */}
-            <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs sm:text-sm font-bold text-slate-800">
-              <span className="bg-white/90 border border-amber-200 px-3.5 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-500" /> 9 Official Rules
+            <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 text-xs sm:text-sm font-bold text-slate-950">
+              <span className="bg-white border border-slate-200/90 px-3.5 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5 text-slate-950">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600" /> 9 Official Rules
               </span>
-              <span className="bg-white/90 border border-amber-200 px-3.5 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5">
-                <Scale className="w-4 h-4 text-blue-500" /> 100% Fair Play
+              <span className="bg-white border border-slate-200/90 px-3.5 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5 text-slate-950">
+                <Scale className="w-4 h-4 text-blue-600" /> 100% Fair Play
               </span>
-              <span className="bg-white/90 border border-amber-200 px-3.5 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5">
-                <HeartHandshake className="w-4 h-4 text-pink-500" /> Equal Opportunity
+              <span className="bg-white border border-slate-200/90 px-3.5 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5 text-slate-950">
+                <HeartHandshake className="w-4 h-4 text-pink-600" /> Equal Opportunity
               </span>
-              <span className="bg-white/90 border border-amber-200 px-3.5 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5">
-                <Video className="w-4 h-4 text-red-500" /> Public Broadcast
+              <span className="bg-white border border-slate-200/90 px-3.5 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5 text-slate-950">
+                <Video className="w-4 h-4 text-red-600" /> Public Broadcast
               </span>
             </div>
           </div>
@@ -233,7 +222,7 @@ export default function RulesAndGuidelinesPage() {
                 className={`px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-bold transition-all cursor-pointer ${
                   activeTab === tab.id
                     ? "bg-[#1a237e] text-white shadow-md shadow-blue-900/20 scale-105"
-                    : "bg-white text-slate-600 hover:text-slate-900 border border-slate-200 hover:border-amber-300 hover:bg-amber-50/50"
+                    : "bg-white text-slate-950 hover:text-black border border-slate-300 hover:border-amber-400 hover:bg-amber-50/50 shadow-2xs"
                 }`}
               >
                 {tab.label}
@@ -248,44 +237,44 @@ export default function RulesAndGuidelinesPage() {
               return (
                 <div
                   key={rule.id}
-                  className={`${rule.cardBg} ${rule.cardBorder} rounded-3xl p-6 sm:p-7 border shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group cursor-pointer relative overflow-hidden`}
+                  className={`bg-white ${rule.cardBorder} rounded-3xl p-6 sm:p-7 border shadow-xs hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group cursor-pointer relative overflow-hidden h-full`}
                 >
                   {/* Subtle card background corner decoration */}
-                  <div className="absolute top-0 right-0 w-24 h-24 bg-white/40 rounded-bl-[4rem] -z-0 pointer-events-none group-hover:scale-110 transition-transform"></div>
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-slate-50/80 rounded-bl-[4rem] -z-0 pointer-events-none group-hover:scale-110 transition-transform"></div>
 
-                  <div>
+                  <div className="relative z-10">
                     {/* Top Row: Number Badge & Category Pill */}
-                    <div className="flex items-center justify-between gap-3 mb-5 relative z-10">
-                      <div className="flex items-center gap-3">
-                        <div className={`w-11 h-11 rounded-2xl flex items-center justify-center font-black text-sm shadow-md shrink-0 transition-transform duration-300 group-hover:scale-115 group-hover:rotate-6 ${rule.iconBg}`}>
+                    <div className="flex items-center justify-between gap-3 mb-4">
+                      <div className="flex items-center gap-2.5">
+                        <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-bold text-sm shadow-xs shrink-0 transition-transform duration-300 group-hover:scale-110 ${rule.iconBg}`}>
                           <IconComponent className="w-5 h-5" />
                         </div>
-                        <span className={`px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider border shadow-2xs ${rule.categoryColor}`}>
+                        <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider border shadow-2xs ${rule.categoryColor}`}>
                           {rule.category}
                         </span>
                       </div>
-                      <div className="text-2xl font-black text-slate-300 group-hover:text-amber-500 transition-colors">
+                      <div className="font-brand text-2xl font-black text-slate-300 group-hover:text-amber-500 transition-colors">
                         #{rule.number}
                       </div>
                     </div>
 
-                    {/* Rule Title */}
-                    <h3 className="text-lg sm:text-xl font-bold text-[#1a237e] group-hover:text-amber-600 transition-colors mb-3 leading-snug">
+                    {/* Rule Title with guaranteed consistent height for cross-column alignment */}
+                    <h3 className="text-lg sm:text-xl font-bold text-slate-950 group-hover:text-amber-600 transition-colors mb-3 leading-snug min-h-[52px] sm:min-h-[56px] flex items-start text-left">
                       {rule.title}
                     </h3>
 
-                    {/* Official Statement */}
-                    <div className="p-3.5 rounded-2xl bg-white/80 border border-slate-100 shadow-2xs mb-4">
-                      <p className="text-slate-800 font-bold text-sm sm:text-[15px] leading-relaxed">
+                    {/* Official Statement in High-Contrast Dark Black */}
+                    <div className="p-4 rounded-2xl bg-amber-50/50 border border-amber-200/80 shadow-2xs mb-4 min-h-[105px] flex items-center">
+                      <p className="text-slate-950 font-extrabold text-sm sm:text-[15px] leading-relaxed text-left">
                         &ldquo;{rule.statement}&rdquo;
                       </p>
                     </div>
                   </div>
 
-                  {/* Context Note / Helpful Tip */}
-                  <div className="pt-3 border-t border-slate-200/60 flex items-start gap-2 text-xs text-slate-600 leading-relaxed font-medium">
+                  {/* Context Note / Helpful Tip in Dark Black */}
+                  <div className="pt-3.5 border-t border-slate-100 flex items-start gap-2.5 mt-auto relative z-10">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                    <span>{rule.note}</span>
+                    <span className="text-slate-900 font-medium text-xs sm:text-[13px] leading-relaxed text-left">{rule.note}</span>
                   </div>
                 </div>
               );
@@ -320,18 +309,18 @@ export default function RulesAndGuidelinesPage() {
                   Have Questions About the Rules?
                 </h2>
 
-                <p className="text-blue-100/90 text-sm sm:text-base font-normal leading-relaxed mb-6">
+                <p className="text-blue-50 text-sm sm:text-base font-normal leading-relaxed mb-6">
                   Our dedicated event coordinators are always available to help parents, students, and school teachers with any questions regarding schedule, eligibility, or participation.
                 </p>
 
                 {/* Direct Contact Pills */}
-                <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs font-semibold text-blue-200">
+                <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs sm:text-sm font-bold text-white">
                   <a href="https://wa.me/919611209606" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-yellow-400 transition-colors">
-                    <Phone className="w-3.5 h-3.5 text-yellow-400" /> +91 96112 09606
+                    <Phone className="w-4 h-4 text-yellow-400" /> +91 96112 09606
                   </a>
-                  <span className="hidden sm:inline">•</span>
+                  <span className="hidden sm:inline text-blue-300">•</span>
                   <a href="mailto:info@spellbeeuniverse.com" className="flex items-center gap-1.5 hover:text-yellow-400 transition-colors">
-                    <Mail className="w-3.5 h-3.5 text-yellow-400" /> info@spellbeeuniverse.com
+                    <Mail className="w-4 h-4 text-yellow-400" /> info@spellbeeuniverse.com
                   </a>
                 </div>
               </div>

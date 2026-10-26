@@ -34,7 +34,7 @@ const SchoolsHero = () => {
               Bring SpellBee Universe to Your School
             </h1>
             
-            <p className="text-[#3949ab] text-sm sm:text-base lg:text-lg font-medium mb-6 max-w-xl leading-relaxed">
+            <p className="text-slate-800 text-sm sm:text-base lg:text-lg font-medium mb-6 max-w-xl leading-relaxed">
               Give your students an engaging opportunity to strengthen language skills, experience competition and celebrate achievement.
             </p>
             
@@ -49,12 +49,12 @@ const SchoolsHero = () => {
                 </span>
                 <span className="absolute inset-0 bg-white/30 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></span>
               </a>
-              <a
-                href="#school-coordinators"
+              <Link
+                href="/register"
                 className="px-6 py-3 rounded-full bg-white hover:bg-amber-50 text-[#1a237e] hover:text-amber-700 border border-slate-300 hover:border-amber-300 font-bold text-sm sm:text-base shadow-xs hover:shadow-md transition-all duration-300 transform hover:-translate-y-0.5 active:scale-95 cursor-pointer inline-flex items-center justify-center w-full sm:w-auto text-center"
               >
-                Talk to Our School Team
-              </a>
+                Students Registration
+              </Link>
             </div>
 
             {/* Micro stats banner */}
@@ -79,23 +79,26 @@ const SchoolsHero = () => {
             {/* Outer pulsating golden glow ring */}
             <div className="absolute w-[290px] h-[290px] sm:w-[350px] sm:h-[350px] md:w-[380px] md:h-[380px] rounded-full bg-gradient-to-tr from-yellow-400 via-amber-300 to-yellow-100 shadow-2xl opacity-80 z-0 animate-glow-pulse"></div>
             
-            {/* Circular Frame Containing The Winner Photo */}
-            <div className="group/heroCard relative z-10 w-[270px] h-[270px] sm:w-[330px] sm:h-[330px] md:w-[360px] md:h-[360px] rounded-full p-2 bg-white/95 shadow-2xl backdrop-blur-sm border-4 sm:border-[6px] border-white overflow-hidden flex items-center justify-center hover:scale-[1.03] transition-all duration-500 cursor-pointer">
-              <img 
-                src="/images/school-hero-winner.jpg" 
-                alt="SpellBee Universe School Champion" 
-                className="w-full h-full object-cover object-[center_12%] rounded-full group-hover/heroCard:scale-108 transition-transform duration-700 ease-out"
-              />
-              
-              {/* Subtle hover shine sheen on image */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover/heroCard:opacity-100 transition-opacity duration-300 rounded-full pointer-events-none"></div>
+            {/* Wrapper for circular photo and bottom badge */}
+            <div className="group/heroCard relative z-10 flex flex-col items-center">
+              {/* Circular Frame Containing The Winner Photo */}
+              <div className="w-[270px] h-[270px] sm:w-[330px] sm:h-[330px] md:w-[360px] md:h-[360px] rounded-full p-2 bg-white/95 shadow-2xl backdrop-blur-sm border-4 sm:border-[6px] border-white overflow-hidden flex items-center justify-center hover:scale-[1.03] transition-all duration-500 cursor-pointer">
+                <img 
+                  src="/images/school-hero-winner.jpg" 
+                  alt="SpellBee Universe School Champion" 
+                  className="w-full h-full object-cover object-[center_12%] rounded-full group-hover/heroCard:scale-108 transition-transform duration-700 ease-out"
+                />
+                
+                {/* Subtle hover shine sheen on image */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover/heroCard:opacity-100 transition-opacity duration-300 rounded-full pointer-events-none"></div>
+              </div>
 
-              {/* Overlay Badge at Bottom of Circle */}
-              <div className="absolute bottom-2.5 sm:bottom-3 inset-x-6 sm:inset-x-10 bg-amber-400/95 backdrop-blur-md rounded-full py-1.5 sm:py-2 px-3 shadow-lg border border-yellow-200 text-center group-hover/heroCard:scale-105 group-hover/heroCard:bg-yellow-400 transition-all duration-300">
-                <div className="font-extrabold text-[#1a237e] text-[10px] sm:text-xs tracking-wider uppercase flex items-center justify-center gap-1.5">
-                  <Sparkles className="w-3.5 h-3.5 text-slate-900 fill-slate-900 inline" /> SpellBee UNIVERSE
+              {/* Overlay Badge at Bottom of Circle - OUTSIDE overflow-hidden to prevent letter cutting */}
+              <div className="absolute -bottom-2.5 sm:-bottom-3.5 z-20 bg-amber-400/98 backdrop-blur-md rounded-2xl py-2 px-4 sm:px-6 shadow-xl border-2 border-yellow-200 text-center group-hover/heroCard:scale-105 group-hover/heroCard:bg-yellow-400 transition-all duration-300 select-none">
+                <div className="font-black text-slate-950 text-[11px] sm:text-xs tracking-wider uppercase flex items-center justify-center gap-1.5 whitespace-nowrap">
+                  <Sparkles className="w-3.5 h-3.5 text-slate-950 fill-slate-950 inline" /> SpellBee UNIVERSE
                 </div>
-                <div className="text-[9px] sm:text-[10px] text-slate-950 font-bold truncate">
+                <div className="text-[10px] sm:text-[11px] text-slate-950 font-bold whitespace-nowrap">
                   School Champions & Grand Finale
                 </div>
               </div>

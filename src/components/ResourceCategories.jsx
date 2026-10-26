@@ -109,14 +109,14 @@ const ResourceCategories = () => {
         <div className="mb-6">
           <div className="flex items-center gap-3 mb-2">
             <span className="w-6 h-1 bg-yellow-400 rounded-full inline-block"></span>
-            <span className="text-[#1a237e] font-extrabold tracking-wider text-xs sm:text-sm uppercase">
+            <span className="text-slate-950 font-black tracking-wider text-xs sm:text-sm uppercase">
               Resource Directory
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#1a237e] mb-3 tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-black text-slate-950 mb-3 tracking-tight">
             Explore Our Resource Categories
           </h2>
-          <p className="text-[#3949ab] font-medium text-base md:text-lg max-w-2xl">
+          <p className="text-slate-700 font-medium text-base md:text-lg max-w-2xl">
             Find exactly what you need to build stronger spelling, vocabulary and communication skills.
           </p>
         </div>
@@ -138,11 +138,11 @@ const ResourceCategories = () => {
                   </div>
                 </div>
 
-                <h3 className="text-sm sm:text-lg font-extrabold text-[#1a237e] mb-1 sm:mb-2 leading-tight">
+                <h3 className="text-sm sm:text-lg font-black text-slate-950 mb-1 sm:mb-2 leading-tight">
                   {cat.title}
                 </h3>
                 
-                <p className="text-slate-600 text-[11px] sm:text-sm leading-relaxed font-medium mb-3 sm:mb-6">
+                <p className="text-slate-700 text-[11px] sm:text-sm leading-relaxed font-medium mb-3 sm:mb-6">
                   {cat.desc}
                 </p>
               </div>

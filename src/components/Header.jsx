@@ -40,11 +40,11 @@ export default function Header() {
             className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain group-hover:scale-105 transition-transform" 
             priority 
           />
-          <div className="flex flex-col justify-center">
-            <span className="text-lg sm:text-xl md:text-2xl font-black text-[#1a237e] tracking-tight leading-none">
+          <div className="flex flex-col justify-center font-brand">
+            <span className="text-lg sm:text-xl md:text-2xl font-black text-slate-950 tracking-tight leading-tight select-none">
               SpellBee
             </span>
-            <span className="text-lg sm:text-xl md:text-2xl font-black text-amber-500 tracking-tight leading-none mt-1">
+            <span className="text-lg sm:text-xl md:text-2xl font-black text-amber-500 tracking-tight leading-tight mt-0.5 select-none">
               Universe
             </span>
           </div>

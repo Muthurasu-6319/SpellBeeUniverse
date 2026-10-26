@@ -63,11 +63,11 @@ export default function StudentLoginPage() {
               className="w-10 h-10 sm:w-11 sm:h-11 object-contain filter drop-shadow-xs" 
               priority 
             />
-            <div className="flex flex-col">
-              <span className="text-base sm:text-lg font-black text-[#1a237e] tracking-tight leading-none">
+            <div className="flex flex-col font-brand">
+              <span className="text-base sm:text-lg font-black text-slate-950 tracking-tight leading-tight select-none">
                 SpellBee
               </span>
-              <span className="text-base sm:text-lg font-black text-amber-500 tracking-tight leading-none mt-0.5">
+              <span className="text-base sm:text-lg font-black text-amber-500 tracking-tight leading-tight mt-0.5 select-none">
                 Universe
               </span>
             </div>

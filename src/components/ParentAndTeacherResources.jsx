@@ -28,10 +28,10 @@ const ParentAndTeacherResources = () => {
                   <Users className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-extrabold text-[#1a237e]">
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-950">
                     Parent Resources
                   </h3>
-                  <p className="text-pink-900/80 text-xs sm:text-sm font-medium">
+                  <p className="text-slate-700 text-xs sm:text-sm font-medium">
                     Helpful guides and tips to support your child&apos;s learning journey.
                   </p>
                 </div>
@@ -42,7 +42,7 @@ const ParentAndTeacherResources = () => {
                 {parentGuides.map((guide, idx) => (
                   <div key={idx} className="flex items-center gap-3 bg-white/70 p-3 rounded-xl border border-pink-100">
                     <CheckCircle2 className="w-5 h-5 text-pink-500 shrink-0" />
-                    <span className="text-xs sm:text-sm font-bold text-slate-800">
+                    <span className="text-xs sm:text-sm font-black text-slate-950">
                       {guide}
                     </span>
                   </div>
@@ -54,7 +54,7 @@ const ParentAndTeacherResources = () => {
             <div className="pt-4 border-t border-pink-200/50 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4">
               <a 
                 href="#all-parent-guides"
-                className="w-full sm:w-auto px-6 py-2.5 rounded-full bg-[#fbc02d] hover:bg-yellow-500 text-slate-900 font-extrabold text-xs sm:text-sm shadow-md transition-all inline-flex items-center justify-center gap-2 group text-center cursor-pointer"
+                className="w-full sm:w-auto px-6 py-2.5 rounded-full bg-[#fbc02d] hover:bg-yellow-500 text-slate-900 font-black text-xs sm:text-sm shadow-md transition-all inline-flex items-center justify-center gap-2 group text-center cursor-pointer"
               >
                 <span>Explore Parent Resources</span>
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
@@ -75,10 +75,10 @@ const ParentAndTeacherResources = () => {
                   <GraduationCap className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-extrabold text-[#1a237e]">
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-950">
                     Teacher Resources
                   </h3>
-                  <p className="text-blue-900/80 text-xs sm:text-sm font-medium">
+                  <p className="text-slate-700 text-xs sm:text-sm font-medium">
                     Engaging classroom activities and teaching tools for educators.
                   </p>
                 </div>
@@ -89,7 +89,7 @@ const ParentAndTeacherResources = () => {
                 {teacherGuides.map((guide, idx) => (
                   <div key={idx} className="flex items-center gap-3 bg-white/70 p-3 rounded-xl border border-blue-100">
                     <CheckCircle2 className="w-5 h-5 text-blue-600 shrink-0" />
-                    <span className="text-xs sm:text-sm font-bold text-slate-800">
+                    <span className="text-xs sm:text-sm font-black text-slate-950">
                       {guide}
                     </span>
                   </div>

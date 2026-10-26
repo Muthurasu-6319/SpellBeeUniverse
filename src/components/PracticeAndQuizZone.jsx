@@ -66,10 +66,10 @@ const PracticeAndQuizZone = () => {
                   <Target className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-extrabold text-[#1a237e]">
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-950">
                     Practice Zone
                   </h3>
-                  <p className="text-slate-500 text-xs sm:text-sm font-medium">
+                  <p className="text-slate-600 text-xs sm:text-sm font-medium">
                     Take a break, try a new word and keep learning every day.
                   </p>
                 </div>
@@ -82,7 +82,7 @@ const PracticeAndQuizZone = () => {
                 </span>
                 
                 <div className="flex items-baseline gap-3 flex-wrap">
-                  <h4 className="text-2xl sm:text-3xl font-black text-[#1a237e]">
+                  <h4 className="text-2xl sm:text-3xl font-black text-slate-950">
                     {currentWord.word}
                   </h4>
                   <span className="text-xs sm:text-sm text-slate-600 font-semibold italic">
@@ -95,7 +95,7 @@ const PracticeAndQuizZone = () => {
                         window.speechSynthesis.speak(utterance);
                       }
                     }}
-                    className="p-1.5 rounded-full bg-white hover:bg-amber-200 text-[#1a237e] transition-colors shadow-xs"
+                    className="p-1.5 rounded-full bg-white hover:bg-amber-200 text-slate-900 transition-colors shadow-xs"
                     title="Listen to pronunciation"
                     aria-label="Listen"
                   >
@@ -107,15 +107,15 @@ const PracticeAndQuizZone = () => {
               {/* Meaning & Example */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm">
                 <div className="bg-white/80 p-3.5 rounded-xl border border-amber-200/50">
-                  <span className="font-extrabold text-[#1a237e] block mb-1">Meaning</span>
-                  <p className="text-slate-600 font-medium leading-relaxed">
+                  <span className="font-black text-slate-950 block mb-1">Meaning</span>
+                  <p className="text-slate-700 font-medium leading-relaxed">
                     {currentWord.meaning}
                   </p>
                 </div>
 
                 <div className="bg-white/80 p-3.5 rounded-xl border border-amber-200/50">
-                  <span className="font-extrabold text-[#1a237e] block mb-1">Example</span>
-                  <p className="text-slate-600 font-medium italic leading-relaxed">
+                  <span className="font-black text-slate-950 block mb-1">Example</span>
+                  <p className="text-slate-700 font-medium italic leading-relaxed">
                     &ldquo;{currentWord.example}&rdquo;
                   </p>
                 </div>
@@ -126,7 +126,7 @@ const PracticeAndQuizZone = () => {
             <div className="mt-6 pt-4 border-t border-amber-200/50 flex flex-col sm:flex-row items-center justify-between gap-3">
               <button 
                 onClick={handleNextWord}
-                className="w-full sm:w-auto px-6 py-2.5 rounded-full bg-[#fbc02d] hover:bg-yellow-500 text-slate-900 font-extrabold text-xs sm:text-sm shadow-md transition-all inline-flex items-center justify-center gap-2 cursor-pointer active:scale-95"
+                className="w-full sm:w-auto px-6 py-2.5 rounded-full bg-[#fbc02d] hover:bg-yellow-500 text-slate-900 font-black text-xs sm:text-sm shadow-md transition-all inline-flex items-center justify-center gap-2 cursor-pointer active:scale-95"
               >
                 <RefreshCw className="w-3.5 h-3.5" /> Try Another Word
               </button>
@@ -145,10 +145,10 @@ const PracticeAndQuizZone = () => {
                   <HelpCircle className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-extrabold text-[#1a237e]">
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-950">
                     Quiz Zone
                   </h3>
-                  <p className="text-slate-500 text-xs sm:text-sm font-medium">
+                  <p className="text-slate-600 text-xs sm:text-sm font-medium">
                     Challenge yourself with interactive fun quizzes.
                   </p>
                 </div>
@@ -164,7 +164,7 @@ const PracticeAndQuizZone = () => {
                     <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl ${q.bg} flex items-center justify-center mb-2 sm:mb-2.5 group-hover:scale-110 transition-transform`}>
                       {q.icon}
                     </div>
-                    <span className="text-xs font-bold text-slate-800 leading-tight">
+                    <span className="text-xs font-black text-slate-950 leading-tight">
                       {q.title}
                     </span>
                   </button>

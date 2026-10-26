@@ -85,14 +85,14 @@ const FeaturedResources = () => {
           <div>
             <div className="flex items-center gap-3 mb-2">
               <span className="w-6 h-1 bg-yellow-400 rounded-full inline-block"></span>
-              <span className="text-[#1a237e] font-extrabold tracking-wider text-xs uppercase">
+              <span className="text-slate-950 font-black tracking-wider text-xs uppercase">
                 Featured Resources
               </span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#1a237e] tracking-tight mb-2">
+            <h2 className="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight mb-2">
               Featured Resources
             </h2>
-            <p className="text-[#3949ab] font-medium text-sm sm:text-base">
+            <p className="text-slate-700 font-medium text-sm sm:text-base">
               Handpicked resources to help you prepare and perform better.
             </p>
           </div>
@@ -132,10 +132,10 @@ const FeaturedResources = () => {
                   <span className={`inline-block px-2.5 py-0.5 rounded-full text-[11px] font-extrabold ${item.badgeColor} mb-2`}>
                     {item.tag}
                   </span>
-                  <h3 className="text-base font-extrabold text-[#1a237e] leading-snug mb-2">
+                  <h3 className="text-base font-black text-slate-950 leading-snug mb-2 min-h-[44px]">
                     {item.title}
                   </h3>
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-medium">
+                  <p className="text-slate-700 text-xs sm:text-sm leading-relaxed font-medium min-h-[38px]">
                     {item.desc}
                   </p>
                 </div>
@@ -143,7 +143,7 @@ const FeaturedResources = () => {
 
               <a 
                 href="#read-resource"
-                className="inline-flex items-center gap-1.5 font-bold text-xs sm:text-sm text-amber-600 hover:text-amber-700 hover:underline pt-2"
+                className="inline-flex items-center gap-1.5 font-bold text-xs sm:text-sm text-amber-600 hover:text-amber-700 hover:underline pt-2 border-t border-slate-100 mt-2"
               >
                 Read More <ArrowRight className="w-3.5 h-3.5" />
               </a>

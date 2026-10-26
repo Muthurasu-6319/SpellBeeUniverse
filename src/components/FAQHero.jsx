@@ -100,17 +100,20 @@ const FAQHero = ({ searchQuery = '', onSearch, onSelectCategory }) => {
             {/* The circular golden background glow */}
             <div className="absolute w-[200px] h-[200px] sm:w-[230px] sm:h-[230px] md:w-[260px] md:h-[260px] rounded-full bg-gradient-to-tr from-yellow-300 via-amber-200 to-yellow-100 shadow-md opacity-90 z-0 animate-pulse-soft"></div>
             
-            {/* Student visual in circle */}
-            <div className="relative z-10 w-[190px] h-[190px] sm:w-[220px] sm:h-[220px] md:w-[250px] md:h-[250px] rounded-full p-2 bg-white/90 shadow-xl backdrop-blur-xs border-4 border-white overflow-hidden flex items-center justify-center">
-              <img 
-                src="/images/faq-hero-student.png" 
-                alt="SpellBee Student Champion asking and answering questions" 
-                className="w-full h-full object-cover rounded-full"
-              />
-              
-              {/* Compact bottom live support badge */}
-              <div className="absolute bottom-2 inset-x-3 sm:inset-x-6 bg-white/95 backdrop-blur-md rounded-full py-1 px-2.5 shadow-md border border-yellow-200 flex items-center justify-center gap-1.5 text-[9px] sm:text-[10px] font-extrabold text-[#1a237e]">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
+            {/* Wrapper for circular photo and bottom badge */}
+            <div className="relative z-10 flex flex-col items-center">
+              {/* Student visual in circle */}
+              <div className="w-[190px] h-[190px] sm:w-[220px] sm:h-[220px] md:w-[250px] md:h-[250px] rounded-full p-2 bg-white/90 shadow-xl backdrop-blur-xs border-4 border-white overflow-hidden flex items-center justify-center">
+                <img 
+                  src="/images/faq-hero-student.png" 
+                  alt="SpellBee Student Champion asking and answering questions" 
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
+
+              {/* Compact bottom live support badge - OUTSIDE overflow-hidden to prevent letter cutting */}
+              <div className="absolute -bottom-2 sm:-bottom-3 z-20 bg-white/98 backdrop-blur-md rounded-full py-1.5 px-3.5 sm:px-4 shadow-lg border border-yellow-300 flex items-center justify-center gap-1.5 text-[10px] sm:text-[11px] font-black text-slate-950 whitespace-nowrap">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                 <span>Instant Answers & Support</span>
               </div>
             </div>
