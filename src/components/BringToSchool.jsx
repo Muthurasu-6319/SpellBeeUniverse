@@ -63,7 +63,7 @@ const BringToSchool = () => {
           <div className="w-full xl:w-auto flex flex-col items-center xl:items-end justify-center gap-6 mt-6 xl:mt-0 pl-0 xl:pl-4">
             <div className="relative group text-center xl:text-right select-none animate-float-slow">
               <span className="text-red-500 text-xl md:text-2xl font-bold -rotate-6 block tracking-tight group-hover:scale-105 transition-transform" style={{fontFamily: "'Comic Sans MS', cursive, sans-serif"}}>Stronger Schools</span>
-              <span className="text-[#1a237e] text-xl md:text-2xl font-bold -rotate-6 block ml-4 xl:ml-0 tracking-tight group-hover:scale-105 transition-transform" style={{fontFamily: "'Comic Sans MS', cursive, sans-serif"}}>Brighter Futures!</span>
+              <span className="text-[#1a237e] text-xl md:text-2xl font-bold -rotate-6 block tracking-tight group-hover:scale-105 transition-transform" style={{fontFamily: "'Comic Sans MS', cursive, sans-serif"}}>Brighter Futures!</span>
               <Bug className="absolute -right-5 sm:-right-6 md:-right-10 -top-2 w-7 h-7 sm:w-8 sm:h-8 text-amber-800 rotate-45 animate-wiggle hover:rotate-90 transition-transform cursor-pointer" />
             </div>
 

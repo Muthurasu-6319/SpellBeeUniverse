@@ -124,3 +124,213 @@ html {
   animation: shineSweep 3s infinite;
 }
 
+/* ==========================================================================
+   Typography Consistency, Line Alignment & Justification Rules
+   ========================================================================== */
+
+/* Universal text spacing and wrapping normalization */
+*, *::before, *::after {
+  word-spacing: normal;
+  letter-spacing: normal;
+}
+
+/* Base typography defaults for consistent line alignment and natural wrapping */
+p {
+  text-align: left;
+  text-align-last: left;
+  text-indent: 0;
+  margin-top: 0;
+  word-spacing: normal;
+  letter-spacing: normal;
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+  hyphens: manual;
+}
+
+/* Ensure headings, buttons, links, inputs, and labels maintain natural alignment */
+h1, h2, h3, h4, h5, h6,
+button,
+button p,
+a,
+a p,
+nav,
+nav p,
+label,
+input,
+textarea,
+select,
+[role="button"],
+.badge,
+.badge p,
+.pill,
+.pill p,
+.no-justify,
+.no-justify p {
+  text-align: inherit;
+  text-align-last: auto;
+  text-indent: 0;
+  word-spacing: normal;
+  letter-spacing: normal;
+  hyphens: manual;
+}
+
+/* ==========================================================================
+   Suitable Paragraph Justification (Clean Rectangular Alignment)
+   ========================================================================== */
+
+/* Applied to multi-line descriptive text, editorial blocks, and long-form prose */
+.text-justify,
+.paragraph-justify,
+p.paragraph-justify,
+p.text-justify,
+.prose p,
+.editorial-text p,
+.story-text p {
+  text-align: justify !important;
+  text-align-last: left !important;
+  text-justify: inter-word !important;
+  word-spacing: normal;
+  letter-spacing: normal;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+}
+
+/* Prevent awkward word stretching on narrow mobile viewports (< 540px) */
+@media (max-width: 539px) {
+  .text-justify,
+  .paragraph-justify,
+  p.paragraph-justify,
+  .prose p,
+  .editorial-text p,
+  .story-text p {
+    text-align: left;
+    text-align-last: left;
+    hyphens: manual;
+  }
+}
+
+/* ==========================================================================
+   Explicit Alignment Preservations & Overrides
+   ========================================================================== */
+
+/* Left Alignment - Guarantees consistent left boundary with zero indentation */
+.text-left,
+.text-left p,
+p.text-left {
+  text-align: left !important;
+  text-align-last: left !important;
+  text-indent: 0 !important;
+  hyphens: manual !important;
+}
+
+/* Center Alignment - Preserves intentional center-alignment with balanced wrapping */
+.text-center,
+.text-center p,
+p.text-center {
+  text-align: center !important;
+  text-align-last: center !important;
+  text-indent: 0 !important;
+  hyphens: manual !important;
+  text-wrap: balance !important;
+}
+
+/* Right Alignment */
+.text-right,
+.text-right p,
+p.text-right {
+  text-align: right !important;
+  text-align-last: right !important;
+  text-indent: 0 !important;
+  hyphens: manual !important;
+}
+
+/* Responsive alignment classes */
+@media (min-width: 640px) {
+  .sm\:text-left, .sm\:text-left p, p.sm\:text-left {
+    text-align: left !important;
+    text-align-last: left !important;
+    text-indent: 0 !important;
+  }
+  .sm\:text-center, .sm\:text-center p, p.sm\:text-center {
+    text-align: center !important;
+    text-align-last: center !important;
+    text-wrap: balance !important;
+  }
+  .sm\:text-right, .sm\:text-right p, p.sm\:text-right {
+    text-align: right !important;
+    text-align-last: right !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-left, .md\:text-left p, p.md\:text-left {
+    text-align: left !important;
+    text-align-last: left !important;
+    text-indent: 0 !important;
+  }
+  .md\:text-center, .md\:text-center p, p.md\:text-center {
+    text-align: center !important;
+    text-align-last: center !important;
+    text-wrap: balance !important;
+  }
+  .md\:text-right, .md\:text-right p, p.md\:text-right {
+    text-align: right !important;
+    text-align-last: right !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-left, .lg\:text-left p, p.lg\:text-left {
+    text-align: left !important;
+    text-align-last: left !important;
+    text-indent: 0 !important;
+  }
+  .lg\:text-center, .lg\:text-center p, p.lg\:text-center {
+    text-align: center !important;
+    text-align-last: center !important;
+    text-wrap: balance !important;
+  }
+  .lg\:text-right, .lg\:text-right p, p.lg\:text-right {
+    text-align: right !important;
+    text-align-last: right !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:text-left, .xl\:text-left p, p.xl\:text-left {
+    text-align: left !important;
+    text-align-last: left !important;
+    text-indent: 0 !important;
+  }
+  .xl\:text-center, .xl\:text-center p, p.xl\:text-center {
+    text-align: center !important;
+    text-align-last: center !important;
+    text-wrap: balance !important;
+  }
+  .xl\:text-right, .xl\:text-right p, p.xl\:text-right {
+    text-align: right !important;
+    text-align-last: right !important;
+  }
+}
+
+/* Prevent awkward word-spacing on single-line items, truncated items, or short labels */
+.whitespace-nowrap,
+.truncate,
+p.truncate,
+p.whitespace-nowrap {
+  text-align: left;
+  text-align-last: left;
+  hyphens: manual;
+  word-spacing: normal;
+}
+
+/* Card, list, and flex text protections against awkward justification */
+.card p,
+.grid p,
+li p,
+[class*="rounded-"] > p {
+  text-indent: 0;
+}
+

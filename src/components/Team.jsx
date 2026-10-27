@@ -25,7 +25,7 @@ const Team = () => {
                    <h3 className="text-xl sm:text-2xl font-bold text-slate-950 group-hover:text-amber-600 transition-colors">Saravana Kumar</h3>
                    <span className="inline-block text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200/60 px-2.5 py-0.5 rounded-full uppercase tracking-wider mx-auto sm:mx-0 w-fit">CEO</span>
                  </div>
-                 <p className="text-slate-900 font-normal text-sm sm:text-[15px] leading-relaxed text-left">
+                 <p className="text-slate-900 font-normal text-sm sm:text-[15px] leading-relaxed text-left paragraph-justify">
                    With 23 years of experience in media, broadcasting, filmmaking and events, Saravana brings creativity, leadership and a passion for education to SpellBee Universe.
                  </p>
                </div>
@@ -42,7 +42,7 @@ const Team = () => {
                    <h3 className="text-xl sm:text-2xl font-bold text-slate-950 group-hover:text-amber-600 transition-colors">Vani Gowda</h3>
                    <span className="inline-block text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200/60 px-2.5 py-0.5 rounded-full uppercase tracking-wider mx-auto sm:mx-0 w-fit">CFO</span>
                  </div>
-                 <p className="text-slate-900 font-normal text-sm sm:text-[15px] leading-relaxed text-left">
+                 <p className="text-slate-900 font-normal text-sm sm:text-[15px] leading-relaxed text-left paragraph-justify">
                    An entrepreneur, social worker, writer, sports enthusiast and education advocate, Vani brings a deep commitment to creating meaningful opportunities for young learners.
                  </p>
                </div>
@@ -71,7 +71,7 @@ const Team = () => {
                   </div>
                 </div>
                 <div className="pt-2.5 border-t border-slate-100">
-                  <p className="text-slate-900 text-xs sm:text-[13px] leading-relaxed font-normal text-left">
+                  <p className="text-slate-900 text-xs sm:text-[13px] leading-relaxed font-normal text-left paragraph-justify">
                     As the Founder Trustee and Executive Director of the Bangalore Schools Sports Foundation (BSSF), Elvis has been at the forefront of pioneering Sports-for-Development initiatives that have positively impacted thousands of children and young people across India. Under his leadership, BSSF has evolved into a nationally recognized organization dedicated to empowering vulnerable, marginalized, and underserved communities through sports, education, leadership, and humanitarian action.
                   </p>
                 </div>
@@ -92,7 +92,7 @@ const Team = () => {
                   </div>
                 </div>
                 <div className="pt-2.5 border-t border-slate-100">
-                  <p className="text-slate-900 text-xs sm:text-[13px] leading-relaxed font-normal text-left">
+                  <p className="text-slate-900 text-xs sm:text-[13px] leading-relaxed font-normal text-left paragraph-justify">
                     Educated in Physics, Sociology, Journalism, Information Technology, Television production, working for overseas TV channels director and script-writer for many decades, Founder/President of the Association of Left-handers, India.
                   </p>
                 </div>
@@ -113,7 +113,7 @@ const Team = () => {
                   </div>
                 </div>
                 <div className="pt-2.5 border-t border-slate-100">
-                  <p className="text-slate-900 text-xs sm:text-[13px] leading-relaxed font-normal text-left">
+                  <p className="text-slate-900 text-xs sm:text-[13px] leading-relaxed font-normal text-left paragraph-justify">
                     Possesses a diverse skill set encompassing architecture, education, and politics. He has proficiency in several languages and a keen interest in social welfare. Mr Gowda is deeply passionate about creating a sustainable and inclusive India through skill development and tourism initiatives and contributing to the betterment of society.
                   </p>
                 </div>
@@ -131,7 +131,7 @@ const Team = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3.5 sm:gap-4 items-stretch">
             <div className="bg-slate-50/80 hover:bg-white rounded-xl p-4 sm:p-5 border border-slate-200/80 hover:border-amber-300 hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center justify-center text-center group cursor-pointer min-h-[120px] h-full">
               <Code className="w-7 h-7 text-blue-600 group-hover:scale-120 group-hover:rotate-12 transition-all duration-300 mb-2.5" />
-              <p className="text-xs sm:text-sm font-bold text-slate-950 group-hover:text-blue-700 transition-colors leading-tight">Technology &<br/>Development</p>
+              <p className="text-xs sm:text-sm font-bold text-slate-950 group-hover:text-blue-700 transition-colors leading-tight">Technology &amp; Development</p>
             </div>
             <div className="bg-slate-50/80 hover:bg-white rounded-xl p-4 sm:p-5 border border-slate-200/80 hover:border-purple-300 hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center justify-center text-center group cursor-pointer min-h-[120px] h-full">
               <CalendarDays className="w-7 h-7 text-purple-600 group-hover:scale-120 group-hover:rotate-12 transition-all duration-300 mb-2.5" />

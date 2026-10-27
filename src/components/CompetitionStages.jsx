@@ -121,25 +121,25 @@ const CompetitionStages = () => {
                 </div>
 
                 {/* Center Trophy Visual */}
-                <div className="lg:col-span-4 flex flex-col justify-center items-center h-full min-h-[240px] relative select-none py-1">
+                <div className="lg:col-span-4 flex flex-col justify-center items-center h-full min-h-[320px] lg:min-h-[430px] relative select-none py-2">
                   <div className="relative group/trophy">
                     {/* Golden ambient aura */}
-                    <div className="absolute -inset-2 bg-gradient-to-tr from-amber-400 via-yellow-300 to-amber-500 rounded-3xl blur-xl opacity-50 group-hover/trophy:opacity-90 transition-opacity duration-500 animate-pulse-soft"></div>
+                    <div className="absolute -inset-3 bg-gradient-to-tr from-amber-400 via-yellow-300 to-amber-500 rounded-[2.5rem] blur-2xl opacity-60 group-hover/trophy:opacity-95 transition-opacity duration-500 animate-pulse-soft"></div>
 
-                    {/* Frame Container - Portrait to fit full trophy */}
-                    <div className="relative w-44 sm:w-48 md:w-52 h-56 sm:h-64 md:h-68 rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-amber-300/90 shadow-2xl bg-gradient-to-b from-[#0e1744] via-[#070e2f] to-[#030617]">
+                    {/* Frame Container - Portrait enlarged to fit full trophy with no clipping */}
+                    <div className="relative w-56 sm:w-64 md:w-72 lg:w-80 h-76 sm:h-88 md:h-[400px] lg:h-[430px] rounded-3xl sm:rounded-[2rem] overflow-hidden border-2 sm:border-3 border-amber-300/90 shadow-2xl bg-gradient-to-b from-[#0e1744] via-[#070e2f] to-[#030617]">
                       <img 
                         src="/images/spell-master-trophy.jpg" 
                         alt="SpellBee Universe Official Spell Master Trophy"
-                        className="w-full h-full object-cover object-center group-hover/trophy:scale-105 transition-transform duration-500"
+                        className="w-full h-full object-cover object-top group-hover/trophy:scale-105 transition-transform duration-500"
                       />
                       {/* Subtle lighting shine effect */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#071330]/60 via-transparent to-white/10 pointer-events-none"></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#071330]/50 via-transparent to-white/10 pointer-events-none"></div>
                     </div>
 
                     {/* Floating Trophy Badge Pill */}
-                    <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-slate-950 font-black text-[10px] sm:text-xs px-3.5 py-1 rounded-full shadow-xl border-2 border-white flex items-center gap-1.5 whitespace-nowrap tracking-wide">
-                      <Trophy className="w-3.5 h-3.5 text-slate-950 fill-slate-950" />
+                    <div className="absolute -bottom-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-slate-950 font-black text-xs sm:text-[13px] px-4 py-1.5 rounded-full shadow-2xl border-2 border-white flex items-center gap-2 whitespace-nowrap tracking-wide z-20">
+                      <Trophy className="w-4 h-4 text-slate-950 fill-slate-950" />
                       <span>Official Spell Master Trophy</span>
                     </div>
                   </div>

@@ -21,7 +21,7 @@ const OurStory = () => {
               </div>
             </div>
 
-            <div className="space-y-3.5 text-slate-600 font-medium leading-relaxed text-sm sm:text-base text-left">
+            <div className="space-y-3.5 text-slate-600 font-medium leading-relaxed text-sm sm:text-base paragraph-justify">
               <p>
                 SpellBee Universe was created with a simple idea: learning language can be exciting, challenging and rewarding.
               </p>

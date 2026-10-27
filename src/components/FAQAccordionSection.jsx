@@ -361,8 +361,40 @@ const FAQAccordionSection = ({ searchQuery = '', onClearSearch, selectedCategory
                           </button>
 
                           {isOpen && (
-                            <div className="px-3 pb-3 sm:px-3.5 sm:pb-3.5 pt-1 border-t border-slate-200/50 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium whitespace-pre-line animate-fadeIn">
-                              <div>{item.a}</div>
+                            <div className="px-3 pb-3 sm:px-3.5 sm:pb-3.5 pt-2 border-t border-slate-200/50 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium animate-fadeIn">
+                              {item.a.includes('\n•') || item.a.startsWith('•') ? (
+                                <div className="space-y-2">
+                                  {item.a.split('\n\n').map((paragraph, pIdx) => {
+                                    if (paragraph.includes('•')) {
+                                      return (
+                                        <div key={pIdx} className="space-y-1.5 my-1.5">
+                                          {paragraph.split('\n').map((line, lIdx) => {
+                                            const trimmed = line.trim();
+                                            if (trimmed.startsWith('•')) {
+                                              return (
+                                                <div key={lIdx} className="flex items-start gap-2.5 text-left">
+                                                  <span className="text-amber-500 font-bold shrink-0 select-none mt-0.5">•</span>
+                                                  <span className="flex-1 leading-relaxed">{trimmed.replace(/^•\s*/, '')}</span>
+                                                </div>
+                                              );
+                                            }
+                                            return trimmed ? <p key={lIdx} className="text-left leading-relaxed">{trimmed}</p> : null;
+                                          })}
+                                        </div>
+                                      );
+                                    }
+                                    return <p key={pIdx} className="text-left leading-relaxed">{paragraph}</p>;
+                                  })}
+                                </div>
+                              ) : item.a.includes('\n\n') ? (
+                                <div className="space-y-2.5 text-left">
+                                  {item.a.split('\n\n').map((paragraph, pIdx) => (
+                                    <p key={pIdx} className="leading-relaxed">{paragraph}</p>
+                                  ))}
+                                </div>
+                              ) : (
+                                <p className="text-left leading-relaxed">{item.a}</p>
+                              )}
 
                               {/* Micro-interaction: Helpful feedback */}
                               <div className="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400">
