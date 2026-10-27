@@ -58,9 +58,9 @@ const CompetitionHero = () => {
             {/* Main Stage Champion Image inside Circle */}
             <div className="relative z-10 w-full max-w-[260px] sm:max-w-[340px] md:max-w-[380px] aspect-square rounded-full p-2 sm:p-2.5 bg-white shadow-2xl border-4 border-white overflow-hidden flex items-center justify-center group cursor-pointer">
               <img 
-                src="/images/competition-hero-champion.jpg" 
+                src="/images/competition-hero-champion.png" 
                 alt="SpellBee Universe Competition Champion" 
-                className="w-full h-full object-cover object-[center_20%] rounded-full transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-full object-cover object-center rounded-full transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
