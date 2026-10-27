@@ -120,27 +120,27 @@ const CompetitionStages = () => {
                   </Link>
                 </div>
 
-                {/* Center Champion Visual */}
-                <div className="lg:col-span-4 flex flex-col justify-center items-center h-full min-h-[220px] relative select-none py-2">
-                  <div className="relative group/champ">
+                {/* Center Trophy Visual */}
+                <div className="lg:col-span-4 flex flex-col justify-center items-center h-full min-h-[240px] relative select-none py-1">
+                  <div className="relative group/trophy">
                     {/* Golden ambient aura */}
-                    <div className="absolute -inset-2 bg-gradient-to-tr from-amber-400 via-yellow-300 to-amber-500 rounded-3xl blur-lg opacity-40 group-hover/champ:opacity-75 transition-opacity duration-500"></div>
+                    <div className="absolute -inset-2 bg-gradient-to-tr from-amber-400 via-yellow-300 to-amber-500 rounded-3xl blur-xl opacity-50 group-hover/trophy:opacity-90 transition-opacity duration-500 animate-pulse-soft"></div>
 
-                    {/* Frame Container */}
-                    <div className="relative w-48 sm:w-52 h-48 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-amber-300/80 shadow-2xl bg-gradient-to-b from-amber-100 to-amber-200">
+                    {/* Frame Container - Portrait to fit full trophy */}
+                    <div className="relative w-44 sm:w-48 md:w-52 h-56 sm:h-64 md:h-68 rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-amber-300/90 shadow-2xl bg-gradient-to-b from-[#0e1744] via-[#070e2f] to-[#030617]">
                       <img 
-                        src="/images/grand-finale-champion.png" 
-                        alt="SpellBee Universe Grand Finale Champion"
-                        className="w-full h-full object-cover object-center group-hover/champ:scale-105 transition-transform duration-500"
+                        src="/images/spell-master-trophy.jpg" 
+                        alt="SpellBee Universe Official Spell Master Trophy"
+                        className="w-full h-full object-cover object-center group-hover/trophy:scale-105 transition-transform duration-500"
                       />
-                      {/* Subtle bottom gradient overlay for badge readability */}
-                      <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#071330]/80 via-transparent to-transparent pointer-events-none"></div>
+                      {/* Subtle lighting shine effect */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#071330]/60 via-transparent to-white/10 pointer-events-none"></div>
                     </div>
 
-                    {/* Floating Champion Badge Pill */}
-                    <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-slate-950 font-black text-[10px] sm:text-xs px-3 py-1 rounded-full shadow-xl border-2 border-white flex items-center gap-1.5 whitespace-nowrap tracking-wide">
+                    {/* Floating Trophy Badge Pill */}
+                    <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-slate-950 font-black text-[10px] sm:text-xs px-3.5 py-1 rounded-full shadow-xl border-2 border-white flex items-center gap-1.5 whitespace-nowrap tracking-wide">
                       <Trophy className="w-3.5 h-3.5 text-slate-950 fill-slate-950" />
-                      <span>Spell Master Champion</span>
+                      <span>Official Spell Master Trophy</span>
                     </div>
                   </div>
                 </div>
