@@ -285,40 +285,6 @@ export const galleryPhotos = [
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/KET_2366.JPG"
   },
   {
-    id: 33,
-    title: "Proud Moments: Parent & Speller on Stage",
-    category: "School Rounds",
-    date: "Felicitation Round",
-    location: "Auditorium Stage",
-    description: "Heartwarming moment as parents join their child on stage to receive the SpellBee Universe achievement award.",
-    tag: "Family Pride",
-    image: "/images/gallery/img-33.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/KET_2356.JPG"
-  },
-  {
-    id: 34,
-    title: "Merit Certificate & Trophy Presentation Ceremony",
-    category: "Award Ceremonies",
-    date: "District Finals",
-    location: "Championship Stage",
-    description: "School representative speller honored with certificate of excellence and shiny gold cup on stage.",
-    tag: "Excellence Award",
-    image: "/images/gallery/img-34.jpg",
-    objectPosition: "top",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/KET_2352-001.JPG"
-  },
-  {
-    id: 35,
-    title: "Dignitary Handshake & Honor Presentation",
-    category: "Award Ceremonies",
-    date: "Felicitation Ceremony",
-    location: "Auditorium Stage",
-    description: "Guest of honor warmly congratulating the young speller while handing over the prestigious trophy.",
-    tag: "Honors Stage",
-    image: "/images/gallery/img-35.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/KET_2342.JPG"
-  },
-  {
     id: 36,
     title: "Golden Trophy Handover by Chief Guest",
     category: "Award Ceremonies",
@@ -671,17 +637,6 @@ export const galleryPhotos = [
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1900.JPG"
   },
   {
-    id: 69,
-    title: "Contestant #6 Precision Spelling Performance",
-    category: "Competitions",
-    date: "Junior Category",
-    location: "Main Stage Screen",
-    description: "Young contestant #6 confidently reciting letters against the colorful SpellBee Universe mascot screen.",
-    tag: "Precision Spelling",
-    image: "/images/gallery/img-69.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1898.JPG"
-  },
-  {
     id: 70,
     title: "Contestant #5 Stage Challenge at the Podium",
     category: "Competitions",
@@ -802,17 +757,6 @@ export const galleryPhotos = [
     image: "/images/gallery/img-85.jpg",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1738.JPG"
   },
-  {
-    id: 86,
-    title: "GVN School Speller: Little Achiever",
-    category: "School Rounds",
-    date: "Junior Category",
-    location: "Auditorium Gallery",
-    description: "Youngest speller from GVN School in uniform pigtails, representing her school with utmost pride.",
-    tag: "Little Achiever",
-    image: "/images/gallery/img-86.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1736.JPG"
-  },
 
   {
     id: 89,
@@ -868,17 +812,6 @@ export const galleryPhotos = [
     tag: "Keynote Address",
     image: "/images/gallery/img-93.jpg",
     originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1682.JPG"
-  },
-  {
-    id: 94,
-    title: "Official Address at V Best Educare Forum",
-    category: "Grand Finale",
-    date: "Opening Ceremony",
-    location: "Ceremonial Podium",
-    description: "Guest of honor sharing words of wisdom and encouragement to students, parents, and educators.",
-    tag: "Guest of Honor",
-    image: "/images/gallery/img-94.jpg",
-    originalUrl: "https://ik.imagekit.io/iq1cbg5ga/Spell%20Bee%20Universe/059A1679.JPG"
   },
   {
     id: 95,
@@ -1098,7 +1031,6 @@ const portraitImages = new Set([
   "/images/gallery/img-20.jpg",
   "/images/gallery/img-21.jpg",
   "/images/gallery/img-29.jpg",
-  "/images/gallery/img-34.jpg",
   "/images/gallery/img-111.jpg",
 ]);
 

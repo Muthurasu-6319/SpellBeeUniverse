@@ -121,17 +121,17 @@ const RegistrationPrepare = () => {
           <div className="bg-[#f0fdf4] rounded-2xl md:rounded-3xl p-5 sm:p-6 border border-emerald-200/60 flex flex-col justify-between shadow-xs hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-9 h-9 rounded-full bg-emerald-500 text-white flex items-center justify-center font-extrabold text-base shadow-sm shrink-0 group-hover:scale-110 group-hover:rotate-6 transition-transform">
+                <div className="w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center font-extrabold text-base shadow-sm shrink-0 group-hover:scale-110 group-hover:rotate-6 transition-transform">
                   3
                 </div>
                 <div>
-                  <h3 className="text-xl font-extrabold text-[#1a237e] tracking-tight">Prepare</h3>
-                  <p className="text-[#3949ab] font-semibold text-xs">Learn Before You Compete</p>
+                  <h3 className="text-xl sm:text-2xl font-black text-[#1a237e] tracking-tight">Prepare</h3>
+                  <p className="text-[#3949ab] font-bold text-xs sm:text-sm">Learn Before You Compete</p>
                 </div>
               </div>
 
-              {/* 2-Column Compact Checklist */}
-              <div className="grid grid-cols-2 gap-x-2 gap-y-2 mb-4">
+              {/* 2-Column Checklist - Increased Size */}
+              <div className="grid grid-cols-2 gap-x-3 gap-y-2.5 mb-5">
                 {[
                   "Word lists",
                   "Practice spelling",
@@ -141,30 +141,30 @@ const RegistrationPrepare = () => {
                   "Sample questions",
                   "Practice tests"
                 ].map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-1.5 hover:translate-x-0.5 transition-transform">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                    <p className="text-[#3949ab] font-medium text-[11px] leading-snug">{item}</p>
+                  <div key={idx} className="flex items-center gap-2 hover:translate-x-1 transition-transform">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+                    <p className="text-slate-800 font-bold text-xs sm:text-[13px] leading-snug">{item}</p>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Books Stack Illustration - Cute & Compact */}
-            <div className="flex flex-col items-center justify-center relative pt-4 pb-1 mt-2 bg-emerald-50/70 rounded-xl border border-emerald-100/80 p-2.5 group-hover:bg-emerald-100/50 transition-colors">
-              <div className="absolute -top-3 right-5 animate-pulse-soft text-amber-500">
-                <Lightbulb className="w-5 h-5 text-amber-500 fill-amber-300" />
+            {/* Books Stack Illustration - Increased Size & Prominence */}
+            <div className="flex flex-col items-center justify-center relative pt-5 pb-2.5 mt-2 bg-emerald-50/90 rounded-2xl border border-emerald-200/80 p-3 group-hover:bg-emerald-100/60 transition-colors shadow-2xs">
+              <div className="absolute -top-3.5 right-6 animate-pulse-soft text-amber-500">
+                <Lightbulb className="w-6 h-6 text-amber-500 fill-amber-300 drop-shadow-md" />
               </div>
               
-              <div className="w-full max-w-[140px] bg-green-500 text-white text-center py-1 font-bold text-[10px] tracking-wider rounded shadow-xs border-b-2 border-green-700 transform -rotate-2 relative z-40 mb-[-3px]">
+              <div className="w-full max-w-[170px] sm:max-w-[195px] bg-green-500 text-white text-center py-1.5 sm:py-2 font-black text-xs sm:text-[13px] tracking-wider rounded-md shadow-xs border-b-3 border-green-700 transform -rotate-2 relative z-40 mb-[-4px]">
                 SPELLING
               </div>
-              <div className="w-full max-w-[150px] bg-orange-500 text-white text-center py-1 font-bold text-[10px] tracking-wider rounded shadow-xs border-b-2 border-orange-700 relative z-30 mb-[-3px]">
+              <div className="w-full max-w-[185px] sm:max-w-[210px] bg-orange-500 text-white text-center py-1.5 sm:py-2 font-black text-xs sm:text-[13px] tracking-wider rounded-md shadow-xs border-b-3 border-orange-700 relative z-30 mb-[-4px]">
                 VOCABULARY
               </div>
-              <div className="w-full max-w-[158px] bg-blue-500 text-white text-center py-1 font-bold text-[10px] tracking-wider rounded shadow-xs border-b-2 border-blue-700 relative z-20 mb-[-3px]">
+              <div className="w-full max-w-[198px] sm:max-w-[225px] bg-blue-500 text-white text-center py-1.5 sm:py-2 font-black text-xs sm:text-[13px] tracking-wider rounded-md shadow-xs border-b-3 border-blue-700 relative z-20 mb-[-4px]">
                 PRONUNCIATION
               </div>
-              <div className="w-full max-w-[166px] bg-pink-500 text-white text-center py-1 font-bold text-[10px] tracking-wider rounded shadow-xs border-b-2 border-pink-700 transform rotate-1 relative z-10">
+              <div className="w-full max-w-[210px] sm:max-w-[240px] bg-pink-500 text-white text-center py-1.5 sm:py-2 font-black text-xs sm:text-[13px] tracking-wider rounded-md shadow-xs border-b-3 border-pink-700 transform rotate-1 relative z-10">
                 PRACTICE
               </div>
             </div>

@@ -60,7 +60,7 @@ const CompetitionHero = () => {
               <img 
                 src="/images/competition-hero-champion.jpg" 
                 alt="SpellBee Universe Competition Champion" 
-                className="w-full h-full object-cover object-center rounded-full transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover object-[center_20%] rounded-full transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 

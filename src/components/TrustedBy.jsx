@@ -37,10 +37,10 @@ const TrustedBy = () => {
           {/* Section Headline */}
           <div className="w-full lg:w-[260px] shrink-0 text-center lg:text-left">
             <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-100 text-slate-950 text-[10px] font-black uppercase mb-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Participated Schools
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Partner Network
             </div>
             <h2 className="text-lg sm:text-xl font-black text-slate-950 tracking-tight leading-tight">
-              Trusted by Schools & Educators
+              Participated Schools
             </h2>
             <p className="text-slate-600 text-[11px] font-medium leading-relaxed mt-1">
               Across India, premier institutions partner with SpellBee Universe.
@@ -82,7 +82,7 @@ const TrustedBy = () => {
               href="/schools"
               className="inline-flex items-center gap-1.5 text-xs font-bold text-[#1a237e] hover:text-yellow-600 bg-white hover:bg-yellow-50 border border-slate-200 hover:border-yellow-300 px-3.5 py-1.5 sm:py-2 rounded-full shadow-2xs transition-all whitespace-nowrap"
             >
-              <span>View All 13 Schools</span>
+              <span>View All Participated Schools</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>

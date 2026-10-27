@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { ArrowRight, CheckCircle2, FileText, BookOpen, Type, Award, Mic, Zap, Image as ImageIcon, MessageSquare, Volume2, Bell, Eye, Trophy, Gift, Medal, Tv } from 'lucide-react';
 
 const CompetitionStages = () => {
@@ -110,18 +111,38 @@ const CompetitionStages = () => {
                   <p className="text-blue-100 text-xs sm:text-sm leading-relaxed mb-6">
                     Selected finalists compete in an exciting stage competition featuring multiple spelling and language challenges.
                   </p>
-                  <button className="px-5 py-2.5 rounded-full bg-[#fbc02d] hover:bg-yellow-500 text-gray-900 font-bold text-xs shadow-lg shadow-yellow-400/20 transition-all flex items-center gap-2 hover:scale-105 active:scale-95 cursor-pointer">
-                    Explore Competition <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
+                  <Link 
+                    href="/competition"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#fbc02d] hover:bg-yellow-400 text-gray-900 font-bold text-xs shadow-lg shadow-yellow-400/25 transition-all hover:scale-105 active:scale-95 cursor-pointer w-fit"
+                  >
+                    <span>Explore Competition</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
                 </div>
 
-                {/* Center Trophy with Float */}
-                <div className="lg:col-span-4 flex justify-center items-center h-full min-h-[160px] relative select-none">
-                    <div className="w-full max-w-[220px] aspect-square rounded-full bg-gradient-to-b from-blue-400/20 to-transparent flex items-center justify-center p-4">
-                        <div className="animate-float-slow hover:scale-115 transition-transform duration-300 filter drop-shadow-[0_10px_20px_rgba(251,192,45,0.4)] cursor-pointer">
-                          <Trophy className="w-16 h-16 sm:w-20 sm:h-20 text-amber-400 fill-amber-300" />
-                        </div>
+                {/* Center Champion Visual */}
+                <div className="lg:col-span-4 flex flex-col justify-center items-center h-full min-h-[220px] relative select-none py-2">
+                  <div className="relative group/champ">
+                    {/* Golden ambient aura */}
+                    <div className="absolute -inset-2 bg-gradient-to-tr from-amber-400 via-yellow-300 to-amber-500 rounded-3xl blur-lg opacity-40 group-hover/champ:opacity-75 transition-opacity duration-500"></div>
+
+                    {/* Frame Container */}
+                    <div className="relative w-48 sm:w-52 h-48 sm:h-52 rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-amber-300/80 shadow-2xl bg-gradient-to-b from-amber-100 to-amber-200">
+                      <img 
+                        src="/images/grand-finale-champion.png" 
+                        alt="SpellBee Universe Grand Finale Champion"
+                        className="w-full h-full object-cover object-center group-hover/champ:scale-105 transition-transform duration-500"
+                      />
+                      {/* Subtle bottom gradient overlay for badge readability */}
+                      <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#071330]/80 via-transparent to-transparent pointer-events-none"></div>
                     </div>
+
+                    {/* Floating Champion Badge Pill */}
+                    <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-slate-950 font-black text-[10px] sm:text-xs px-3 py-1 rounded-full shadow-xl border-2 border-white flex items-center gap-1.5 whitespace-nowrap tracking-wide">
+                      <Trophy className="w-3.5 h-3.5 text-slate-950 fill-slate-950" />
+                      <span>Spell Master Champion</span>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Right Content - Challenges List */}
