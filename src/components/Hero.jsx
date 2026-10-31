@@ -23,7 +23,7 @@ export default function Hero() {
       </div>
 
       {/* Subtle overlay for small & medium screens to ensure zero text overlap */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#FFFDF7] via-[#FFFDF7]/90 via-40% to-transparent lg:hidden z-0 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#FFFDF7]/98 via-[#FFFDF7]/92 via-60% to-[#FFFDF7]/70 sm:bg-gradient-to-r sm:from-[#FFFDF7] sm:via-[#FFFDF7]/90 sm:to-transparent lg:hidden z-0 pointer-events-none" />
 
       {/* Hero Content (Foreground) */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-10 relative z-10 py-6 sm:py-8">
@@ -43,7 +43,7 @@ export default function Hero() {
           </h1>
 
           {/* Subtitle / Description - Broken into lines so it stacks cleanly downwards without touching image */}
-          <p className="text-sm sm:text-base md:text-lg text-slate-700 font-medium leading-relaxed max-w-[420px]">
+          <p className="text-sm sm:text-base md:text-lg text-slate-700 font-medium leading-relaxed max-w-[420px] text-justify">
             SpellBee Universe is an exciting spelling and vocabulary competition that gives young learners the opportunity to strengthen their English, build confidence and showcase their skills on a bigger stage.
           </p>
 

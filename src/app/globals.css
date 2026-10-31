@@ -197,17 +197,23 @@ p.text-justify,
   overflow-wrap: break-word;
 }
 
-/* Prevent awkward word stretching on narrow mobile viewports (< 540px) */
-@media (max-width: 539px) {
+/* ==========================================================================
+   Mobile-First Typography: Clean Justification Across All Sections & Pages
+   ========================================================================== */
+@media (max-width: 768px) {
+  main section p:not(.no-justify):not(nav p):not(button p):not(footer p):not(.pill p):not(.badge p),
+  section p:not(.no-justify):not(nav p):not(button p):not(footer p):not(.pill p):not(.badge p),
   .text-justify,
   .paragraph-justify,
   p.paragraph-justify,
-  .prose p,
-  .editorial-text p,
-  .story-text p {
-    text-align: left;
-    text-align-last: left;
-    hyphens: manual;
+  p.text-justify {
+    text-align: justify !important;
+    text-align-last: left !important;
+    text-justify: inter-word !important;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 }
 
