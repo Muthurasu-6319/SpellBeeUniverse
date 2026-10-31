@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden py-6 sm:py-8 lg:py-0 lg:h-[500px] flex items-center bg-gradient-to-b lg:bg-gradient-to-r from-[#FFFDF7] via-[#FFF9EB] to-[#FFF4D6]">
+    <section className="relative overflow-hidden pt-5 pb-0 sm:pt-7 sm:pb-0 lg:py-0 lg:h-[500px] flex items-center bg-gradient-to-b lg:bg-gradient-to-r from-[#FFFDF7] via-[#FFF9EB] to-[#FFF4D6]">
       {/* Desktop Background Image: Strictly touching top-0 and bottom-0 (Zero space above & below) */}
       <div 
         className="hidden lg:block absolute top-0 bottom-0 right-0 h-full aspect-[1583/994] z-0 select-none pointer-events-none"
@@ -23,8 +23,8 @@ export default function Hero() {
       </div>
 
       {/* Hero Content (Foreground) */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
-        <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[460px] space-y-3.5 sm:space-y-4 animate-fade-in-up">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-10 relative z-10 w-full">
+        <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[460px] space-y-3 sm:space-y-3.5 animate-fade-in-up">
           {/* Badge with micro-interaction */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yellow-400 text-slate-950 font-black text-xs sm:text-sm tracking-wider uppercase shadow-xs hover:scale-105 transition-all duration-300 cursor-pointer select-none">
             <img src="/logo.png" alt="SpellBee" className="w-4 h-4 object-contain inline-block animate-wiggle" />
@@ -45,17 +45,17 @@ export default function Hero() {
           </p>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 pt-0.5">
             <Link 
               href="/register" 
-              className="px-6 sm:px-7 py-3 rounded-full bg-yellow-400 hover:bg-yellow-500 text-slate-950 font-black text-sm sm:text-base shadow-md shadow-yellow-400/30 transition-all transform hover:scale-105 active:scale-95 inline-flex items-center justify-center gap-2 group cursor-pointer w-full sm:w-auto text-center"
+              className="px-6 sm:px-7 py-2.5 sm:py-3 rounded-full bg-yellow-400 hover:bg-yellow-500 text-slate-950 font-black text-sm sm:text-base shadow-md shadow-yellow-400/30 transition-all transform hover:scale-105 active:scale-95 inline-flex items-center justify-center gap-2 group cursor-pointer w-full sm:w-auto text-center"
             >
               Register Now 
               <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
             </Link>
             <Link 
               href="/competition" 
-              className="px-6 sm:px-7 py-3 rounded-full border-2 border-[#1a237e] text-[#1a237e] font-black text-sm sm:text-base bg-white/90 hover:bg-[#1a237e] hover:text-white transition-all transform hover:scale-105 active:scale-95 shadow-xs inline-flex items-center justify-center w-full sm:w-auto text-center"
+              className="px-6 sm:px-7 py-2.5 sm:py-3 rounded-full border-2 border-[#1a237e] text-[#1a237e] font-black text-sm sm:text-base bg-white/90 hover:bg-[#1a237e] hover:text-white transition-all transform hover:scale-105 active:scale-95 shadow-xs inline-flex items-center justify-center w-full sm:w-auto text-center"
             >
               Explore the Competition
             </Link>
@@ -66,19 +66,19 @@ export default function Hero() {
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             <span>For students from Classes 1–10</span>
           </div>
+        </div>
 
-          {/* Mobile View Cute Compact Hero Image (Visible on mobile & tablet only) */}
-          <div className="block lg:hidden pt-3 pb-1">
-            <div className="relative w-full max-w-[340px] sm:max-w-md mx-auto aspect-[16/10] rounded-2xl overflow-hidden shadow-lg border-2 border-amber-300/80 bg-white">
-              <Image 
-                src="/images/image.png" 
-                alt="SpellBee Universe Hero Students" 
-                fill 
-                priority
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover object-center" 
-              />
-            </div>
+        {/* Mobile View Full-Bleed Image: Zero space on left, right, and bottom; minimal space on top */}
+        <div className="block lg:hidden mt-2.5 -mx-4 sm:-mx-6 w-[calc(100%+2rem)] sm:w-[calc(100%+3rem)]">
+          <div className="relative w-full aspect-[1583/994] overflow-hidden select-none">
+            <Image 
+              src="/images/image.png" 
+              alt="SpellBee Universe Hero Students" 
+              fill 
+              priority
+              sizes="100vw"
+              className="object-cover object-bottom" 
+            />
           </div>
         </div>
       </div>
