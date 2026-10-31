@@ -1049,28 +1049,28 @@ export default function GalleryPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative py-10 md:py-14 bg-gradient-to-b from-[#1a237e] via-[#151c6b] to-[#0f172a] text-white overflow-hidden">
+      <section className="relative py-6 sm:py-7 md:py-8 bg-gradient-to-b from-[#1a237e] via-[#151c6b] to-[#0f172a] text-white overflow-hidden">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-10 w-80 h-80 bg-rose-500/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/15 border border-amber-400/30 text-amber-300 text-xs sm:text-sm font-bold uppercase tracking-wider mb-4 shadow-xs">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/15 border border-amber-400/30 text-amber-300 text-xs sm:text-sm font-bold uppercase tracking-wider mb-2.5 shadow-xs">
             <Camera className="w-4 h-4 text-amber-400" />
             Moments That Matter
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-2.5">
             SpellBee Universe <span className="text-amber-400">Photo Gallery</span>
           </h1>
 
-          <p className="max-w-2xl mx-auto text-slate-300 text-sm sm:text-base md:text-lg font-medium leading-relaxed">
+          <p className="max-w-xl mx-auto text-slate-300 text-sm sm:text-base md:text-lg font-medium leading-relaxed">
             Explore memorable moments, triumphs, and highlights from our nationwide competitions, celebrations, and school workshops.
           </p>
         </div>
       </section>
 
       {/* Filter Bar */}
-      <section className="py-3 sm:py-4 bg-white border-b border-gray-200 sticky top-[60px] sm:top-[68px] z-30 shadow-xs">
+      <section className="py-2 sm:py-2.5 bg-white border-b border-gray-200 sticky top-[60px] sm:top-[68px] z-30 shadow-xs">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0 scrollbar-none -mx-4 px-4 sm:mx-0 sm:px-0 justify-start md:justify-center">
             {categories.map((cat) => (

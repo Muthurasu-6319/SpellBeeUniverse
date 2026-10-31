@@ -4,9 +4,9 @@ import { ArrowRight, Trophy, Bug, BookOpen, Sparkles } from 'lucide-react';
 
 const HowItWorksHero = () => {
   return (
-    <section className="bg-[#fff9df] pt-10 pb-8 sm:pt-14 sm:pb-10 md:pt-16 md:pb-12 overflow-hidden relative border-b border-amber-200/50">
+    <section className="bg-[#fff9df] pt-5 pb-6 sm:pt-7 sm:pb-8 md:pt-8 md:pb-10 overflow-hidden relative border-b border-amber-200/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
           
           {/* Left Text Content */}
           <div className="w-full lg:w-1/2 relative z-20 text-center lg:text-left">
@@ -16,7 +16,7 @@ const HowItWorksHero = () => {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-[#1a237e] leading-[1.12] mb-3 sm:mb-4 tracking-tight">
               From Registration to<br/><span className="text-amber-500">Spell Master</span>
             </h1>
-            <p className="text-[#3949ab] text-sm sm:text-base md:text-lg font-medium leading-relaxed max-w-xl mb-6 mx-auto lg:mx-0">
+            <p className="text-[#3949ab] text-sm sm:text-base md:text-lg font-medium leading-relaxed max-w-[420px] mb-4 sm:mb-5 mx-auto lg:mx-0">
               A simple journey. Three exciting stages.<br className="hidden sm:inline" /> One unforgettable learning experience.
             </p>
             <Link 

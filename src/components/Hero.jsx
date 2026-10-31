@@ -8,8 +8,8 @@ export default function Hero() {
       <div 
         className="absolute top-0 bottom-0 right-0 h-full aspect-[1583/994] z-0 select-none pointer-events-none"
         style={{
-          maskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 100%)',
-          WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 100%)',
+          maskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 100%)',
+          WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 100%)',
         }}
       >
         <Image 
@@ -17,17 +17,17 @@ export default function Hero() {
           alt="SpellBee Universe Hero Background" 
           fill 
           priority
-          sizes="(max-width: 1024px) 100vw, 65vw"
-          className="object-cover object-center" 
+          sizes="(max-width: 1024px) 100vw, 55vw"
+          className="object-cover object-right-top" 
         />
       </div>
 
-      {/* Subtle overlay for small screens to ensure text legibility */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#FFFDF7] via-[#FFFDF7]/90 to-transparent sm:hidden z-0 pointer-events-none" />
+      {/* Subtle overlay for small & medium screens to ensure zero text overlap */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#FFFDF7] via-[#FFFDF7]/90 via-40% to-transparent lg:hidden z-0 pointer-events-none" />
 
       {/* Hero Content (Foreground) */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-10 relative z-10 py-6 sm:py-8">
-        <div className="max-w-md sm:max-w-lg md:max-w-xl lg:max-w-[520px] space-y-4 animate-fade-in-up">
+        <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[460px] space-y-4 animate-fade-in-up">
           {/* Badge with micro-interaction */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yellow-400 text-slate-950 font-black text-xs sm:text-sm tracking-wider uppercase shadow-xs hover:scale-105 transition-all duration-300 cursor-pointer select-none">
             <img src="/logo.png" alt="SpellBee" className="w-4 h-4 object-contain inline-block animate-wiggle" />
@@ -42,8 +42,8 @@ export default function Hero() {
             </span>
           </h1>
 
-          {/* Subtitle / Description */}
-          <p className="text-sm sm:text-base md:text-lg text-slate-700 font-medium leading-relaxed">
+          {/* Subtitle / Description - Broken into lines so it stacks cleanly downwards without touching image */}
+          <p className="text-sm sm:text-base md:text-lg text-slate-700 font-medium leading-relaxed max-w-[420px]">
             SpellBee Universe is an exciting spelling and vocabulary competition that gives young learners the opportunity to strengthen their English, build confidence and showcase their skills on a bigger stage.
           </p>
 

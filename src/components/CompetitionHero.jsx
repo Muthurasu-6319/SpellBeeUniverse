@@ -4,7 +4,7 @@ import { ArrowRight, ChevronRight, Crown, Sparkles, Trophy } from 'lucide-react'
 
 const CompetitionHero = () => {
   return (
-    <section className="bg-[#fff9e6] pt-4 pb-10 sm:pt-6 sm:pb-12 md:pt-6 md:pb-14 overflow-hidden relative">
+    <section className="bg-[#fff9e6] pt-3 pb-6 sm:pt-4 sm:pb-8 md:pt-5 md:pb-9 overflow-hidden relative">
       {/* Background soft ambient glows */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-12 left-10 w-72 h-72 bg-yellow-200/60 rounded-full filter blur-3xl"></div>
@@ -13,13 +13,13 @@ const CompetitionHero = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         {/* Breadcrumb */}
-        <div className="flex items-center gap-1.5 text-xs sm:text-sm text-[#3949ab] font-medium mb-4 sm:mb-5">
+        <div className="flex items-center gap-1.5 text-xs sm:text-sm text-[#3949ab] font-medium mb-3">
           <Link href="/" className="hover:text-yellow-600 transition-colors">Home</Link>
           <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
           <span className="text-gray-500">Competition</span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-6 items-center">
           
           {/* Left Content */}
           <div className="lg:col-span-6 xl:col-span-7 text-center lg:text-left">
@@ -30,12 +30,12 @@ const CompetitionHero = () => {
               </div>
             </div>
             
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1a237e] leading-[1.14] mb-3 sm:mb-4 tracking-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1a237e] leading-[1.14] mb-2 sm:mb-3 tracking-tight">
               The Stage Is Set.<br/>
               Are You Ready?
             </h1>
             
-            <p className="text-[#3949ab] text-sm sm:text-base lg:text-lg font-medium mb-5 sm:mb-6 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-[#3949ab] text-sm sm:text-base lg:text-lg font-medium mb-5 sm:mb-6 max-w-[440px] mx-auto lg:mx-0 leading-relaxed">
               Challenge your spelling. Expand your vocabulary. Build your confidence. Take your place on the SpellBee Universe stage.
             </p>
             
@@ -51,7 +51,7 @@ const CompetitionHero = () => {
           </div>
 
           {/* Right Image & Creative Stage Visual */}
-          <div className="lg:col-span-6 xl:col-span-5 relative flex justify-center items-center py-2 sm:py-4">
+          <div className="lg:col-span-6 xl:col-span-5 relative flex justify-center items-center py-1 sm:py-2">
             {/* The circular golden background glow */}
             <div className="absolute w-[270px] h-[270px] sm:w-[350px] sm:h-[350px] md:w-[410px] md:h-[410px] rounded-full bg-gradient-to-tr from-yellow-300 via-amber-200 to-yellow-100 shadow-xl opacity-90 z-0 animate-pulse-soft"></div>
             

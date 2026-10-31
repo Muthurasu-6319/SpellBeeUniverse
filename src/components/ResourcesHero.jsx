@@ -7,7 +7,7 @@ const ResourcesHero = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   return (
-    <section className="bg-[#fff9e6] pt-4 pb-10 md:pt-6 md:pb-14 overflow-hidden relative">
+    <section className="bg-[#fff9e6] pt-3 pb-6 sm:pt-4 sm:pb-8 md:pt-5 md:pb-9 overflow-hidden relative">
       {/* Background soft ambient glows */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-8 left-10 w-64 h-64 bg-yellow-200/60 rounded-full filter blur-3xl"></div>
@@ -16,13 +16,13 @@ const ResourcesHero = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         {/* Breadcrumb */}
-        <div className="flex items-center gap-1.5 text-xs sm:text-sm text-slate-700 font-medium mb-4 sm:mb-6">
+        <div className="flex items-center gap-1.5 text-xs sm:text-sm text-slate-700 font-medium mb-3">
           <Link href="/" className="hover:text-amber-600 transition-colors">Home</Link>
           <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
           <span className="text-slate-900 font-bold">Resources</span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-6 items-center">
           
           {/* Left Content */}
           <div className="lg:col-span-6 xl:col-span-6">
@@ -33,16 +33,16 @@ const ResourcesHero = () => {
               </span>
             </div>
             
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-950 leading-[1.15] mb-3.5 tracking-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-950 leading-[1.15] mb-2.5 tracking-tight">
               Learn. Practise. Improve.
             </h1>
             
-            <p className="text-slate-700 text-sm sm:text-base lg:text-lg font-medium mb-6 max-w-xl leading-relaxed">
+            <p className="text-slate-700 text-sm sm:text-base lg:text-lg font-medium mb-4 sm:mb-5 max-w-[440px] leading-relaxed">
               Everything students, parents and teachers need to prepare for their SpellBee journey with confidence.
             </p>
             
             {/* Search Input Bar */}
-            <div className="relative max-w-lg">
+            <div className="relative max-w-md">
               <div className="flex items-center bg-white rounded-full p-1.5 sm:p-2 border-2 border-amber-300 shadow-md focus-within:ring-2 focus-within:ring-yellow-400 focus-within:border-amber-400 transition-all hover:border-amber-400">
                 <Search className="w-4 h-4 sm:w-5 sm:h-5 text-slate-400 ml-3 shrink-0" />
                 <input 
@@ -63,7 +63,7 @@ const ResourcesHero = () => {
           </div>
 
           {/* Right Image & Creative Visual */}
-          <div className="lg:col-span-6 xl:col-span-6 relative flex justify-center items-center py-2 sm:py-4">
+          <div className="lg:col-span-6 xl:col-span-6 relative flex justify-center items-center py-1 sm:py-2">
             {/* The circular golden background glow */}
             <div className="absolute w-[280px] h-[280px] sm:w-[330px] sm:h-[330px] md:w-[360px] md:h-[360px] rounded-full bg-gradient-to-tr from-yellow-400 via-amber-300 to-yellow-100 shadow-2xl opacity-80 z-0 animate-glow-pulse"></div>
             

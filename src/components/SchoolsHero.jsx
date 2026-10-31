@@ -4,7 +4,7 @@ import { ArrowRight, ChevronRight, Trophy, FileText, Sparkles } from 'lucide-rea
 
 const SchoolsHero = () => {
   return (
-    <section className="bg-[#fff9e6] pt-5 pb-10 md:pt-6 md:pb-14 overflow-hidden relative">
+    <section className="bg-[#fff9e6] pt-3 pb-6 sm:pt-4 sm:pb-8 md:pt-5 md:pb-9 overflow-hidden relative">
       {/* Background soft ambient glows */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-10 left-10 w-64 h-64 bg-yellow-200/60 rounded-full filter blur-3xl"></div>
@@ -13,13 +13,13 @@ const SchoolsHero = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         {/* Breadcrumb */}
-        <div className="flex items-center gap-1.5 text-xs sm:text-sm text-[#3949ab] font-medium mb-5">
+        <div className="flex items-center gap-1.5 text-xs sm:text-sm text-[#3949ab] font-medium mb-3">
           <Link href="/" className="hover:text-yellow-600 transition-colors">Home</Link>
           <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
           <span className="text-gray-500">Schools</span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-6 items-center">
           
           {/* Left Content */}
           <div className="lg:col-span-6 xl:col-span-6">
@@ -30,15 +30,15 @@ const SchoolsHero = () => {
               </span>
             </div>
             
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a237e] leading-[1.15] mb-4 tracking-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1a237e] leading-[1.15] mb-2.5 tracking-tight">
               Bring SpellBee Universe to Your School
             </h1>
             
-            <p className="text-slate-800 text-sm sm:text-base lg:text-lg font-medium mb-6 max-w-xl leading-relaxed">
+            <p className="text-slate-800 text-sm sm:text-base lg:text-lg font-medium mb-4 sm:mb-5 max-w-[440px] leading-relaxed">
               Give your students an engaging opportunity to strengthen language skills, experience competition and celebrate achievement.
             </p>
             
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-6">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-4 sm:mb-5">
               <a 
                 href="#partnership-form"
                 className="relative overflow-hidden px-6 py-3 rounded-full bg-[#fbc02d] hover:bg-yellow-500 text-gray-900 font-extrabold shadow-md shadow-yellow-400/30 transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg active:scale-95 inline-flex items-center justify-center gap-2 group text-sm sm:text-base cursor-pointer w-full sm:w-auto text-center"
@@ -75,7 +75,7 @@ const SchoolsHero = () => {
           </div>
 
           {/* Right Image & School Student Heroes Visual */}
-          <div className="lg:col-span-6 xl:col-span-6 relative flex justify-center items-center py-4">
+          <div className="lg:col-span-6 xl:col-span-6 relative flex justify-center items-center py-1 sm:py-2">
             {/* Outer pulsating golden glow ring */}
             <div className="absolute w-[290px] h-[290px] sm:w-[350px] sm:h-[350px] md:w-[380px] md:h-[380px] rounded-full bg-gradient-to-tr from-yellow-400 via-amber-300 to-yellow-100 shadow-2xl opacity-80 z-0 animate-glow-pulse"></div>
             

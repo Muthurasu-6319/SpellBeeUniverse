@@ -17,7 +17,7 @@ const FAQHero = ({ searchQuery = '', onSearch, onSelectCategory }) => {
   };
 
   return (
-    <section className="bg-[#fff9e6] pt-3 pb-5 md:pt-4 md:pb-7 overflow-hidden relative">
+    <section className="bg-[#fff9e6] pt-3 pb-4 md:pt-3.5 md:pb-5 overflow-hidden relative">
       {/* Background soft ambient glows */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-6 left-10 w-52 h-52 bg-yellow-200/50 rounded-full filter blur-3xl"></div>
@@ -26,13 +26,13 @@ const FAQHero = ({ searchQuery = '', onSearch, onSelectCategory }) => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         {/* Breadcrumb */}
-        <div className="flex items-center gap-1.5 text-xs sm:text-sm text-[#3949ab] font-medium mb-3">
+        <div className="flex items-center gap-1.5 text-xs sm:text-sm text-[#3949ab] font-medium mb-2">
           <Link href="/" className="hover:text-yellow-600 transition-colors">Home</Link>
           <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
           <span className="text-gray-500">FAQs</span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 items-center">
           
           {/* Left Content */}
           <div className="lg:col-span-7 xl:col-span-7 text-center lg:text-left">
@@ -47,12 +47,12 @@ const FAQHero = ({ searchQuery = '', onSearch, onSelectCategory }) => {
               Questions? We&apos;ve Got Answers.
             </h1>
             
-            <p className="text-[#3949ab] text-xs sm:text-sm md:text-base font-medium mb-3 sm:mb-4 max-w-xl leading-relaxed mx-auto lg:mx-0">
+            <p className="text-[#3949ab] text-xs sm:text-sm md:text-base font-medium mb-2 sm:mb-4 max-w-[440px] leading-relaxed mx-auto lg:mx-0">
               Find instant answers about rounds, eligibility, registration, preparation, and awards.
             </p>
             
             {/* Search Input Bar */}
-            <div className="relative max-w-lg mx-auto lg:mx-0 mb-3">
+            <div className="relative max-w-md mx-auto lg:mx-0 mb-3">
               <div className="flex items-center bg-white rounded-full p-1.5 sm:p-2 border-2 border-amber-300 shadow-sm focus-within:ring-2 focus-within:ring-yellow-400 focus-within:border-amber-400 transition-all">
                 <Search className="w-4 h-4 text-slate-400 ml-2.5 shrink-0" />
                 <input 
