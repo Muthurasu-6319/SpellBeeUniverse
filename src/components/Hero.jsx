@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden min-h-[460px] md:min-h-[480px] lg:h-[500px] flex items-center bg-gradient-to-r from-[#FFFDF7] via-[#FFF9EB] to-[#FFF4D6]">
-      {/* Background Image: Strictly touching top-0 and bottom-0 (Zero space above & below) */}
+    <section className="relative overflow-hidden py-6 sm:py-8 lg:py-0 lg:h-[500px] flex items-center bg-gradient-to-b lg:bg-gradient-to-r from-[#FFFDF7] via-[#FFF9EB] to-[#FFF4D6]">
+      {/* Desktop Background Image: Strictly touching top-0 and bottom-0 (Zero space above & below) */}
       <div 
-        className="absolute top-0 bottom-0 right-0 h-full aspect-[1583/994] z-0 select-none pointer-events-none"
+        className="hidden lg:block absolute top-0 bottom-0 right-0 h-full aspect-[1583/994] z-0 select-none pointer-events-none"
         style={{
           maskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 100%)',
           WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 100%)',
@@ -17,17 +17,14 @@ export default function Hero() {
           alt="SpellBee Universe Hero Background" 
           fill 
           priority
-          sizes="(max-width: 1024px) 100vw, 55vw"
+          sizes="55vw"
           className="object-cover object-right-top" 
         />
       </div>
 
-      {/* Subtle overlay for small & medium screens to ensure zero text overlap */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#FFFDF7]/98 via-[#FFFDF7]/92 via-60% to-[#FFFDF7]/70 sm:bg-gradient-to-r sm:from-[#FFFDF7] sm:via-[#FFFDF7]/90 sm:to-transparent lg:hidden z-0 pointer-events-none" />
-
       {/* Hero Content (Foreground) */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-10 relative z-10 py-6 sm:py-8">
-        <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[460px] space-y-4 animate-fade-in-up">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
+        <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[460px] space-y-3.5 sm:space-y-4 animate-fade-in-up">
           {/* Badge with micro-interaction */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yellow-400 text-slate-950 font-black text-xs sm:text-sm tracking-wider uppercase shadow-xs hover:scale-105 transition-all duration-300 cursor-pointer select-none">
             <img src="/logo.png" alt="SpellBee" className="w-4 h-4 object-contain inline-block animate-wiggle" />
@@ -51,7 +48,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
             <Link 
               href="/register" 
-              className="px-6 sm:px-7 py-3 rounded-full bg-yellow-400 hover:bg-yellow-500 text-slate-950 font-black text-sm sm:text-base shadow-md shadow-yellow-400/30 transition-all transform hover:scale-105 active:scale-95 inline-flex items-center justify-center gap-2 group cursor-pointer w-full sm:w-auto"
+              className="px-6 sm:px-7 py-3 rounded-full bg-yellow-400 hover:bg-yellow-500 text-slate-950 font-black text-sm sm:text-base shadow-md shadow-yellow-400/30 transition-all transform hover:scale-105 active:scale-95 inline-flex items-center justify-center gap-2 group cursor-pointer w-full sm:w-auto text-center"
             >
               Register Now 
               <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
@@ -68,6 +65,20 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-blue-200 text-blue-950 text-xs sm:text-sm font-bold shadow-2xs hover:shadow-sm hover:scale-105 transition-all duration-300 cursor-pointer">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             <span>For students from Classes 1–10</span>
+          </div>
+
+          {/* Mobile View Cute Compact Hero Image (Visible on mobile & tablet only) */}
+          <div className="block lg:hidden pt-3 pb-1">
+            <div className="relative w-full max-w-[340px] sm:max-w-md mx-auto aspect-[16/10] rounded-2xl overflow-hidden shadow-lg border-2 border-amber-300/80 bg-white">
+              <Image 
+                src="/images/image.png" 
+                alt="SpellBee Universe Hero Students" 
+                fill 
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover object-center" 
+              />
+            </div>
           </div>
         </div>
       </div>
