@@ -4,8 +4,8 @@ import { ArrowRight, Trophy, Bug, BookOpen, Sparkles } from 'lucide-react';
 
 const HowItWorksHero = () => {
   return (
-    <section className="bg-[#fff9df] pt-5 pb-6 sm:pt-7 sm:pb-8 md:pt-8 md:pb-10 overflow-hidden relative border-b border-amber-200/50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+    <section className="bg-[#fff9df] pt-2 pb-2.5 sm:pt-7 sm:pb-8 md:pt-8 md:pb-10 overflow-hidden relative border-b border-amber-200/50">
+      <div className="container mx-auto px-2.5 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
           
           {/* Left Text Content */}

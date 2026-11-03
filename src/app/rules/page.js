@@ -154,12 +154,12 @@ export default function RulesAndGuidelinesPage() {
       <Header />
 
       {/* Hero Header Section */}
-      <section className="bg-gradient-to-b from-[#FFF9E6] via-[#FFFDF5] to-white pt-6 pb-12 sm:pt-8 sm:pb-16 border-b border-amber-200/60 relative overflow-hidden">
+      <section className="bg-gradient-to-b from-[#FFF9E6] via-[#FFFDF5] to-white pt-3 pb-4 sm:pt-8 sm:pb-16 border-b border-amber-200/60 relative overflow-hidden">
         {/* Ambient Glows */}
         <div className="absolute top-0 right-1/4 w-80 h-80 bg-amber-200/50 rounded-full blur-3xl pointer-events-none -z-0"></div>
         <div className="absolute bottom-0 left-10 w-96 h-96 bg-yellow-200/40 rounded-full blur-3xl pointer-events-none -z-0"></div>
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+        <div className="container mx-auto px-2.5 sm:px-6 lg:px-8 max-w-7xl relative z-10">
           {/* Breadcrumb */}
           <div className="flex items-center gap-1.5 text-xs sm:text-sm text-slate-800 font-medium mb-6">
             <Link href="/" className="hover:text-amber-600 transition-colors text-slate-900 font-semibold">Home</Link>
@@ -205,7 +205,7 @@ export default function RulesAndGuidelinesPage() {
 
       {/* Main Rules Content Section */}
       <section className="py-10 sm:py-14 md:py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div className="container mx-auto px-2.5 sm:px-6 lg:px-8 max-w-7xl">
           
           {/* Interactive Filter Tabs */}
           <div className="flex flex-wrap items-center justify-center gap-2 mb-8 sm:mb-12">
@@ -286,7 +286,7 @@ export default function RulesAndGuidelinesPage() {
 
       {/* Dedicated Contact & Help Section */}
       <section className="pb-16 sm:pb-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div className="container mx-auto px-2.5 sm:px-6 lg:px-8 max-w-7xl">
           <div className="bg-gradient-to-br from-[#0c1a40] via-[#1a237e] to-[#071330] rounded-3xl sm:rounded-[2.5rem] p-8 sm:p-10 md:p-14 text-white relative overflow-hidden shadow-2xl border border-blue-900/50">
             {/* Ambient Background Glows */}
             <div className="absolute top-0 right-10 w-96 h-96 bg-yellow-400/15 rounded-full blur-[100px] pointer-events-none"></div>

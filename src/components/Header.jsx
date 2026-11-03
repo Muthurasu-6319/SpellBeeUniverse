@@ -31,20 +31,20 @@ export default function Header() {
       <header className="flex items-center justify-between px-4 sm:px-6 lg:px-8 xl:px-10 py-2.5 sm:py-3 bg-white/98 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 shadow-xs">
         {/* Brand Logo & Title */}
         <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
-          <Image 
-            src="/logo.png" 
-            alt="SpellBee Universe Logo" 
-            width={80} 
-            height={80} 
+          <Image
+            src="/logo.png"
+            alt="SpellBee Universe Logo"
+            width={80}
+            height={80}
             unoptimized
-            className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain group-hover:scale-105 transition-transform" 
-            priority 
+            className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain group-hover:scale-105 transition-transform"
+            priority
           />
-          <div className="flex flex-col justify-center font-brand">
-            <span className="text-lg sm:text-xl md:text-2xl font-black text-slate-950 tracking-tight leading-tight select-none">
+          <div className="flex flex-col justify-center font-brand gap-0 leading-none">
+            <span className="text-lg sm:text-xl md:text-2xl font-black text-slate-950 tracking-tight leading-none select-none">
               SpellBee
             </span>
-            <span className="text-lg sm:text-xl md:text-2xl font-black text-amber-500 tracking-tight leading-tight mt-0.5 select-none">
+            <span className="text-lg sm:text-xl md:text-2xl font-black text-amber-500 tracking-tight leading-none mt-0.5 select-none">
               Universe
             </span>
           </div>
@@ -53,9 +53,9 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-4 xl:gap-6 text-sm font-semibold text-gray-700">
           {navLinks.map((link) => (
-            <Link 
+            <Link
               key={link.href}
-              href={link.href} 
+              href={link.href}
               className={`transition-all pb-1 hover:-translate-y-0.5 ${isLinkActive(link.href) ? "text-yellow-500 font-bold border-b-2 border-yellow-500" : "hover:text-yellow-500"}`}
             >
               {link.label}
@@ -66,22 +66,22 @@ export default function Header() {
         {/* Right Action Buttons on Desktop & Hamburger Menu on Mobile */}
         <div className="flex items-center gap-3 shrink-0">
           {/* Desktop Buttons */}
-          <Link 
+          <Link
             href="/login"
             className="hidden xl:block px-5 py-2 rounded-full border border-gray-300 text-sm font-semibold text-gray-700 hover:bg-gray-50 hover:border-gray-400 hover:scale-105 active:scale-95 transition-all"
           >
             Student Login
           </Link>
-          <Link 
+          <Link
             href="/register"
             className="hidden lg:flex px-5 py-2.5 rounded-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 text-sm font-bold shadow-md shadow-yellow-400/20 transition-all transform hover:scale-105 active:scale-95 items-center gap-1.5 group cursor-pointer"
           >
-            Register Now 
+            Register Now
             <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
           </Link>
 
           {/* Hamburger Menu Button */}
-          <button 
+          <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="lg:hidden w-11 h-11 rounded-2xl bg-amber-50 hover:bg-amber-100 text-[#1a237e] border border-amber-200/80 flex items-center justify-center transition-all shadow-xs active:scale-95"
@@ -105,11 +105,10 @@ export default function Header() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`px-4 py-3 rounded-2xl text-base font-extrabold flex items-center justify-between transition-colors ${
-                      active 
-                        ? "bg-amber-100/70 text-[#1a237e] border border-amber-300/60" 
+                    className={`px-4 py-3 rounded-2xl text-base font-extrabold flex items-center justify-between transition-colors ${active
+                        ? "bg-amber-100/70 text-[#1a237e] border border-amber-300/60"
                         : "text-slate-700 hover:bg-slate-50"
-                    }`}
+                      }`}
                   >
                     <span>{link.label}</span>
                     <ArrowRight className={`w-4 h-4 ${active ? "text-amber-600" : "text-slate-400"}`} />

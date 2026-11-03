@@ -3,8 +3,8 @@ import { Bug, Lightbulb } from 'lucide-react';
 
 const AboutHero = () => {
   return (
-    <section className="bg-[#fff9df] pt-8 sm:pt-10 md:pt-12 pb-8 sm:pb-10 md:pb-12 overflow-hidden relative border-b border-amber-200/50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+    <section className="bg-[#fff9df] pt-2.5 pb-3 sm:pt-10 sm:pb-10 md:pt-12 md:pb-12 overflow-hidden relative border-b border-amber-200/50">
+      <div className="container mx-auto px-2.5 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-10">
           
           {/* Left Text Content */}

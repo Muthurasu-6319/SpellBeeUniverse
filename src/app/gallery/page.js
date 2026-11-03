@@ -1049,11 +1049,11 @@ export default function GalleryPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative py-6 sm:py-7 md:py-8 bg-gradient-to-b from-[#1a237e] via-[#151c6b] to-[#0f172a] text-white overflow-hidden">
+      <section className="relative py-3 sm:py-7 md:py-8 bg-gradient-to-b from-[#1a237e] via-[#151c6b] to-[#0f172a] text-white overflow-hidden">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-10 w-80 h-80 bg-rose-500/10 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 text-center">
+        <div className="container mx-auto px-2.5 sm:px-6 lg:px-8 max-w-7xl relative z-10 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/15 border border-amber-400/30 text-amber-300 text-xs sm:text-sm font-bold uppercase tracking-wider mb-2.5 shadow-xs">
             <Camera className="w-4 h-4 text-amber-400" />
             Moments That Matter
@@ -1071,7 +1071,7 @@ export default function GalleryPage() {
 
       {/* Filter Bar */}
       <section className="py-2 sm:py-2.5 bg-white border-b border-gray-200 sticky top-[60px] sm:top-[68px] z-30 shadow-xs">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div className="container mx-auto px-2.5 sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0 scrollbar-none -mx-4 px-4 sm:mx-0 sm:px-0 justify-start md:justify-center">
             {categories.map((cat) => (
               <button
@@ -1092,7 +1092,7 @@ export default function GalleryPage() {
 
       {/* Gallery Showcase Section */}
       <section className="py-8 md:py-12 min-h-[420px]">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div className="container mx-auto px-2.5 sm:px-6 lg:px-8 max-w-7xl">
           {filteredPhotos.length === 0 ? (
             /* Visitor-facing Clean Curated State */
             <div className="max-w-2xl mx-auto text-center py-12 px-6 bg-white rounded-3xl border border-slate-200/80 shadow-sm">
@@ -1236,7 +1236,7 @@ export default function GalleryPage() {
 
       {/* Bottom CTA */}
       <section className="py-10 md:py-14 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 border-t border-amber-300">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl text-center">
+        <div className="container mx-auto px-2.5 sm:px-6 lg:px-8 max-w-5xl text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#1a237e] mb-4">
             Be A Part Of Our Next Unforgettable Event!
           </h2>

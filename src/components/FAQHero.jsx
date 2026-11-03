@@ -17,14 +17,14 @@ const FAQHero = ({ searchQuery = '', onSearch, onSelectCategory }) => {
   };
 
   return (
-    <section className="bg-[#fff9e6] pt-3 pb-4 md:pt-3.5 md:pb-5 overflow-hidden relative">
+    <section className="bg-[#fff9e6] pt-2 pb-2 md:pt-3.5 md:pb-5 overflow-hidden relative">
       {/* Background soft ambient glows */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-6 left-10 w-52 h-52 bg-yellow-200/50 rounded-full filter blur-3xl"></div>
         <div className="absolute bottom-4 right-16 w-64 h-64 bg-amber-200/40 rounded-full filter blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+      <div className="container mx-auto px-2.5 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         {/* Breadcrumb */}
         <div className="flex items-center gap-1.5 text-xs sm:text-sm text-[#3949ab] font-medium mb-2">
           <Link href="/" className="hover:text-yellow-600 transition-colors">Home</Link>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-5 pb-0 sm:pt-7 sm:pb-0 lg:py-0 lg:h-[500px] flex items-center bg-gradient-to-b lg:bg-gradient-to-r from-[#FFFDF7] via-[#FFF9EB] to-[#FFF4D6]">
+    <section className="relative overflow-hidden pt-2 pb-0 sm:pt-7 sm:pb-0 lg:py-0 lg:h-[500px] flex items-center bg-gradient-to-b lg:bg-gradient-to-r from-[#FFFDF7] via-[#FFF9EB] to-[#FFF4D6]">
       {/* Desktop Background Image: Strictly touching top-0 and bottom-0 (Zero space above & below) */}
       <div 
         className="hidden lg:block absolute top-0 bottom-0 right-0 h-full aspect-[1583/994] z-0 select-none pointer-events-none"
@@ -23,7 +23,7 @@ export default function Hero() {
       </div>
 
       {/* Hero Content (Foreground) */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-10 relative z-10 w-full">
+      <div className="container mx-auto px-2.5 sm:px-6 lg:px-10 relative z-10 w-full">
         <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[460px] space-y-3 sm:space-y-3.5 animate-fade-in-up">
           {/* Badge with micro-interaction */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yellow-400 text-slate-950 font-black text-xs sm:text-sm tracking-wider uppercase shadow-xs hover:scale-105 transition-all duration-300 cursor-pointer select-none">
@@ -69,7 +69,7 @@ export default function Hero() {
         </div>
 
         {/* Mobile View Full-Bleed Image: Zero space on left, right, and bottom; minimal space on top */}
-        <div className="block lg:hidden mt-2.5 -mx-4 sm:-mx-6 w-[calc(100%+2rem)] sm:w-[calc(100%+3rem)]">
+        <div className="block lg:hidden mt-2.5 -mx-2.5 sm:-mx-6 w-[calc(100%+1.25rem)] sm:w-[calc(100%+3rem)]">
           <div className="relative w-full aspect-[1583/994] overflow-hidden select-none">
             <Image 
               src="/images/image.png" 

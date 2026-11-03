@@ -1,3 +1,10 @@
+
+/* Ensure brand logo text in header & footer never has unintended gap */
+.font-brand,
+.font-brand span {
+  row-gap: 0 !important;
+  gap: 0 !important;
+}
 @import "tailwindcss";
 
 :root {
@@ -391,12 +398,36 @@ li p,
     padding-bottom: 0.5rem !important;
   }
 
-  /* Compact hero sections on mobile without dead top/bottom space */
+  /* ==========================================================================
+     Hero Section Mobile Spacing: Cut top, bottom, left & right gaps across all pages
+     ========================================================================== */
   main > section:first-of-type,
   section[class*="Hero"],
-  section.hero-section {
-    padding-top: 1rem !important;
-    padding-bottom: 1.25rem !important;
+  section.hero-section,
+  .hero-section {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  main > section:first-of-type .container,
+  section[class*="Hero"] .container,
+  section.hero-section .container,
+  .hero-section .container {
+    padding-left: 0.625rem !important;
+    padding-right: 0.625rem !important;
+  }
+
+  main > section:first-of-type h1,
+  section[class*="Hero"] h1,
+  section.hero-section h1 {
+    margin-bottom: 0.375rem !important;
+    line-height: 1.15 !important;
+  }
+
+  main > section:first-of-type p,
+  section[class*="Hero"] p,
+  section.hero-section p {
+    margin-bottom: 0.375rem !important;
   }
 
   /* 2. Remove unwanted left & right empty margins on containers */
@@ -435,8 +466,7 @@ li p,
   section [class*="gap-9"],
   section [class*="gap-10"],
   section [class*="gap-12"],
-  .grid,
-  .flex-col {
+  section .grid {
     row-gap: 0.875rem !important;
   }
 
