@@ -24,7 +24,7 @@ export default function Hero() {
 
       {/* Hero Content (Foreground) */}
       <div className="container mx-auto px-2 sm:px-6 lg:px-10 relative z-10 w-full">
-        <div className="max-w-full sm:max-w-sm md:max-w-md lg:max-w-[460px] mx-auto lg:mx-0 space-y-3 sm:space-y-3.5 animate-fade-in-up text-center lg:text-left">
+        <div className="max-w-full sm:max-w-sm md:max-w-md lg:max-w-[460px] mx-auto lg:mx-0 space-y-3 sm:space-y-3.5 animate-fade-in-up">
           {/* Badge with micro-interaction */}
           <div className="flex justify-center lg:justify-start">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yellow-400 text-slate-950 font-black text-xs sm:text-sm tracking-wider uppercase shadow-xs hover:scale-105 transition-all duration-300 cursor-pointer select-none">

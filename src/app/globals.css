@@ -229,11 +229,30 @@ select,
     overflow-wrap: break-word !important;
   }
 
+  /* Explicitly preserved centered elements remain centered on mobile */
+  .text-center,
+  .text-center p:not(.hero-description):not(.text-justify),
+  p.text-center:not(.hero-description):not(.text-justify),
+  h1.text-center,
+  h2.text-center,
+  h3.text-center,
+  div.text-center > p:not(.hero-description):not(.text-justify),
+  section.text-center > p:not(.hero-description):not(.text-justify),
+  header.text-center > p:not(.hero-description):not(.text-justify) {
+    text-align: center !important;
+    text-align-last: center !important;
+    text-wrap: balance !important;
+  }
+
   /* When explicitly requested via .text-justify or .hero-description, provide clean rectangular justification without double spaces */
   .text-justify,
   p.text-justify,
   .hero-description,
-  p.hero-description {
+  p.hero-description,
+  div > p.hero-description,
+  div > p.text-justify,
+  div.text-center > p.hero-description,
+  div.text-center > p.text-justify {
     text-align: justify !important;
     text-align-last: left !important;
     text-justify: inter-word !important;
@@ -243,21 +262,6 @@ select,
     letter-spacing: normal !important;
     text-wrap: pretty !important;
     overflow-wrap: break-word !important;
-  }
-
-  /* Explicitly preserved centered elements remain centered on mobile */
-  .text-center,
-  .text-center p,
-  p.text-center,
-  h1.text-center,
-  h2.text-center,
-  h3.text-center,
-  div.text-center > p,
-  section.text-center > p,
-  header.text-center > p {
-    text-align: center !important;
-    text-align-last: center !important;
-    text-wrap: balance !important;
   }
 
   /* Explicitly preserved right-aligned elements */
