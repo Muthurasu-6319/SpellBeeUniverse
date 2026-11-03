@@ -372,3 +372,118 @@ li p,
   text-indent: 0;
 }
 
+
+/* ==========================================================================
+   Mobile Spacing Optimization: Remove Unwanted Top, Bottom, Left, Right Empty Spaces and Gaps
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* 1. Remove unwanted top & bottom empty space between sections */
+  main > section,
+  section {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  /* Exclude sticky filter bars and navigation */
+  section.sticky,
+  section[class*="sticky"] {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  /* Compact hero sections on mobile without dead top/bottom space */
+  main > section:first-of-type,
+  section[class*="Hero"],
+  section.hero-section {
+    padding-top: 1rem !important;
+    padding-bottom: 1.25rem !important;
+  }
+
+  /* 2. Remove unwanted left & right empty margins on containers */
+  .container,
+  [class*="container"] {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* 3. Remove unwanted empty space below section headers/titles */
+  section .mb-8,
+  section .mb-10,
+  section .mb-12,
+  section .mb-14,
+  section .mb-16,
+  section [class*="mb-8"],
+  section [class*="mb-10"],
+  section [class*="mb-12"],
+  section [class*="mb-14"],
+  section [class*="mb-16"] {
+    margin-bottom: 1rem !important;
+  }
+
+  /* 4. Remove unwanted large gaps between cards and grid/flex items */
+  section .gap-6,
+  section .gap-7,
+  section .gap-8,
+  section .gap-9,
+  section .gap-10,
+  section .gap-12,
+  section [class*="gap-6"],
+  section [class*="gap-7"],
+  section [class*="gap-8"],
+  section [class*="gap-9"],
+  section [class*="gap-10"],
+  section [class*="gap-12"],
+  .grid,
+  .flex-col {
+    row-gap: 0.875rem !important;
+  }
+
+  /* 5. Remove unwanted empty vertical gaps in stack elements */
+  section .space-y-6 > :not([hidden]) ~ :not([hidden]),
+  section .space-y-7 > :not([hidden]) ~ :not([hidden]),
+  section .space-y-8 > :not([hidden]) ~ :not([hidden]),
+  section .space-y-9 > :not([hidden]) ~ :not([hidden]),
+  section .space-y-10 > :not([hidden]) ~ :not([hidden]),
+  section .space-y-12 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 0.75rem !important;
+  }
+
+  /* 6. Remove excessive left, right, top, bottom padding inside cards */
+  section .p-6,
+  section .p-7,
+  section .p-8,
+  section .p-10,
+  section .p-12 {
+    padding: 1rem !important;
+  }
+
+  /* 7. Remove unwanted vertical margins between blocks */
+  section .my-8,
+  section .my-10,
+  section .my-12,
+  section .my-14,
+  section .my-16,
+  section .mt-8,
+  section .mt-10,
+  section .mt-12,
+  section .mt-14,
+  section .mt-16 {
+    margin-top: 0.875rem !important;
+    margin-bottom: 0.875rem !important;
+  }
+
+  /* 8. Tighten footer vertical padding and spacing on mobile */
+  footer {
+    padding-top: 2rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  footer .mb-10,
+  footer .mb-12 {
+    margin-bottom: 1.25rem !important;
+  }
+  footer .gap-10 {
+    gap: 1.25rem !important;
+  }
+}
