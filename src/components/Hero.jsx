@@ -40,7 +40,7 @@ export default function Hero() {
           </h1>
 
           {/* Subtitle / Description - Broken into lines so it stacks cleanly downwards without touching image */}
-          <p className="text-sm sm:text-base md:text-lg text-slate-700 font-medium leading-relaxed max-w-[420px] text-justify">
+          <p className="text-sm sm:text-base md:text-lg text-slate-700 font-medium leading-relaxed max-w-[420px] text-left">
             SpellBee Universe is an exciting spelling and vocabulary competition that gives young learners the opportunity to strengthen their English, build confidence and showcase their skills on a bigger stage.
           </p>
 

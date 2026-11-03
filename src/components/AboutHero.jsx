@@ -19,8 +19,7 @@ const AboutHero = () => {
               Inspiring Young Minds,<br className="hidden sm:inline" /> One Word at a Time.
             </h1>
             <p 
-              className="text-[#3949ab] text-sm sm:text-base md:text-lg font-medium leading-relaxed max-w-xl mx-auto lg:mx-0 text-justify paragraph-justify"
-              style={{ textAlign: 'justify', textAlignLast: 'left' }}
+              className="text-[#3949ab] text-sm sm:text-base md:text-lg font-medium leading-relaxed max-w-xl mx-auto lg:mx-0 text-left"
             >
               SpellBee Universe creates opportunities for young learners to develop spelling, vocabulary, pronunciation and confidence through an engaging competitive learning experience.
             </p>

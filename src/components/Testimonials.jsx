@@ -85,15 +85,15 @@ export default function Testimonials() {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch max-w-5xl mx-auto">
             {initialVideoReviews.map((v) => (
               <div
                 key={v.id}
                 onClick={() => setActiveVideo(v)}
-                className="group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1.5 cursor-pointer border border-slate-200/90 hover:border-amber-300 flex flex-col h-full"
+                className="group relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1.5 cursor-pointer border border-slate-200/90 hover:border-amber-300 flex flex-col h-full max-w-sm mx-auto w-full"
               >
-                {/* Video Aspect Ratio Box (16:9) */}
-                <div className="relative aspect-video w-full overflow-hidden bg-slate-900 shrink-0">
+                {/* Video Aspect Ratio Box (Instagram 9:16) */}
+                <div className="relative aspect-[9/16] w-full overflow-hidden bg-slate-900 shrink-0">
                   <img
                     src={v.thumbnail}
                     alt={v.title}
@@ -156,7 +156,7 @@ export default function Testimonials() {
           onClick={() => setActiveVideo(null)}
         >
           <div 
-            className="relative w-full max-w-3xl bg-slate-900 rounded-2xl overflow-hidden shadow-2xl border border-slate-800"
+            className="relative w-full max-w-sm sm:max-w-md bg-slate-900 rounded-2xl overflow-hidden shadow-2xl border border-slate-800"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Header */}
@@ -178,8 +178,8 @@ export default function Testimonials() {
               </button>
             </div>
 
-            {/* Modal Video Body */}
-            <div className="relative aspect-video w-full bg-black flex items-center justify-center">
+            {/* Modal Video Body (Instagram 9:16) */}
+            <div className="relative aspect-[9/16] w-full bg-black flex items-center justify-center">
               {activeVideo.videoUrl ? (
                 <iframe
                   src={activeVideo.videoUrl}

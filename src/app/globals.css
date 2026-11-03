@@ -175,45 +175,77 @@ select,
 }
 
 /* ==========================================================================
-   Suitable Paragraph Justification (Clean Rectangular Alignment)
+   Controlled Paragraph Justification (Desktop Wide Screens Only)
    ========================================================================== */
 
-/* Applied to multi-line descriptive text, editorial blocks, and long-form prose */
-.text-justify,
-.paragraph-justify,
-p.paragraph-justify,
-p.text-justify,
-.prose p,
-.editorial-text p,
-.story-text p {
-  text-align: justify !important;
-  text-align-last: left !important;
-  text-justify: inter-word !important;
-  word-spacing: normal;
-  letter-spacing: normal;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  text-wrap: pretty;
-  overflow-wrap: break-word;
-}
-
-/* ==========================================================================
-   Mobile-First Typography: Clean Justification Across All Sections & Pages
-   ========================================================================== */
-@media (max-width: 768px) {
-  main section p:not(.no-justify):not(nav p):not(button p):not(footer p):not(.pill p):not(.badge p),
-  section p:not(.no-justify):not(nav p):not(button p):not(footer p):not(.pill p):not(.badge p),
+/* Only apply justification on wide desktop viewports where line length prevents word stretching */
+@media (min-width: 769px) {
   .text-justify,
   .paragraph-justify,
   p.paragraph-justify,
-  p.text-justify {
-    text-align: justify !important;
-    text-align-last: left !important;
-    text-justify: inter-word !important;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    word-break: break-word;
+  p.text-justify,
+  .prose p,
+  .editorial-text p,
+  .story-text p {
+    text-align: justify;
+    text-align-last: left;
+    word-spacing: normal;
+    letter-spacing: normal;
+    hyphens: manual;
+    text-wrap: pretty;
     overflow-wrap: break-word;
+  }
+}
+
+/* ==========================================================================
+   Mobile Typography: Clean Natural Alignment, Perfect Letter Spacing & No Double Spaces
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* On mobile screens, disable forced justification to eliminate unnatural gaps ('double spaces') and awkward word-breaks */
+  p,
+  li,
+  article,
+  .text-justify,
+  .paragraph-justify,
+  .paragraph-justify p,
+  .text-justify p,
+  p.paragraph-justify,
+  p.text-justify,
+  .prose p,
+  .editorial-text p,
+  .story-text p {
+    text-align: left !important;
+    text-align-last: left !important;
+    text-justify: none !important;
+    word-spacing: normal !important;
+    letter-spacing: normal !important;
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
+    text-wrap: pretty !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Explicitly preserved centered elements remain centered on mobile */
+  .text-center,
+  .text-center p,
+  p.text-center,
+  h1.text-center,
+  h2.text-center,
+  h3.text-center,
+  div.text-center > p,
+  section.text-center > p,
+  header.text-center > p {
+    text-align: center !important;
+    text-align-last: center !important;
+    text-wrap: balance !important;
+  }
+
+  /* Explicitly preserved right-aligned elements */
+  .text-right,
+  .text-right p,
+  p.text-right {
+    text-align: right !important;
+    text-align-last: right !important;
   }
 }
 
