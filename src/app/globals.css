@@ -185,43 +185,50 @@ select,
    Controlled Paragraph Justification (Desktop Wide Screens Only)
    ========================================================================== */
 
-/* Only apply justification on wide desktop viewports where line length prevents word stretching */
-@media (min-width: 769px) {
-  .text-justify,
-  .paragraph-justify,
-  p.paragraph-justify,
-  p.text-justify,
-  .prose p,
-  .editorial-text p,
-  .story-text p {
-    text-align: justify;
-    text-align-last: left;
-    word-spacing: normal;
-    letter-spacing: normal;
-    hyphens: manual;
-    text-wrap: pretty;
-    overflow-wrap: break-word;
-  }
+/* Uniform natural word spacing across all screen sizes: zero double spaces or artificial stretching */
+p,
+.text-justify,
+.paragraph-justify,
+p.paragraph-justify,
+p.text-justify,
+.hero-description,
+p.hero-description,
+.prose p,
+.editorial-text p,
+.story-text p {
+  text-align: left;
+  text-align-last: left;
+  text-justify: none !important;
+  word-spacing: 0px !important;
+  letter-spacing: normal !important;
+  hyphens: none !important;
+  -webkit-hyphens: none !important;
+  text-wrap: pretty;
+  overflow-wrap: break-word;
 }
 
 /* ==========================================================================
-   Mobile Typography: Clean Natural Alignment, Perfect Letter Spacing & No Double Spaces
+   Mobile Typography: Clean Natural Alignment, Perfect Letter Spacing & Zero Double Spaces
    ========================================================================== */
 @media (max-width: 768px) {
-  /* On mobile screens, default plain paragraphs to clean left alignment */
+  /* On mobile screens, enforce uniform single word spacing and clean left alignment */
   p,
   li,
   article,
+  .text-justify,
   .paragraph-justify,
   .paragraph-justify p,
   p.paragraph-justify,
+  p.text-justify,
+  .hero-description,
+  p.hero-description,
   .prose p,
   .editorial-text p,
   .story-text p {
     text-align: left !important;
     text-align-last: left !important;
     text-justify: none !important;
-    word-spacing: normal !important;
+    word-spacing: 0px !important;
     letter-spacing: normal !important;
     hyphens: none !important;
     -webkit-hyphens: none !important;
@@ -231,49 +238,17 @@ select,
 
   /* Explicitly preserved centered elements remain centered on mobile */
   .text-center,
-  .text-center p:not(.hero-description):not(.text-justify),
-  p.text-center:not(.hero-description):not(.text-justify),
+  .text-center p:not(.hero-description),
+  p.text-center:not(.hero-description),
   h1.text-center,
   h2.text-center,
   h3.text-center,
-  div.text-center > p:not(.hero-description):not(.text-justify),
-  section.text-center > p:not(.hero-description):not(.text-justify),
-  header.text-center > p:not(.hero-description):not(.text-justify) {
+  div.text-center > p:not(.hero-description),
+  section.text-center > p:not(.hero-description),
+  header.text-center > p:not(.hero-description) {
     text-align: center !important;
     text-align-last: center !important;
     text-wrap: balance !important;
-  }
-
-  /* When explicitly requested via .text-justify, provide clean justification */
-  .text-justify,
-  p.text-justify,
-  div > p.text-justify,
-  div.text-center > p.text-justify {
-    text-align: justify !important;
-    text-align-last: left !important;
-    text-justify: inter-word !important;
-    hyphens: none !important;
-    -webkit-hyphens: none !important;
-    word-spacing: normal !important;
-    letter-spacing: normal !important;
-    text-wrap: pretty !important;
-    overflow-wrap: break-word !important;
-  }
-
-  /* Hero description: perfectly uniform single word spacing with zero double spaces */
-  .hero-description,
-  p.hero-description,
-  div > p.hero-description,
-  div.text-center > p.hero-description {
-    text-align: left !important;
-    text-align-last: left !important;
-    text-justify: none !important;
-    word-spacing: normal !important;
-    letter-spacing: normal !important;
-    hyphens: none !important;
-    -webkit-hyphens: none !important;
-    text-wrap: pretty !important;
-    overflow-wrap: break-word !important;
   }
 
   /* Explicitly preserved right-aligned elements */

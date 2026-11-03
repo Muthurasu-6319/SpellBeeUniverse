@@ -35,7 +35,7 @@ export default function Hero() {
 
           {/* Main Title */}
           <h1 className="text-3xl sm:text-4xl md:text-[44px] lg:text-[48px] font-black text-slate-950 leading-[1.14] tracking-tight text-center lg:text-left">
-            Turn Words Into <br className="hidden sm:inline" />
+            Turn Words Into{' '}
             <span className="text-[#1a237e] hover:text-amber-500 transition-colors duration-300">
               Confidence.
             </span>
@@ -47,10 +47,12 @@ export default function Hero() {
             style={{
               textAlign: 'left',
               textAlignLast: 'left',
-              wordSpacing: 'normal',
-              letterSpacing: 'normal',
+              textJustify: 'none',
+              wordSpacing: '0px',
+              letterSpacing: '0px',
               hyphens: 'none',
               WebkitHyphens: 'none',
+              whiteSpace: 'normal',
             }}
           >
             SpellBee Universe is an exciting spelling and vocabulary competition that gives young learners the opportunity to strengthen their English, build confidence and showcase their skills on a bigger stage.
