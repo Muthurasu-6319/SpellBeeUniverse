@@ -208,16 +208,13 @@ select,
    Mobile Typography: Clean Natural Alignment, Perfect Letter Spacing & No Double Spaces
    ========================================================================== */
 @media (max-width: 768px) {
-  /* On mobile screens, disable forced justification to eliminate unnatural gaps ('double spaces') and awkward word-breaks */
+  /* On mobile screens, default plain paragraphs to clean left alignment */
   p,
   li,
   article,
-  .text-justify,
   .paragraph-justify,
   .paragraph-justify p,
-  .text-justify p,
   p.paragraph-justify,
-  p.text-justify,
   .prose p,
   .editorial-text p,
   .story-text p {
@@ -228,6 +225,22 @@ select,
     letter-spacing: normal !important;
     hyphens: none !important;
     -webkit-hyphens: none !important;
+    text-wrap: pretty !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* When explicitly requested via .text-justify or .hero-description, provide clean rectangular justification without double spaces */
+  .text-justify,
+  p.text-justify,
+  .hero-description,
+  p.hero-description {
+    text-align: justify !important;
+    text-align-last: left !important;
+    text-justify: inter-word !important;
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
+    word-spacing: normal !important;
+    letter-spacing: normal !important;
     text-wrap: pretty !important;
     overflow-wrap: break-word !important;
   }

@@ -42,7 +42,17 @@ export default function Hero() {
           </h1>
 
           {/* Subtitle / Description */}
-          <p className="text-sm sm:text-base md:text-lg text-slate-700 font-medium leading-relaxed max-w-[420px] mx-auto lg:mx-0 text-center lg:text-left">
+          <p 
+            className="hero-description text-sm sm:text-base md:text-lg text-slate-700 font-medium leading-relaxed max-w-[440px] mx-auto lg:mx-0 text-justify"
+            style={{
+              textAlign: 'justify',
+              textAlignLast: 'left',
+              textJustify: 'inter-word',
+              hyphens: 'none',
+              WebkitHyphens: 'none',
+              wordSpacing: 'normal',
+            }}
+          >
             SpellBee Universe is an exciting spelling and vocabulary competition that gives young learners the opportunity to strengthen their English, build confidence and showcase their skills on a bigger stage.
           </p>
 
