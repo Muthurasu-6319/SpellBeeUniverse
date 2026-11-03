@@ -23,29 +23,31 @@ export default function Hero() {
       </div>
 
       {/* Hero Content (Foreground) */}
-      <div className="container mx-auto px-2.5 sm:px-6 lg:px-10 relative z-10 w-full">
-        <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-[460px] space-y-3 sm:space-y-3.5 animate-fade-in-up">
+      <div className="container mx-auto px-2 sm:px-6 lg:px-10 relative z-10 w-full">
+        <div className="max-w-full sm:max-w-sm md:max-w-md lg:max-w-[460px] mx-auto lg:mx-0 space-y-3 sm:space-y-3.5 animate-fade-in-up text-center lg:text-left">
           {/* Badge with micro-interaction */}
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yellow-400 text-slate-950 font-black text-xs sm:text-sm tracking-wider uppercase shadow-xs hover:scale-105 transition-all duration-300 cursor-pointer select-none">
-            <img src="/logo.png" alt="SpellBee" className="w-4 h-4 object-contain inline-block animate-wiggle" />
-            <span>LEARN • SPELL • GROW • SHINE</span>
+          <div className="flex justify-center lg:justify-start">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yellow-400 text-slate-950 font-black text-xs sm:text-sm tracking-wider uppercase shadow-xs hover:scale-105 transition-all duration-300 cursor-pointer select-none">
+              <img src="/logo.png" alt="SpellBee" className="w-4 h-4 object-contain inline-block animate-wiggle" />
+              <span>LEARN • SPELL • GROW • SHINE</span>
+            </div>
           </div>
 
           {/* Main Title */}
-          <h1 className="text-3xl sm:text-4xl md:text-[44px] lg:text-[48px] font-black text-slate-950 leading-[1.14] tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-[44px] lg:text-[48px] font-black text-slate-950 leading-[1.14] tracking-tight text-center lg:text-left">
             Turn Words Into <br className="hidden sm:inline" />
             <span className="text-[#1a237e] hover:text-amber-500 transition-colors duration-300">
               Confidence.
             </span>
           </h1>
 
-          {/* Subtitle / Description - Broken into lines so it stacks cleanly downwards without touching image */}
-          <p className="text-sm sm:text-base md:text-lg text-slate-700 font-medium leading-relaxed max-w-[420px] text-left">
+          {/* Subtitle / Description */}
+          <p className="text-sm sm:text-base md:text-lg text-slate-700 font-medium leading-relaxed max-w-[420px] mx-auto lg:mx-0 text-center lg:text-left">
             SpellBee Universe is an exciting spelling and vocabulary competition that gives young learners the opportunity to strengthen their English, build confidence and showcase their skills on a bigger stage.
           </p>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 pt-0.5">
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2.5 sm:gap-3 pt-0.5 w-full max-w-sm mx-auto lg:mx-0">
             <Link 
               href="/register" 
               className="px-6 sm:px-7 py-2.5 sm:py-3 rounded-full bg-yellow-400 hover:bg-yellow-500 text-slate-950 font-black text-sm sm:text-base shadow-md shadow-yellow-400/30 transition-all transform hover:scale-105 active:scale-95 inline-flex items-center justify-center gap-2 group cursor-pointer w-full sm:w-auto text-center"
@@ -62,14 +64,16 @@ export default function Hero() {
           </div>
 
           {/* Eligibility Badge */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-blue-200 text-blue-950 text-xs sm:text-sm font-bold shadow-2xs hover:shadow-sm hover:scale-105 transition-all duration-300 cursor-pointer">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span>For students from Classes 1–10</span>
+          <div className="flex justify-center lg:justify-start">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-blue-200 text-blue-950 text-xs sm:text-sm font-bold shadow-2xs hover:shadow-sm hover:scale-105 transition-all duration-300 cursor-pointer">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span>For students from Classes 1–10</span>
+            </div>
           </div>
         </div>
 
         {/* Mobile View Full-Bleed Image: Zero space on left, right, and bottom; minimal space on top */}
-        <div className="block lg:hidden mt-2.5 -mx-2.5 sm:-mx-6 w-[calc(100%+1.25rem)] sm:w-[calc(100%+3rem)]">
+        <div className="block lg:hidden mt-2 -mx-2 sm:-mx-6 w-[calc(100%+1rem)] sm:w-[calc(100%+3rem)]">
           <div className="relative w-full aspect-[1583/994] overflow-hidden select-none">
             <Image 
               src="/images/image.png" 
