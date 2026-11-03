@@ -244,14 +244,10 @@ select,
     text-wrap: balance !important;
   }
 
-  /* When explicitly requested via .text-justify or .hero-description, provide clean rectangular justification without double spaces */
+  /* When explicitly requested via .text-justify, provide clean justification */
   .text-justify,
   p.text-justify,
-  .hero-description,
-  p.hero-description,
-  div > p.hero-description,
   div > p.text-justify,
-  div.text-center > p.hero-description,
   div.text-center > p.text-justify {
     text-align: justify !important;
     text-align-last: left !important;
@@ -260,6 +256,22 @@ select,
     -webkit-hyphens: none !important;
     word-spacing: normal !important;
     letter-spacing: normal !important;
+    text-wrap: pretty !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Hero description: perfectly uniform single word spacing with zero double spaces */
+  .hero-description,
+  p.hero-description,
+  div > p.hero-description,
+  div.text-center > p.hero-description {
+    text-align: left !important;
+    text-align-last: left !important;
+    text-justify: none !important;
+    word-spacing: normal !important;
+    letter-spacing: normal !important;
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
     text-wrap: pretty !important;
     overflow-wrap: break-word !important;
   }
